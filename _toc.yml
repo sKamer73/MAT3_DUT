@@ -1,0 +1,12 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+
+- file: intro
+  numbered: false
+- part: Géométrie dans l'espace
+  numbered: false
+  chapters:
+  - file: Part1/Cours
+  - file: Part1/TD
+
