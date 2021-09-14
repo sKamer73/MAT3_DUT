@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travaux Dirigés &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part3/TD.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart3/TD.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part3/TD.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part3/TD.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partie-1">
+   Partie 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partie-2">
+   Partie 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partie-3">
+   Partie 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partie-4">
+   Partie 4
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="travaux-diriges">
+<h1>Travaux Dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="partie-1">
+<h2>Partie 1<a class="headerlink" href="#partie-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Exercice 1</strong>. (*) L’ancien système d’immatriculation français était
+le suivant: chaque plaque avait 4 chiffres suivis de 2 lettres, puis des
+deux numéros du département. Les nouvelles plaques françaises sont
+formées de la façon suivante: elles comportent deux lettres, puis 3
+chiffres, puis 2 lettres. Il n’y a plus d’indication de département, le
+nouveau système étant national.</p>
+<ol class="simple">
+<li><p>Combien un département pouvait-il immatriculer de véhicules dans
+l’ancien système ?</p></li>
+<li><p>En supposant que la France a 101 départements, combien pouvait-on
+immatriculer de véhicules ?</p></li>
+<li><p>Combien le nouveau système permet-il d’immatriculer de véhicules ?</p></li>
+<li><p>Proposer une explication au fait que le nouveau système reste
+avantageux malgré tout.</p></li>
+<li><p>En réalité dans le nouveau système comme dans l’ancien, certaines
+combinaisons sont interdites pour éviter une confusion dans les
+procès-verbaux: les I, O et U du fait de leur trop proche
+ressemblance avec le 1, le 0 et le V, ainsi que les séries SS et WW
+du bloc de gauche et la série SS du bloc de droite. Par ailleurs les
+séries de chiffrent ne commencent pas à 000 mais démarrent à 001.<br />
+Quel est, en procédant à ces ajustements, le nouveau nombre de
+plaques réalisables en France avant que le nombre de combinaisons de
+plaques soit épuisé ?</p></li>
+<li><p>Proposer une estimation (grossière) de la durée de vie de ce nouveau
+système.</p></li>
+</ol>
+<p><strong>Exercice 2</strong>. (*) Quatre personnes participent à une course. Combien
+peut-il y avoir de classements possibles, en admettant qu’il puisse y
+avoir des ex-aequo ?</p>
+<p><strong>Exercice 3</strong>. (*) Si <span class="math notranslate nohighlight">\(30\)</span> personnes sont présentes à un réveillon et
+si, à minuit, chaque personne fait une bise à chacune des autres
+personnes, combien de bises se sont échangées en tout ?</p>
+<p><strong>Exercice 4</strong>. (*) Un QCM comporte <span class="math notranslate nohighlight">\(10\)</span> questions, pour chacune
+desquelles <span class="math notranslate nohighlight">\(4\)</span> réponses sont proposées, une seule est exacte. Combien y
+a-t-il de grilles-réponses possibles? Quelle est la probabilité de
+répondre au hasard au moins à <span class="math notranslate nohighlight">\(6\)</span> questions correctement?</p>
+<p><strong>Exercice 5</strong>. (*) Amédée, Barnabé, Charles tirent sur un oiseau; si
+les probabilités de succès sont pour Amédée : <span class="math notranslate nohighlight">\(70\)</span>%, Barnabé : <span class="math notranslate nohighlight">\(50\)</span>%,
+Charles : <span class="math notranslate nohighlight">\(90\)</span>%, quelle est la probabilité que l’oiseau soit touché ?</p>
+<p><strong>Exercice 6</strong>. (***) On se pose la question suivante: “Combien de
+personnes doit-on réunir pour que la probabilité que deux d’entre elles
+au moins possèdent la même date d’anniversaire dépasse 50 % ?” On
+négligera les années bissextiles.</p>
+<ol>
+<li><p>Donner la réponse qui vous vient naturellement à l’esprit sans
+calcul.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(n\)</span> le nombre de personnes présentes, qu’on suppose inférieur
+à 365. Dénombrer le nombre de cas possibles de répartition des dates
+d’anniversaires dans toute l’assemblée.</p></li>
+<li><p>Dénombrer maintenant le nombre de cas de figures où toutes les
+personnes présentes ont une date d’anniversaire différente.</p></li>
+<li><p>Conclure en répondant à la question initiale.</p>
+<p><em>Indication: Il est probable que la calculatrice ne puisse pas
+effectuer tel quel le calcul. Un tableur en revanche le fait bien
+jusqu’à <span class="math notranslate nohighlight">\(n=100\)</span> environ, à condition d’utiliser les bonnes
+formules.</em></p>
+</li>
+</ol>
+<p><strong>Quelques formules sous Excel</strong> Soit un ensemble à <span class="math notranslate nohighlight">\(n\)</span> éléments.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{|l|c|l|}
+\hline
+&amp; \text{Formule}&amp;\text{Formule Excel}\\
+\hline
+&amp;&amp;\\
+\text{Le nombre de permutations de ces élements} &amp; n! &amp; \text{=FACT(n)}\\
+&amp;&amp;\\
+\hline
+&amp;&amp;\\
+\text{Le nombre d'arrangements de k éléments parmi n} &amp; A_n^k=\dfrac{n!}{(n-k)!} &amp; \text{=PERMUTATION(n;k)}\\
+&amp;&amp;\\\hline
+&amp;&amp;\\
+\text{Le nombre de combinaisons de k éléments parmi n} &amp; C_n^k=\dfrac{n!}{k!(n-k)!} &amp; \text{=COMBIN(n;k)}\\
+&amp;&amp;\\
+\hline
+\end{array}\end{split}\]</div>
+</div>
+<div class="section" id="partie-2">
+<h2>Partie 2<a class="headerlink" href="#partie-2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Exercice 1</strong>. (*) Un quart d’une population a été vaccinée. Si on est
+vacciné, on tombe malade avec une probabilité de <span class="math notranslate nohighlight">\(\frac{1}{20}\)</span>. Parmi
+les malades, il y a 4-non vaccinés pour 1 vacciné.<br />
+Quelle est la probabilité pour un non-vacciné de tomber malade ?</p>
+<p><strong>Exercice 2</strong>. (*) On considère une maladie dont est atteinte 1% de la
+population.<br />
+Si on est malade, on a une chance sur deux de mourir. Il existe un
+traitement contre la maladie, qui fait qu’un individu malade et traité
+n’a plus que 10% de chances de mourir.<br />
+Le test de dépistage permet de détecter 80% des malades, mais désigne
+aussi à tort 3% de personnes saines. Or si une personne saine est
+traitée, elle meurt dans 2% des cas.</p>
+<ol class="simple">
+<li><p>Si on n’effectue aucun test de dépistage, quelle est la probabilité
+de mourir de cette maladie ?</p></li>
+<li><p>On décide de procéder à un dépistage généralisé et à un traitement
+des individus désignés comme malades.<br />
+Quelle est la probabilité de mourir dans ce cas ? (que ce soit à
+cause de la maladie ou du traitement)</p></li>
+</ol>
+<p><strong>Exercice 3</strong>. (***) Une source d’informations émet un message sous
+forme de “0” ou de “1” avec des probabilités respectives <span class="math notranslate nohighlight">\(p_{0}=0,3\)</span> et
+<span class="math notranslate nohighlight">\(p_{1}=0,7\)</span>.<br />
+On souhaite transmettre ce message vers le récepteur par une liaison
+<span class="math notranslate nohighlight">\(A\)</span>. Cette liaison, à cause de défauts, transmet le contraire du message
+avec une probabilité d’erreur <span class="math notranslate nohighlight">\(q_{A}=10^{-7}\)</span>.<br />
+Pour diminuer cette probabilité d’erreur, on considère alors le système
+suivant:<br />
+Les messages sont maintenant tranmis vers un récepteur par 2 canaux
+distincts <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span>. On suppose que les deux liaisons sont
+indépendantes et que les probabilités d’erreur sur chacune de ces
+liaisons sont respectivement <span class="math notranslate nohighlight">\(q_{A}=10^{-7}\)</span> et <span class="math notranslate nohighlight">\(q_{B}=2.10^{-7}\)</span> (quel
+que soit le message émis).</p>
+<ol class="simple">
+<li><p>A un instant donné, le récepteur reçoit “0” sur le premier canal et
+“1” sur le second. On demande de <strong>décider</strong> quel était le message
+émis, en choisissant celui dont la probabilité d’émission sachant le
+résultat à la réception (sur les 2 canaux) est maximale. (C’est la
+méthode dit du <em>maximum a posteriori</em>.)</p></li>
+<li><p>Etablir une règle de décision par la méthode du maximum a posteriori
+pour toutes les configurations possibles en réception: autrement
+dit, que décider dans les cas suivants ?</p>
+<ul class="simple">
+<li><p>0 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 0 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>0 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 1 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>1 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 1 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>1 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 0 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Calculer approximativement la probabilité d’erreur globale de cette
+règle de décision. Quelle conclusion en tirer ?</p></li>
+</ol>
+</div>
+<div class="section" id="partie-3">
+<h2>Partie 3<a class="headerlink" href="#partie-3" title="Permalink to this headline">¶</a></h2>
+<p><strong>Exercice 1</strong>. (*) A chaque expérience aléatoire proposée, déterminer
+son ensemble des évènements élémentaires possibles <span class="math notranslate nohighlight">\(\Omega\)</span>, ainsi la
+variable aléatoire choisie.</p>
+<ol class="simple">
+<li><p>On tire deux dés et on observe leur somme.</p></li>
+<li><p>On répond au hasard à un QCM où chaque question donne 4 choix, dont
+un seul est bon, et on observe, pour une question, le résultat du
+nombre de points obtenus, en sachant que:</p>
+<ol class="simple">
+<li><p>Une réponse juste rapporte 1 point</p></li>
+<li><p>Une réponse fausse enlève 0,5 point</p></li>
+</ol>
+</li>
+<li><p>On observe maintenant le résultat du test QCM présenté plus haut,
+sachant qu’il y a 20 questions.</p></li>
+</ol>
+<p><strong>Exercice 2</strong>. (**) Reprendre l’exercice précédent en calculant cette
+fois-ci la loi de probabilité de la variable aléatoire, ainsi que son
+espérance.</p>
+<p><strong>Exercice 3</strong>. (* à ***) En utilisant les définitions du cours,
+montrer que :</p>
+<ol>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(p)\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = p\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}[X]=p(1-p)\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{U}([1,2])\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{3}{2}\)</span>
+et <span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{1}{12}\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span> alors
+<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{1}{\lambda}\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}(X) = \dfrac{1}{\lambda^2}\)</span>.</p>
+<p>Ce dernier cas est plus difficile.<br />
+Indication: Utiliser une intégration par parties.</p>
+</li>
+</ol>
+<p><strong>Exercice 4</strong>. (**) Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire. Calculer la
+fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> lorsque :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(X \sim \mathcal{U}([a,b])\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(X\sim \mathcal{E}(\lambda)\)</span></p></li>
+</ol>
+<p><strong>Exercice 5</strong>. (*) On lance 7 fois une pièce équilibré. On note
+modélise par la variable aléatoire <span class="math notranslate nohighlight">\(X_i\)</span> le résultat du <span class="math notranslate nohighlight">\(i\)</span>-ème lancé.</p>
+<ol class="simple">
+<li><p>Donner la loi de la variable aléatoire <span class="math notranslate nohighlight">\(X_i\)</span>.</p></li>
+<li><p>Donner la loi de la variable aléatoire <span class="math notranslate nohighlight">\(X_1+\ldots+X_7\)</span>.</p></li>
+<li><p>En déduire la probabilité qu’il y ait plus de pile que de face.</p></li>
+</ol>
+<p><strong>Exercice 6</strong>. (*) Une entreprise fabrique des pièces pour l’industrie
+automobile. Après une réorganisation de l’atelier, le taux de pièces
+défectueuses est tombé à 1%. Calculer la probabilité d’avoir moins de 15
+pièces défectueuses sur un lot de 1000.</p>
+<p><strong>Exercice 7</strong>. (*) Dans une usine de fabrication d’emballage, on
+considère que 3% sont défectueux. Le fabricant doit livrer une série de
+60 pièces à un de ses particulièrement pointilleux : dès que le nombre
+de produits défectueux livrés est supérieur à 2, il doit donner une
+indemnité forfaitaire de <span class="math notranslate nohighlight">\(x\)</span> euros.</p>
+<ol class="simple">
+<li><p>En utilisant une modélisation de type succès-échec, donner la
+probabilité que la série contienne plus de deux pièces
+défectueuses<span id="q1" label="q1">[q1]</span></p></li>
+<li><p>Sachant qu’il doit vendre la série 1000 euros, calculer l’espérance
+du gain du fabricant</p></li>
+<li><p>En faisant effectuer une manipulation par un technicien spécialisé,
+le fabricant sait qu’il peut à coup sûr produire une série de 100
+pièces en bon état. Sachant que l’intervention lui coûte 200 euros,
+à partir de quelle pénalité <span class="math notranslate nohighlight">\(x\)</span> a-t-il intérêt à faire se déplacer
+le technicien ?</p></li>
+<li><p>On note <span class="math notranslate nohighlight">\(Y\)</span> la variable aléatoire qui, à chaque lot de 60 pièces,
+associe le nombre d’emballage défectueux. Reprendre la question
+<a href="#q1" data-reference-type="eqref" data-reference="q1">[q1]</a>
+en supposant que <span class="math notranslate nohighlight">\(Y\sim \mathcal{P}(60\times 0.03)\)</span> et commenter.</p></li>
+</ol>
+<p><strong>Exercice 8</strong>. (*) Un standard téléphonique reçoit en moyenne 2 appels
+par minute. Les appels sont répartis au hasard dans le temps.</p>
+<ol class="simple">
+<li><p>Quelle est la loi de probabilité régissant le nombre d’appels reçus
+en 3 minutes ? Quelle est la probabilité qu’il n’y ait aucun appel
+en 3 minutes ?</p></li>
+<li><p>Quelle est la probabilité que le nombre d’appels en 2 minutes soit
+supérieur ou égal à 5 ?</p></li>
+</ol>
+<p><strong>Exercice 9</strong>. (*) Dans une population, le poids des individus est une
+variable aléatoire suivant une loi normale de moyenne égale à 60 kg et
+un écart-type égal à 15 kg. Un ascenseur a une capacité égale à 2200 kg.
+Calculer :</p>
+<ol class="simple">
+<li><p>La probabilité que 20 individus pèsent ensemble plus de 2200 kg.</p></li>
+<li><p>Le nombre maximum de personnes pouvant rentrer dans l’ascenseur de
+sorte que celui-ci ne soit en surcharge qu’avec une probabilité
+inférieure à 0,01.</p></li>
+</ol>
+</div>
+<div class="section" id="partie-4">
+<h2>Partie 4<a class="headerlink" href="#partie-4" title="Permalink to this headline">¶</a></h2>
+<p><strong>Exercice 1</strong>. (* à ***) En utilisant les définitions du cours,
+montrer que :</p>
+<ol>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(p)\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = p\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}[X]=p(1-p)\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{U}([1,2])\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{3}{2}\)</span>
+et <span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{1}{12}\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span> alors
+<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{1}{\lambda}\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}(X) = \dfrac{1}{\lambda^2}\)</span>.</p>
+<p>Ce dernier cas est plus difficile.<br />
+Indication: Utiliser une intégration par parties.</p>
+</li>
+</ol>
+<p><strong>Exercice 2</strong>. (**) Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire. Calculer la
+fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> lorsque :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(X \sim \mathcal{U}([a,b])\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(X\sim \mathcal{E}(\lambda)\)</span></p></li>
+</ol>
+<p><strong>Exercice 3</strong>. (*) Madame Michel et Monsieur Boulanger vont chaque
+semaine au marché hebdomadaire. Madame Michel arrive à une heure
+aléatoire entre 8h et 12h et elle reste 30 minutes ; on suppose que son
+heure d’arrivée suit une loi uniforme. Monsieur Boulanger arrive à 10h
+pile et reste également 30 minutes. Quelle est la probabilité pour
+qu’ils se trouvent ensemble au marché à un certain moment ?</p>
+<p><strong>Exercice 4</strong>. (*) Max a un rendez-vous avec une amie. Ils vont au
+restaurant, puis au cinéma. Le temps passé au restaurant est une
+variable aléatoire suivant une loi exponentielle de paramètre
+<span class="math notranslate nohighlight">\(\lambda = 1\)</span>. (temps compté en heures)</p>
+<ol class="simple">
+<li><p>Le film commence 1 heure après leur entrée au restaurant. On néglige
+les temps d’attente et de déplacement, quelle est alors la
+probabilité pour qu’ils ratent le début du film ?</p></li>
+<li><p>Le film dure 1h30. Quelle est la probabilité qu’ils ne voient qu’une
+partie du film seulement ?</p></li>
+<li><p>Le temps passé au cinéma est une variable aléatoire de loi
+exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda = \frac{1}{2}\)</span>. Combien de temps
+Max peut-il espérer passer avec son amie ce soir ?</p></li>
+</ol>
+<p><strong>Exercice 5</strong>. (*)</p>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire suivant une loi normale
+<span class="math notranslate nohighlight">\(N(m,\sigma)\)</span>. Quelle est la probabilité que <span class="math notranslate nohighlight">\(X\)</span> soit supérieure à
+<span class="math notranslate nohighlight">\(m\)</span> ?</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(Y\)</span> une variable aléatoire suivant une loi normale <span class="math notranslate nohighlight">\(N(0,1)\)</span>.
+Quelle est la loi de <span class="math notranslate nohighlight">\(-Y\)</span> ? la loi de <span class="math notranslate nohighlight">\(\sigma Y+m\)</span> ?</p></li>
+<li><p>En utilisant la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>, déterminer
+<span class="math notranslate nohighlight">\(P(0\leqslant Y\leqslant 0,8)\)</span>, <span class="math notranslate nohighlight">\(P(-0,6\leqslant Y\leqslant 0)\)</span> et
+<span class="math notranslate nohighlight">\(P(Y\leqslant 0,8)\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 6</strong>. (*) La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi normale
+<span class="math notranslate nohighlight">\(N(12,4)\)</span>. Calculer:
+$<span class="math notranslate nohighlight">\(P(X\leqslant 15), \qquad P(X\geqslant 18), \qquad P(X\geqslant 7), \qquad P(X\leqslant 9), \qquad P(8\leqslant X\leqslant 17).\)</span>$</p>
+<p><strong>Exercice 7</strong>. (*) Une machine produit des rondelles métalliques en
+grande série. Une rondelle est acceptée si son diamètre extérieur est
+compris entre 21,9 et 22,1 mm. On suppose que sur l’ensemble de la
+production le diamètre extérieur des rondelles est une variable
+aléatoire X suivant la loi normale de moyenne <span class="math notranslate nohighlight">\(m\)</span> = 22 mm et
+d’écart-type <span class="math notranslate nohighlight">\(\sigma\)</span> = 0,05 mm. Quelle est la probabilité qu’une pièce
+soit refusée ?</p>
+<p><strong>Exercice 8</strong>. (*) Le nombre de clients d’un magasin suit chaque
+samedi une loi normale <span class="math notranslate nohighlight">\(N(365,30)\)</span>. Quelle est la probabilité pour qu’il
+y ait un samedi donné:</p>
+<ol class="simple">
+<li><p>plus de 400 clients ?</p></li>
+<li><p>moins de 300 clients ?</p></li>
+<li><p>entre 320 et 380 clients ?</p></li>
+</ol>
+<p><strong>Exercice 9</strong>. (**) Dans une population, le poids des individus est
+une variable aléatoire suivant une loi normale de moyenne égale à 60 kg
+et un écart-type égal à 15 kg. Un ascenseur a une capacité égale à 2200
+kg. Calculer :</p>
+<ol class="simple">
+<li><p>La probabilité que 20 individus pèsent ensemble plus de 2200 kg.</p></li>
+<li><p>Le nombre maximum de personnes pouvant rentrer dans l’ascenseur de
+sorte que celui-ci ne soit en surcharge qu’avec une probabilité
+inférieure à 0,01.</p></li>
+</ol>
+<p><strong>Exercice 10</strong>. (**) Une machine est conçue pour confectionner des
+paquets d’un poids de 500g, mais ils n’ont pas exactement tous le même
+poids. On a constaté que la distribution des poids autour de la valeur
+moyenne de 500g avait un écart-type de 25g.</p>
+<ol class="simple">
+<li><p>Par quelle loi est-il raisonnable de modéliser le poids des paquets
+?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant entre
+480g et 520g ? (<em>utiliser la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span></em>)</p></li>
+<li><p>Combien de paquets pèsent entre 480g et 490g ?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant plus de
+450g ?</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(a\)</span> tel que les 9/10 de cette production aient un poids
+compris entre <span class="math notranslate nohighlight">\(500-a\)</span> et <span class="math notranslate nohighlight">\(500+a\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 11</strong>. (***) Une entreprise d’édition a retenu la technique
+du placard publicitaire vantant quelques articles sans en donner le
+prix, invitant le lecture à recevoir à domicile gratuitement et san
+engagement de sa part des documents le renseignant de façon détaillée.
+L’expérience montre que le client qui se manifeste a une chance sur cinq
+de passer commande. En utilisant une approximation appropriée, calculer
+la probabilité d’observer lorsque l’on envoie 500 articles de
+renseignement :</p>
+<ol class="simple">
+<li><p>exactement 110 commandes</p></li>
+<li><p>plus de 110 commandes</p></li>
+</ol>
+<p><strong>Exercice 12</strong>. (***) La demande de fabrication d’une pièce X à une
+entreprise suit une loi normale. Elle a une probabilité 0,1 d’être
+inférieure à 15.000, et une probabilité 0,1 d’être supérieure à 25.000.</p>
+<ol class="simple">
+<li><p>Déterminer les paramètres de la loi normale.</p></li>
+<li><p>La marge sur une pièce est de 10 euros, les charges fixes mensuelles
+de l’entreprise sont de 175.000 euros. Déterminer la loi de
+probabilité suivie par le résultat mensuel de l’entreprise.</p></li>
+<li><p>En déduire la probabilité que le seuil de rentabilité mensuel soit
+atteint.</p></li>
+<li><p>Quelle est la probabilité que le seuil de rentabilité trimestriel
+soit atteint ?</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

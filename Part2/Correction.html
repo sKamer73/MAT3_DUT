@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correction du TD &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Travaux Dirigés" href="TD.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part2/Correction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart2/Correction.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part2/Correction.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part2/Correction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Correction du TD
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#travaux-diriges">
+   Travaux Dirigés
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#partie-i-premiers-calculs">
+     Partie I - Premiers calculs
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#partie-2-determinant-et-inversion">
+     Partie 2 - Déterminant et inversion
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#partie-3-applications">
+     Partie 3 - applications
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="correction-du-td">
+<h1>Correction du TD<a class="headerlink" href="#correction-du-td" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="travaux-diriges">
+<h1>Travaux Dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="partie-i-premiers-calculs">
+<h2>Partie I - Premiers calculs<a class="headerlink" href="#partie-i-premiers-calculs" title="Permalink to this headline">¶</a></h2>
+<p><strong>Exercice 1</strong>. Soit <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> deux matrices. Effectuer les produits
+matriciels <span class="math notranslate nohighlight">\(A\)</span>x<span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(B\)</span>x<span class="math notranslate nohighlight">\(A\)</span>, quand cela est possible.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;-2&amp;3\\
+2&amp;1&amp;0\\
+-1&amp;2&amp;5
+\end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(B=\begin{pmatrix}
+1&amp;0&amp;0\\
+0&amp;2&amp;0\\
+0&amp;0&amp;3
+\end{pmatrix}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;-2&amp;3\\
+2&amp;1&amp;0\\
+-1&amp;2&amp;5
+\end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(B=\begin{pmatrix}
+1&amp;2&amp;-1\\
+-2&amp;2&amp;1\\
+1&amp;0&amp;1
+\end{pmatrix}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;-2&amp;3\\
+2&amp;1&amp;0\\
+-1&amp;2&amp;5\\
+\end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(B=\begin{pmatrix}
+2\\-1\\5
+\end{pmatrix}\)</span></p></li>
+</ol>
+<p><strong>Exercice 2</strong>. Soit <span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+3&amp;9&amp;-9\\
+2&amp;0&amp;0\\
+3&amp;3&amp;-3
+\end{pmatrix}\)</span>. Calculer <span class="math notranslate nohighlight">\(A^{3}\)</span>.</p>
+<p><strong>Exercice 3</strong>. Dans chaque cas, trouver une matrice <span class="math notranslate nohighlight">\(M\)</span> et une
+multiplication (soit <span class="math notranslate nohighlight">\(A\)</span>x<span class="math notranslate nohighlight">\(M\)</span> soit <span class="math notranslate nohighlight">\(M\)</span>x<span class="math notranslate nohighlight">\(A\)</span>) qui permette d’obtenir la
+matrice indiquée:</p>
+<ol class="simple">
+<li><p>Décaler toutes les colonnes vers la droite:<br />
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+a&amp;a'&amp;a&quot;\\
+b&amp;b'&amp;b&quot;\\
+c&amp;c'&amp;c&quot;
+\end{pmatrix} \longrightarrow \begin{pmatrix}
+0&amp;a&amp;a'\\
+0&amp;b&amp;b'\\
+0&amp;c&amp;c'
+\end{pmatrix}\)</span></p></li>
+<li><p>Décaler toutes les colonnes vers la gauche:<br />
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+a&amp;a'&amp;a&quot;\\
+b&amp;b'&amp;b&quot;\\
+c&amp;c'&amp;c&quot;
+\end{pmatrix} \longrightarrow \begin{pmatrix}
+a'&amp;a&quot;&amp;0\\
+b'&amp;b&quot;&amp;0\\
+c'&amp;c&quot;&amp;0
+\end{pmatrix}\)</span></p></li>
+<li><p>Décaler toutes les lignes vers le haut:<br />
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+a&amp;a'&amp;a&quot;\\
+b&amp;b'&amp;b&quot;\\
+c&amp;c'&amp;c&quot;
+\end{pmatrix} \longrightarrow \begin{pmatrix}
+b&amp;b'&amp;b&quot;\\
+c&amp;c'&amp;c&quot;\\
+0&amp;0&amp;0
+\end{pmatrix}\)</span></p></li>
+<li><p>Décaler toutes les lignes vers le bas:<br />
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+a&amp;a'&amp;a&quot;\\
+b&amp;b'&amp;b&quot;\\
+c&amp;c'&amp;c&quot;
+\end{pmatrix} \longrightarrow \begin{pmatrix}
+0&amp;0&amp;0\\
+a&amp;a'&amp;a&quot;\\
+b&amp;b'&amp;b&quot;
+\end{pmatrix}\)</span></p></li>
+</ol>
+</div>
+<div class="section" id="partie-2-determinant-et-inversion">
+<h2>Partie 2 - Déterminant et inversion<a class="headerlink" href="#partie-2-determinant-et-inversion" title="Permalink to this headline">¶</a></h2>
+<p>Nous allons dans cette partie réaliser différents calculs de
+déterminants et d’inverses de matrices, et nous étudierons la résolution
+de systèmes à l’aide de matrices.</p>
+<p><strong>Exercice 1</strong>. Calculer les déterminants des matrices suivantes et,
+lorsque cela est possible, calculer leur inverse.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{lcl}
+A=\begin{pmatrix}
+-1&amp;2\\
+2&amp;3\\
+\end{pmatrix}
+&amp; \qquad \qquad
+&amp;
+B=\begin{pmatrix}
+2&amp;1\\
+3&amp;-1
+\end{pmatrix}\\
+\\
+C=\begin{pmatrix}
+1&amp;-1&amp;2\\
+-1&amp;2&amp;-3\\
+-1&amp;1&amp;-1
+\end{pmatrix}
+&amp;
+&amp;
+D=\begin{pmatrix}
+3&amp;-1&amp;2\\
+1&amp;2&amp;-3\\
+4&amp;1&amp;-1\\
+\end{pmatrix}
+\\
+\end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}N=\begin{pmatrix}
+1&amp;0&amp;0&amp;1\\
+0&amp;1&amp;0&amp;0\\
+1&amp;0&amp;1&amp;1\\
+2&amp;3&amp;1&amp;1
+\end{pmatrix}\end{split}\]</div>
+<p><em>Indication 1</em>. Calcul de déterminant<br />
+Chercher la technique de calcul la plus avantageuse parmi celles que
+vous connaissez, notamment pour les déterminants d’ordre 3: règle de
+Sarrus, développement par ligne ou par colonne, ou opérations sur les
+lignes ou les colonnes.</p>
+<p><em>Indication 2</em>. Calcul de d’inverse de matrice<br />
+De même il existe plusieurs façons de calculer l’inverse d’une matrice:
+grâce à la formule du cours (faisant intervenir la comatrice), mais
+aussi la technique dite du “Pivot de Gauss” qui sera étudiée un peu plus
+tard (exercice 5).</p>
+<p><strong>Exercice 2</strong>. Soit <span class="math notranslate nohighlight">\(A\)</span> une matrice de <span class="math notranslate nohighlight">\(M_{3}(\mathbb{R})\)</span> définie par
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;0&amp;2\\
+0&amp;-1&amp;1\\
+1&amp;-2&amp;0
+\end{pmatrix}\)</span>.</p>
+<ol class="simple">
+<li><p>Calculer <span class="math notranslate nohighlight">\(A^{3}-A\)</span>.</p></li>
+<li><p>En déduire que <span class="math notranslate nohighlight">\(A\)</span> est inversible puis déterminer son inverse
+<span class="math notranslate nohighlight">\(A^{-1}\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 3</strong>. On considère le système d’équations suivants</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\lbrace
+\begin{array}{ll}
+3x+2y =1\\
+x + 4y =2
+\end{array}\right.\end{split}\]</div>
+<ol class="simple">
+<li><p>Montrer que le système s’écrit sous la forme <span class="math notranslate nohighlight">\(A\begin{pmatrix}
+x\\y
+\end{pmatrix}=\begin{pmatrix}
+1\\2
+\end{pmatrix}\)</span>, et déterminer <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p>La matrice <span class="math notranslate nohighlight">\(A\)</span> est-elle inversible ? Si oui donner son inverse.</p></li>
+<li><p>En déduire une solution au système précédent.</p></li>
+<li><p>Reproduire la démarche avec le système suivant:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\lbrace
+    \begin{array}{ll}
+    x-y =1\\
+    x + y + 3z =2\\
+    x-z=4
+    \end{array}\right.\\\end{split}\]</div>
+<p>Dans cet exercice le déterminant de la matrice associé est non nul, donc
+cette matrice est inversible et le système admet une unique solution: on
+appelle un tel système un “système de Cramer”.</p>
+<p><strong>Exercice 4</strong>. Nous avons vu précédemment comment résoudre un système
+dont le déterminant associé est non nul. Dans cet exercice nous allons
+étudier le cas où ce déterminant est nul.</p>
+<p>Soit le système à étudier dans <span class="math notranslate nohighlight">\(\mathbb{R}^{2}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\lbrace
+\begin{array}{ll}
+3x-7y =2\\
+-1,5x + 3,5y =-1
+\end{array}\right.\end{split}\]</div>
+<ol>
+<li><p>Ecrire le système sous forme matricielle et calculer le déterminant
+de la matrice associée au système. Peut-on trouver une solution au
+système grâce à la forme matricielle ?</p></li>
+<li><p>Résoudre de façon “classique” le système.</p></li>
+<li><p>Etudier maintenant le système proche suivant. Que peut-on en dire ?
+Quelles sont ses solutions ?</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left\lbrace
+    \begin{array}{ll}
+    3x-7y =2\\
+    -1,5x + 3,5y =0
+    \end{array}\right.\end{split}\]</div>
+</li>
+<li><p>Conclure sur la résolution d’un système de deux équations à deux
+inconnues dont le déterminant de la matrice associée est nul.</p></li>
+<li><p>Que se passe-t-il en dimension 3 ? (C’est-à-dire avec un système de
+trois équations à trois inconnues dont le déterminant associé est
+nul.)<br />
+Enumérer les cas de figure possibles: à quoi correspondent-ils
+géométriquement ?</p></li>
+</ol>
+<p><em>Indication 3</em>. Des schémas de ces différents cas de figure sont
+disponibles sur Moodle.</p>
+<p><strong>Exercice 5</strong>. Pivot de Gauss Nous allons voir dans cet exercice une
+autre méthode pour résoudre un système ou inverser une matrice.
+Reprenons la matrice <span class="math notranslate nohighlight">\(A\)</span> de l’exercice 1.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A=\begin{pmatrix}
+-1&amp;2\\
+2&amp;3\\
+\end{pmatrix}\end{split}\]</div>
+<p>Nous savons d’après l’exercice 1 que cette matrice est inversible. Nous
+allons calculer son inverse grâce à la méthode dite du “Pivot de Gauss”.</p>
+<ol>
+<li><p>Ecrire côte à côte la matrice <span class="math notranslate nohighlight">\(A\)</span> et la matrice identité <span class="math notranslate nohighlight">\(I_{2}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(
+     \begin{array}{cc|cc}
+    -1&amp;2&amp;1&amp;0\\
+    2&amp;3&amp;0&amp;1
+     \end{array}\right)\end{split}\]</div>
+<p>Notre but est d’obtenir la matrice identité à gauche grâce à une
+série d’opérations élémentaires sur les lignes. On aura alors à
+droite la matrice inverse <span class="math notranslate nohighlight">\(A^{-1}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(
+     \begin{array}{cc|cc}
+    -1&amp;2&amp;1&amp;0\\
+    2&amp;3&amp;0&amp;1
+     \end{array}\right)
+     \longrightarrow \left(
+     \begin{array}{cc|c}
+    1&amp;0&amp;\\
+    0&amp;1&amp;
+     \end{array} A^{-1}\right)\end{split}\]</div>
+<p>Pour cela commencer par effectuer une opération sur la deuxième
+ligne pour obtenir un <span class="math notranslate nohighlight">\(0\)</span> en <span class="math notranslate nohighlight">\(a_{2,1}\)</span>.</p>
+<p>On obtient alors en faisant <span class="math notranslate nohighlight">\(L_{2}\leftarrow L_{2}+2.L_{1}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left(
+     \begin{array}{cc|cc}
+    -1&amp;2&amp;1&amp;0\\
+    2&amp;3&amp;0&amp;1
+     \end{array}\right)
+     \Leftrightarrow \left(
+     \begin{array}{cc|cc}
+    -1&amp;2&amp;1&amp;0\\
+    0&amp;7&amp;2&amp;1
+     \end{array}\right)\end{split}\]</div>
+</li>
+<li><p>Réaliser sur le même modèle une opération sur la ligne 1 pour
+obtenir <span class="math notranslate nohighlight">\(a_{1,2}=0\)</span>. On aura alors une matrice diagonale à gauche.</p></li>
+<li><p>Terminer en réalisant une opération sur chaque ligne pour nous
+ramener à la matrice identité.</p></li>
+<li><p>Comparer le résultat obtenu avec celui obtenu dans l’exercice 1.</p></li>
+<li><p>Reproduire la démarche avec les matrices <span class="math notranslate nohighlight">\(C\)</span> et <span class="math notranslate nohighlight">\(N\)</span> de l’exercice
+1.</p></li>
+</ol>
+<p><em>Indication 4</em>. Pour des exemples de la méthode du Pivot de Gauss, voir
+la video explicative disponible sur Moodle, issue du site Exo7.</p>
+</div>
+<div class="section" id="partie-3-applications">
+<h2>Partie 3 - applications<a class="headerlink" href="#partie-3-applications" title="Permalink to this headline">¶</a></h2>
+<p>Dans ce dernier TD, nous allons étudier quelques applications du produit
+matriciel, de façon un peu plus visuelle.</p>
+<p><strong>Exercice 1</strong>. On se place dans un repère orthonormé
+<span class="math notranslate nohighlight">\((\mathcal{O},\vec{i},\vec{j})\)</span>.</p>
+<p>On étudiera le vecteur <span class="math notranslate nohighlight">\(\vec{u}_{1}= \begin{pmatrix}
+3\\1
+\end{pmatrix}\)</span>. et <span class="math notranslate nohighlight">\(\vec{u}_{2}= \begin{pmatrix}
+2\\2
+\end{pmatrix}\)</span> On notera <span class="math notranslate nohighlight">\(U_{1}\)</span> et <span class="math notranslate nohighlight">\(U_{2}\)</span> les matrices colonnes
+contenant leurs coordonnées respectives dans la suite de l’énoncé. Soit
+<span class="math notranslate nohighlight">\(R(\theta)=\begin{pmatrix}
+cos(\theta)&amp;-sin(\theta)\\
+sin(\theta)&amp;cos(\theta)
+\end{pmatrix}\)</span></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\theta=\frac{\pi}{2}\)</span></p>
+<ol class="simple">
+<li><p>Calculer <span class="math notranslate nohighlight">\(R(\frac{\pi}{2})\)</span>.</p></li>
+<li><p>Calculer <span class="math notranslate nohighlight">\(V_{1}=R(\frac{\pi}{2}).U_{1}\)</span> et
+<span class="math notranslate nohighlight">\(V_{2}=R(\frac{\pi}{2}).U_{2}\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(\vec{v}_{1}\)</span> le vecteur donc les coordonnées sont
+représentées par la matrice colonne <span class="math notranslate nohighlight">\(V_{1}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}_{2}\)</span> par
+la matrice colonne <span class="math notranslate nohighlight">\(V_{2}\)</span>. Dessiner les vecteurs <span class="math notranslate nohighlight">\(\vec{u}_{1}\)</span>,
+<span class="math notranslate nohighlight">\(\vec{u}_{2}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}_{1}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}_{2}\)</span> dans le repère
+orthonormé <span class="math notranslate nohighlight">\((\mathcal{O},\vec{i},\vec{j})\)</span> en faisant partir
+tous les vecteurs de l’origine du repère.</p></li>
+</ol>
+</li>
+<li><p><span class="math notranslate nohighlight">\(\theta=\frac{\pi}{3}\)</span></p>
+<ol class="simple">
+<li><p>Calculer <span class="math notranslate nohighlight">\(R(\frac{\pi}{3})\)</span>.</p></li>
+<li><p>Calculer <span class="math notranslate nohighlight">\(V'_{1}=R(\frac{\pi}{3}).U_{1}\)</span> et
+<span class="math notranslate nohighlight">\(V'_{2}=R(\frac{\pi}{3}).U_{2}\)</span>.</p></li>
+<li><p>De la même façon dans un second repère aux mêmes dimensions
+représenter <span class="math notranslate nohighlight">\(\vec{u}_{1}\)</span>, <span class="math notranslate nohighlight">\(\vec{u}_{2}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}'_{1}\)</span> et
+<span class="math notranslate nohighlight">\(\vec{v}'_{2}\)</span> en partant toujours de l’origine du repère.</p></li>
+</ol>
+</li>
+<li><p>Que remarque-t-on ?</p></li>
+<li><p>Dans un troisième repère observer maintenant ce que devient le
+vecteur <span class="math notranslate nohighlight">\(\vec{u}_{1}\)</span> par les matrices <span class="math notranslate nohighlight">\(P_{x}=\begin{pmatrix}
+1&amp;0\\
+0&amp;0
+\end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(P_{y}=\begin{pmatrix}
+0&amp;0\\
+0&amp;1
+\end{pmatrix}\)</span></p></li>
+<li><p>Même question dans un dernier repère avec
+<span class="math notranslate nohighlight">\(M(\lambda)=\begin{pmatrix}
+\lambda&amp;0\\
+0&amp;\lambda
+\end{pmatrix}\)</span> et prenant plusieurs valeurs de <span class="math notranslate nohighlight">\(\lambda\)</span>.<br />
+(On pourra par exemple prendre <span class="math notranslate nohighlight">\(\lambda=\frac{1}{2}\)</span> et <span class="math notranslate nohighlight">\(\lambda=2\)</span>)</p></li>
+<li><p>Que pouvez-vous en déduire sur l’utilité géométrique des matrices ?</p></li>
+</ol>
+<p><em>Indications 1</em>. On pourra aussi, pour les curieux, regarder l’effet des
+matrices <span class="math notranslate nohighlight">\(\begin{pmatrix}
+1&amp;0\\
+0&amp;-1
+\end{pmatrix}\)</span>, <span class="math notranslate nohighlight">\(\begin{pmatrix}
+-1&amp;0\\
+0&amp;1
+\end{pmatrix}\)</span>, et <span class="math notranslate nohighlight">\(\begin{pmatrix}
+1&amp;0\\
+0&amp;\lambda
+\end{pmatrix}\)</span></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="TD.html" title="previous page">Travaux Dirigés</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

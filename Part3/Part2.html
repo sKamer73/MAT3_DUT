@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travaux Dirigés &#8212; Cours de Math 3</title>
+    <title>&lt;no title&gt; &#8212; Cours de Math 3</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Correction du TD" href="Correction.html" />
-    <link rel="prev" title="Cours" href="Cours.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -97,19 +95,19 @@
   Géométrie dans l'espace
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Cours.html">
+  <a class="reference internal" href="../Part1/Cours.html">
    Cours
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
    Travaux Dirigés
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Correction.html">
+  <a class="reference internal" href="../Part1/Correction.html">
    Correction du TD
   </a>
  </li>
@@ -176,7 +174,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Part1/TD.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Part3/Part2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -196,10 +194,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart1/TD.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart3/Part2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part1/TD.ipynb"><button
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part3/Part2.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -214,28 +212,19 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part1/TD.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -244,63 +233,59 @@
         
               <div>
                 
-  <div class="section" id="travaux-diriges">
-<h1>Travaux Dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
-<span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">29</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>16
-</pre></div>
-</div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Dans tout le TD, on se place dans un repère orthonormé <span class="math notranslate nohighlight">\(\mathcal{E} = (O,\vec{i},\vec{j},\vec{k})\)</span>.</p>
-</div>
-<p><strong>Exercice 1.</strong> On souhaite exprimer l’aire S d’un triangle à l’aide d’un produit vectoriel. On considère le triangle <span class="math notranslate nohighlight">\(ABC\)</span> et on note les coordonnées des points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>.</p>
-<p>Dans le plan <span class="math notranslate nohighlight">\((ABC)\)</span>, les formules de trigonométrie donnent la relation suivante:</p>
-<div class="math notranslate nohighlight">
-\[
-S=\frac{1}{2}\begin{Vmatrix}\vec{AB}\end{Vmatrix} \times \begin{Vmatrix}\vec{AC}\end{Vmatrix} \times \begin{vmatrix}sin\alpha\end{vmatrix}
-\]</div>
-<p>où <span class="math notranslate nohighlight">\(\alpha\)</span> est l’angle orienté <span class="math notranslate nohighlight">\((\vec{AB},\vec{AC})\)</span>.</p>
+  <p>IUT de Chambéry - 2 année GCCD 2017-2018</p>
+<p><strong>Exercice 1</strong>. (*) Un quart d’une population a été vaccinée. Si on est
+vacciné, on tombe malade avec une probabilité de <span class="math notranslate nohighlight">\(\frac{1}{20}\)</span>. Parmi
+les malades, il y a 4-non vaccinés pour 1 vacciné.<br />
+Quelle est la probabilité pour un non-vacciné de tomber malade ?</p>
+<p><strong>Exercice 2</strong>. (*) On considère une maladie dont est atteinte 1% de la
+population.<br />
+Si on est malade, on a une chance sur deux de mourir. Il existe un
+traitement contre la maladie, qui fait qu’un individu malade et traité
+n’a plus que 10% de chances de mourir.<br />
+Le test de dépistage permet de détecter 80% des malades, mais désigne
+aussi à tort 3% de personnes saines. Or si une personne saine est
+traitée, elle meurt dans 2% des cas.</p>
+<ol class="simple">
+<li><p>Si on n’effectue aucun test de dépistage, quelle est la probabilité
+de mourir de cette maladie ?</p></li>
+<li><p>On décide de procéder à un dépistage généralisé et à un traitement
+des individus désignés comme malades.<br />
+Quelle est la probabilité de mourir dans ce cas ? (que ce soit à
+cause de la maladie ou du traitement)</p></li>
+</ol>
+<p><strong>Exercice 3</strong>. (***) Une source d’informations émet un message sous
+forme de “0” ou de “1” avec des probabilités respectives <span class="math notranslate nohighlight">\(p_{0}=0,3\)</span> et
+<span class="math notranslate nohighlight">\(p_{1}=0,7\)</span>.<br />
+On souhaite transmettre ce message vers le récepteur par une liaison
+<span class="math notranslate nohighlight">\(A\)</span>. Cette liaison, à cause de défauts, transmet le contraire du message
+avec une probabilité d’erreur <span class="math notranslate nohighlight">\(q_{A}=10^{-7}\)</span>.<br />
+Pour diminuer cette probabilité d’erreur, on considère alors le système
+suivant:<br />
+Les messages sont maintenant tranmis vers un récepteur par 2 canaux
+distincts <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span>. On suppose que les deux liaisons sont
+indépendantes et que les probabilités d’erreur sur chacune de ces
+liaisons sont respectivement <span class="math notranslate nohighlight">\(q_{A}=10^{-7}\)</span> et <span class="math notranslate nohighlight">\(q_{B}=2.10^{-7}\)</span> (quel
+que soit le message émis).</p>
+<ol class="simple">
+<li><p>A un instant donné, le récepteur reçoit “0” sur le premier canal et
+“1” sur le second. On demande de <strong>décider</strong> quel était le message
+émis, en choisissant celui dont la probabilité d’émission sachant le
+résultat à la réception (sur les 2 canaux) est maximale. (C’est la
+méthode dit du <em>maximum a posteriori</em>.)</p></li>
+<li><p>Etablir une règle de décision par la méthode du maximum a posteriori
+pour toutes les configurations possibles en réception: autrement
+dit, que décider dans les cas suivants ?</p>
 <ul class="simple">
-<li><p>Exprimer l’aire <span class="math notranslate nohighlight">\(S\)</span> à l’aide d’un produit vectoriel.</p></li>
-<li><p>Calculer l’aire <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
+<li><p>0 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 0 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>0 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 1 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>1 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 1 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>1 reçu sur <span class="math notranslate nohighlight">\(A\)</span>, 0 reçu sur <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 </ul>
-<p><strong>Exercice 2.</strong> On considère le point <span class="math notranslate nohighlight">\(A(-2;0;5)\)</span> et le vecteur <span class="math notranslate nohighlight">\(\vec{n}\begin{pmatrix}
-2\\-6\\4
-\end{pmatrix}\)</span>.</p>
-<p>Déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> passant par <span class="math notranslate nohighlight">\(A\)</span> et de vecteur normal <span class="math notranslate nohighlight">\(\vec{n}\)</span>.</p>
-<p><strong>Exercice 3.</strong> Soient les points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>. En utilisant un produit vectoriel, déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\((ABC)\)</span>.</p>
-<p><strong>Exercice 4.</strong> On considère la droite <span class="math notranslate nohighlight">\((AB)\)</span> avec <span class="math notranslate nohighlight">\(A(1;2;-1)\)</span> et <span class="math notranslate nohighlight">\(B(0;1;3)\)</span>, ainsi que le plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> d’équation : <span class="math notranslate nohighlight">\(x+y+z-1=0\)</span>.</p>
-<ul class="simple">
-<li><p>Montrer que <span class="math notranslate nohighlight">\((AB)\)</span> et <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> sont sécants.</p></li>
-<li><p>Déterminer les coordonnées de leur point d’intersection <span class="math notranslate nohighlight">\(I\)</span>. On commencera par déterminer une représentation paramétrique de <span class="math notranslate nohighlight">\((AB)\)</span>.</p></li>
-</ul>
-<p><strong>Exercice 5.</strong> Montrer que les représentations paramétriques suivantes
-définissent le même plan :</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left\{ \begin{array}{l}x=2+s+2t \\ y=2+2s+t \\ z=1-s-t \end{array} \right.
-\quad \text{ et } \quad  \left\{ \begin{array}{l} x=1+3s'-t'\\ y=3+3s'+t'\\ z=1-2s' \end{array} \right.
-\end{split}\]</div>
-<p><strong>Exercice 6.</strong></p>
-<p>  1. Déterminer la distance du point <span class="math notranslate nohighlight">\(A\)</span> au plan <span class="math notranslate nohighlight">\((P)\)</span></p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A(1,0,2)\)</span> et <span class="math notranslate nohighlight">\((P): 2x+y+z+4=0\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A(3,2,1)\)</span> et <span class="math notranslate nohighlight">\((P): -x+5y-4z=5\)</span>.</p></li>
-</ul>
-<p>  2. (** Un peu plus difficile) Calculer la distance du point <span class="math notranslate nohighlight">\(A(1,2,3)\)</span> à la droite
-<span class="math notranslate nohighlight">\((D):  \left\{ \begin{array}{l}
--2x+y-3z=1\\ x+z=1  \end{array} \right.\)</span></p>
-</div>
+</li>
+<li><p>Calculer approximativement la probabilité d’erreur globale de cette
+règle de décision. Quelle conclusion en tirer ?</p></li>
+</ol>
 
     <script type="text/x-thebe-config">
     {
@@ -315,7 +300,7 @@ définissent le même plan :</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Part1"
+            path: "./Part3"
         },
         predefinedOutput: true
     }
@@ -327,8 +312,6 @@ définissent le même plan :</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="Cours.html" title="previous page">Cours</a>
-    <a class='right-next' id="next-link" href="Correction.html" title="next page">Correction du TD</a>
 
         </div>
         

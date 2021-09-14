@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travaux Dirigés &#8212; Cours de Math 3</title>
+    <title>&lt;no title&gt; &#8212; Cours de Math 3</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Correction du TD" href="Correction.html" />
-    <link rel="prev" title="Cours" href="Cours.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -97,19 +95,19 @@
   Géométrie dans l'espace
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Cours.html">
+  <a class="reference internal" href="../Part1/Cours.html">
    Cours
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
    Travaux Dirigés
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Correction.html">
+  <a class="reference internal" href="../Part1/Correction.html">
    Correction du TD
   </a>
  </li>
@@ -176,7 +174,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Part1/TD.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Part3/Part4Etu.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -196,10 +194,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart1/TD.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart3/Part4Etu.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part1/TD.ipynb"><button
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part3/Part4Etu.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -214,28 +212,19 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part1/TD.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -244,63 +233,126 @@
         
               <div>
                 
-  <div class="section" id="travaux-diriges">
-<h1>Travaux Dirigés<a class="headerlink" href="#travaux-diriges" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
-<span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">29</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>16
-</pre></div>
-</div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Dans tout le TD, on se place dans un repère orthonormé <span class="math notranslate nohighlight">\(\mathcal{E} = (O,\vec{i},\vec{j},\vec{k})\)</span>.</p>
-</div>
-<p><strong>Exercice 1.</strong> On souhaite exprimer l’aire S d’un triangle à l’aide d’un produit vectoriel. On considère le triangle <span class="math notranslate nohighlight">\(ABC\)</span> et on note les coordonnées des points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>.</p>
-<p>Dans le plan <span class="math notranslate nohighlight">\((ABC)\)</span>, les formules de trigonométrie donnent la relation suivante:</p>
-<div class="math notranslate nohighlight">
-\[
-S=\frac{1}{2}\begin{Vmatrix}\vec{AB}\end{Vmatrix} \times \begin{Vmatrix}\vec{AC}\end{Vmatrix} \times \begin{vmatrix}sin\alpha\end{vmatrix}
-\]</div>
-<p>où <span class="math notranslate nohighlight">\(\alpha\)</span> est l’angle orienté <span class="math notranslate nohighlight">\((\vec{AB},\vec{AC})\)</span>.</p>
-<ul class="simple">
-<li><p>Exprimer l’aire <span class="math notranslate nohighlight">\(S\)</span> à l’aide d’un produit vectoriel.</p></li>
-<li><p>Calculer l’aire <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
-</ul>
-<p><strong>Exercice 2.</strong> On considère le point <span class="math notranslate nohighlight">\(A(-2;0;5)\)</span> et le vecteur <span class="math notranslate nohighlight">\(\vec{n}\begin{pmatrix}
-2\\-6\\4
-\end{pmatrix}\)</span>.</p>
-<p>Déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> passant par <span class="math notranslate nohighlight">\(A\)</span> et de vecteur normal <span class="math notranslate nohighlight">\(\vec{n}\)</span>.</p>
-<p><strong>Exercice 3.</strong> Soient les points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>. En utilisant un produit vectoriel, déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\((ABC)\)</span>.</p>
-<p><strong>Exercice 4.</strong> On considère la droite <span class="math notranslate nohighlight">\((AB)\)</span> avec <span class="math notranslate nohighlight">\(A(1;2;-1)\)</span> et <span class="math notranslate nohighlight">\(B(0;1;3)\)</span>, ainsi que le plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> d’équation : <span class="math notranslate nohighlight">\(x+y+z-1=0\)</span>.</p>
-<ul class="simple">
-<li><p>Montrer que <span class="math notranslate nohighlight">\((AB)\)</span> et <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> sont sécants.</p></li>
-<li><p>Déterminer les coordonnées de leur point d’intersection <span class="math notranslate nohighlight">\(I\)</span>. On commencera par déterminer une représentation paramétrique de <span class="math notranslate nohighlight">\((AB)\)</span>.</p></li>
-</ul>
-<p><strong>Exercice 5.</strong> Montrer que les représentations paramétriques suivantes
-définissent le même plan :</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\left\{ \begin{array}{l}x=2+s+2t \\ y=2+2s+t \\ z=1-s-t \end{array} \right.
-\quad \text{ et } \quad  \left\{ \begin{array}{l} x=1+3s'-t'\\ y=3+3s'+t'\\ z=1-2s' \end{array} \right.
-\end{split}\]</div>
-<p><strong>Exercice 6.</strong></p>
-<p>  1. Déterminer la distance du point <span class="math notranslate nohighlight">\(A\)</span> au plan <span class="math notranslate nohighlight">\((P)\)</span></p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A(1,0,2)\)</span> et <span class="math notranslate nohighlight">\((P): 2x+y+z+4=0\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A(3,2,1)\)</span> et <span class="math notranslate nohighlight">\((P): -x+5y-4z=5\)</span>.</p></li>
-</ul>
-<p>  2. (** Un peu plus difficile) Calculer la distance du point <span class="math notranslate nohighlight">\(A(1,2,3)\)</span> à la droite
-<span class="math notranslate nohighlight">\((D):  \left\{ \begin{array}{l}
--2x+y-3z=1\\ x+z=1  \end{array} \right.\)</span></p>
-</div>
+  <p>IUT de Chambéry - 2 année GCCD 2017-2018</p>
+<p><strong>Exercice 1</strong>. (* à ***) En utilisant les définitions du cours,
+montrer que :</p>
+<ol>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(p)\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = p\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}[X]=p(1-p)\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{U}([1,2])\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{3}{2}\)</span>
+et <span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{1}{12}\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span> alors
+<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{1}{\lambda}\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}(X) = \dfrac{1}{\lambda^2}\)</span>.</p>
+<p>Ce dernier cas est plus difficile.<br />
+Indication: Utiliser une intégration par parties.</p>
+</li>
+</ol>
+<p><strong>Exercice 2</strong>. (**) Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire. Calculer la
+fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> lorsque :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(X \sim \mathcal{U}([a,b])\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(X\sim \mathcal{E}(\lambda)\)</span></p></li>
+</ol>
+<p><strong>Exercice 3</strong>. (*) Madame Michel et Monsieur Boulanger vont chaque
+semaine au marché hebdomadaire. Madame Michel arrive à une heure
+aléatoire entre 8h et 12h et elle reste 30 minutes ; on suppose que son
+heure d’arrivée suit une loi uniforme. Monsieur Boulanger arrive à 10h
+pile et reste également 30 minutes. Quelle est la probabilité pour
+qu’ils se trouvent ensemble au marché à un certain moment ?</p>
+<p><strong>Exercice 4</strong>. (*) Max a un rendez-vous avec une amie. Ils vont au
+restaurant, puis au cinéma. Le temps passé au restaurant est une
+variable aléatoire suivant une loi exponentielle de paramètre
+<span class="math notranslate nohighlight">\(\lambda = 1\)</span>. (temps compté en heures)</p>
+<ol class="simple">
+<li><p>Le film commence 1 heure après leur entrée au restaurant. On néglige
+les temps d’attente et de déplacement, quelle est alors la
+probabilité pour qu’ils ratent le début du film ?</p></li>
+<li><p>Le film dure 1h30. Quelle est la probabilité qu’ils ne voient qu’une
+partie du film seulement ?</p></li>
+<li><p>Le temps passé au cinéma est une variable aléatoire de loi
+exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda = \frac{1}{2}\)</span>. Combien de temps
+Max peut-il espérer passer avec son amie ce soir ?</p></li>
+</ol>
+<p><strong>Exercice 5</strong>. (*)</p>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire suivant une loi normale
+<span class="math notranslate nohighlight">\(N(m,\sigma)\)</span>. Quelle est la probabilité que <span class="math notranslate nohighlight">\(X\)</span> soit supérieure à
+<span class="math notranslate nohighlight">\(m\)</span> ?</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(Y\)</span> une variable aléatoire suivant une loi normale <span class="math notranslate nohighlight">\(N(0,1)\)</span>.
+Quelle est la loi de <span class="math notranslate nohighlight">\(-Y\)</span> ? la loi de <span class="math notranslate nohighlight">\(\sigma Y+m\)</span> ?</p></li>
+<li><p>En utilisant la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>, déterminer
+<span class="math notranslate nohighlight">\(P(0\leqslant Y\leqslant 0,8)\)</span>, <span class="math notranslate nohighlight">\(P(-0,6\leqslant Y\leqslant 0)\)</span> et
+<span class="math notranslate nohighlight">\(P(Y\leqslant 0,8)\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 6</strong>. (*) La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi normale
+<span class="math notranslate nohighlight">\(N(12,4)\)</span>. Calculer:
+$<span class="math notranslate nohighlight">\(P(X\leqslant 15), \qquad P(X\geqslant 18), \qquad P(X\geqslant 7), \qquad P(X\leqslant 9), \qquad P(8\leqslant X\leqslant 17).\)</span>$</p>
+<p><strong>Exercice 7</strong>. (*) Une machine produit des rondelles métalliques en
+grande série. Une rondelle est acceptée si son diamètre extérieur est
+compris entre 21,9 et 22,1 mm. On suppose que sur l’ensemble de la
+production le diamètre extérieur des rondelles est une variable
+aléatoire X suivant la loi normale de moyenne <span class="math notranslate nohighlight">\(m\)</span> = 22 mm et
+d’écart-type <span class="math notranslate nohighlight">\(\sigma\)</span> = 0,05 mm. Quelle est la probabilité qu’une pièce
+soit refusée ?</p>
+<p><strong>Exercice 8</strong>. (*) Le nombre de clients d’un magasin suit chaque
+samedi une loi normale <span class="math notranslate nohighlight">\(N(365,30)\)</span>. Quelle est la probabilité pour qu’il
+y ait un samedi donné:</p>
+<ol class="simple">
+<li><p>plus de 400 clients ?</p></li>
+<li><p>moins de 300 clients ?</p></li>
+<li><p>entre 320 et 380 clients ?</p></li>
+</ol>
+<p><strong>Exercice 9</strong>. (**) Dans une population, le poids des individus est
+une variable aléatoire suivant une loi normale de moyenne égale à 60 kg
+et un écart-type égal à 15 kg. Un ascenseur a une capacité égale à 2200
+kg. Calculer :</p>
+<ol class="simple">
+<li><p>La probabilité que 20 individus pèsent ensemble plus de 2200 kg.</p></li>
+<li><p>Le nombre maximum de personnes pouvant rentrer dans l’ascenseur de
+sorte que celui-ci ne soit en surcharge qu’avec une probabilité
+inférieure à 0,01.</p></li>
+</ol>
+<p><strong>Exercice 10</strong>. (**) Une machine est conçue pour confectionner des
+paquets d’un poids de 500g, mais ils n’ont pas exactement tous le même
+poids. On a constaté que la distribution des poids autour de la valeur
+moyenne de 500g avait un écart-type de 25g.</p>
+<ol class="simple">
+<li><p>Par quelle loi est-il raisonnable de modéliser le poids des paquets
+?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant entre
+480g et 520g ? (<em>utiliser la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span></em>)</p></li>
+<li><p>Combien de paquets pèsent entre 480g et 490g ?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant plus de
+450g ?</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(a\)</span> tel que les 9/10 de cette production aient un poids
+compris entre <span class="math notranslate nohighlight">\(500-a\)</span> et <span class="math notranslate nohighlight">\(500+a\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 11</strong>. (***) Une entreprise d’édition a retenu la technique
+du placard publicitaire vantant quelques articles sans en donner le
+prix, invitant le lecture à recevoir à domicile gratuitement et san
+engagement de sa part des documents le renseignant de façon détaillée.
+L’expérience montre que le client qui se manifeste a une chance sur cinq
+de passer commande. En utilisant une approximation appropriée, calculer
+la probabilité d’observer lorsque l’on envoie 500 articles de
+renseignement :</p>
+<ol class="simple">
+<li><p>exactement 110 commandes</p></li>
+<li><p>plus de 110 commandes</p></li>
+</ol>
+<p><strong>Exercice 12</strong>. (***) La demande de fabrication d’une pièce X à une
+entreprise suit une loi normale. Elle a une probabilité 0,1 d’être
+inférieure à 15.000, et une probabilité 0,1 d’être supérieure à 25.000.</p>
+<ol class="simple">
+<li><p>Déterminer les paramètres de la loi normale.</p></li>
+<li><p>La marge sur une pièce est de 10 euros, les charges fixes mensuelles
+de l’entreprise sont de 175.000 euros. Déterminer la loi de
+probabilité suivie par le résultat mensuel de l’entreprise.</p></li>
+<li><p>En déduire la probabilité que le seuil de rentabilité mensuel soit
+atteint.</p></li>
+<li><p>Quelle est la probabilité que le seuil de rentabilité trimestriel
+soit atteint ?</p></li>
+</ol>
 
     <script type="text/x-thebe-config">
     {
@@ -315,7 +367,7 @@ définissent le même plan :</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Part1"
+            path: "./Part3"
         },
         predefinedOutput: true
     }
@@ -327,8 +379,6 @@ définissent le même plan :</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="Cours.html" title="previous page">Cours</a>
-    <a class='right-next' id="next-link" href="Correction.html" title="next page">Correction du TD</a>
 
         </div>
         

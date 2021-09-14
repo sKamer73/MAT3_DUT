@@ -1,0 +1,1240 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probabilités &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part3/Cours.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart3/Cours.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part3/Cours.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part3/Cours.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-1">
+   Introduction [1]
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflexions-sur-le-hasard">
+   Réflexions sur le hasard
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simuler-le-hasard">
+     Simuler le hasard
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#leffet-rateau">
+     L’effet “rateau”
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#elements-de-vocabulaire-et-notions-cles">
+   Eléments de vocabulaire et Notions clés
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ensemble-des-eventualites-variable-aleatoire">
+     Ensemble des éventualités, Variable aléatoire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mesure-de-probabilite">
+     Mesure de probabilité
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fonction-de-repartition">
+     Fonction de répartition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#independance-de-variables-aleatoires">
+     Indépendance de variables aléatoires
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#probabilites-conditionnelles">
+     Probabilités conditionnelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Probabilités conditionnelles
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#probabilites-totales">
+       Probabilités totales
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#le-cas-discret">
+   Le cas discret
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#esperance-et-variance-dune-variable-aleatoire-discrete">
+     Espérance et variance d’une variable aléatoire discrète
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#les-lois-discretes-usuelles">
+     Les lois discrètes usuelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-uniforme-sur-un-ensemble-fini-de-reels">
+       Loi uniforme sur un ensemble fini de réels
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-de-bernoulli">
+       Loi de Bernoulli
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-binomiale">
+       Loi binomiale
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-de-poisson">
+       Loi de poisson
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-geometrique">
+       Loi géométrique
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#le-cas-continu">
+   Le cas continu
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#esperance-et-variance-dune-variable-aleatoire-continue">
+     Éspérance et variance d’une variable aléatoire continue
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#les-lois-continues-usuelles">
+     Les lois continues usuelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-uniforme">
+       Loi uniforme
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-exponentielle">
+       Loi exponentielle
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-normale">
+       Loi normale
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#loi-du-khi-deux">
+       Loi du khi-deux
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loi-des-grands-nombres-et-tcl">
+   Loi des grands nombres et TCL
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="probabilites">
+<h1>Probabilités<a class="headerlink" href="#probabilites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-1">
+<h2>Introduction [1]<a class="headerlink" href="#introduction-1" title="Permalink to this headline">¶</a></h2>
+<p>La théorie des probabilités fournit des modèles mathématiques permettant
+l’étude d’expériences dont le résultat ne peut être prévu avec une
+totale certitude. En voici quelques exemples :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{|l|l|}
+\hline
+\quad \textbf{Expérience} &amp; \quad \textbf{Résultat observable}\\
+\hline
+\text{Lancer d’un dé } &amp; \text{Un entier k }\in \{1, . . . , 6\}\\
+\hline
+\text{Prélèvement de }n\text{ objets en sortie} &amp; \text{Nombre d’objets défectueux}\\
+\text{d’une chaîne de production} &amp; \text{dans l'échantillon}\\
+\hline
+\text{Questionnaire à 100 questions} &amp; \text{Suite }\omega\text{ de 100 réponses}\\
+\text{binaires} &amp; \omega \in \{ \text{oui, non} \} ^{100}\\
+\hline
+\text{Lancer d’une pièce jusqu’à la} &amp; \text{Un entier k }\in \mathbb N\text{ : le temps}\\
+\text{première obtention de pile} &amp; \text{d’attente du premier succès}\\
+\hline
+\text{Mise en service d’une ampoule} &amp; \text{Durée de vie }T \in \mathbb R\\
+\hline
+\text{Lancer d’une fléchette sur une cible} &amp; \text{Point d’impact}\\
+\hline
+\text{Mouvement d’un grain de pollen} &amp; \text{Une fonction continue :}\\
+\text{dans un liquide} &amp; \text{la trajectoire}\\
+\hline
+\text{Mélange de deux gaz} &amp; \text{Répartition spatiale de deux}\\
+\text{} &amp; \text{types de molécules}\\
+\hline
+\end{array}\end{split}\]</div>
+<p>Bien que le résultat précis de chacune de ces expériences soit
+imprévisible, l’observation et l’intuition nous amènent à penser que ces
+phénomènes obéissent à certaines lois. Par exemple si on jette 6000 fois
+le dé, on s’attend à ce que le nombre d’apparitions de la face « 3 »
+soit voisin de 1000. Si on met en service 100 ampoules, leurs durées de
+vie observées seront concentrées autour d’une certaine valeur moyenne.<br />
+La <strong>théorie des probabilités</strong> permet de donner un sens précis à ces
+considérations un peu vagues. La <strong>statistique</strong> permet de confronter
+les modèles probabilistes avec la réalité observée afin de les valider
+ou de les invalider. Par exemple si quelqu’un a 60 bonnes réponses sur
+100 au questionnaire, est-il légitime de considérer qu’il a « mieux fait
+» que le hasard ? Sur les <span class="math notranslate nohighlight">\(n\)</span> objets prélevés en sortie de chaîne, <span class="math notranslate nohighlight">\(k\)</span>
+sont défectueux. Peut-on en déduire quelque chose sur la qualité de la
+production globale ?</p>
+</div>
+<div class="section" id="reflexions-sur-le-hasard">
+<h2>Réflexions sur le hasard<a class="headerlink" href="#reflexions-sur-le-hasard" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="simuler-le-hasard">
+<h3>Simuler le hasard<a class="headerlink" href="#simuler-le-hasard" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hasard</strong> : de l’arabe <em>az-zahr</em> (dé à jouer), nommé d’après l’arabe
+<em>zahr</em> (« fleur ») car la face gagnante du dé portait une fleur.</p>
+<p><strong>Aléatoire</strong>: du latin <em>aleatorius</em> « qui concerne le jeu (de hasard) »</p>
+<p>“Choisir un nombre au hasard” paraît de prime abord assez simple. Il
+n’en est rien ! La simulation de l’aléatoire est pourtant un enjeu de
+taille pour de nombreuses applications (cryptologie, jeux de hasard,
+simulations et recherches, tirages au sort, ou encore pour des projets
+artistiques). La plupart des programmes ont aujourd’hui accès à une
+“source” de hasard relativement performante (elle l’est plus ou moins
+selon les OS et les langages), mais celle-ci ne fait que produire, pour
+un nombre limité de bits, une simulation qui paraît, pour ce nombre,
+relativement aléatoire. Mais elle n’est pas, par définition, aléatoire.
+En effet, un ordinateur, par principe, ne fonctionne que de façon
+déterministe (il réalise une suite d’instructions qui lui est confiée),
+à moins d’être dysfonctionnel. Pour lui faire simuler au mieux le
+hasard, le plus courant est d’utiliser son horloge propre interne, et à
+partir de la mesure faite, de transformer successivement les nombres
+obtenus pour avoir une longue suite de bits “au hasard”. Ce hasard peut
+être de plus ou moins bonne qualité.<br />
+Pour obtenir un hasard de meilleure performance, il devient nécessaire
+de se baser sur des phénomènes naturels: bruit électromagnétique,
+radioactivité, phénomènes basés sur la mécanique quantique, … Des
+projets de ce genre existent, et offrent ou vendent les suites
+aléatoires “fabriquées”. On citera par exemple <em><a class="reference external" href="http://Random.org">Random.org</a></em> et
+<em>HotBits</em>.<br />
+Un développeur a conduit le test ci-dessous pour “tester” de façon
+visuelle la qualité de deux générateurs de nombres aléatoires: un “réel”
+basé sur un phénomène physique, et un “pseudo-aléatoire”, calculé par
+une machine sur la base d’un algorithme.[2]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{cc}
+\includegraphics[width=200pt]{images/randbitmap_true.png} &amp; \includegraphics[width=200pt]{images/randbitmap_computer.png}\\
+\text{\small Image obtenue grâce à une séquence} &amp; \text{\small Image obtenue grâce à un générateur}\\
+\text{\small aléatoire produite par le générateur} &amp; \text{\small de nombres pseudo-aléatoires (Windows, php)}\\
+\text{\small de nombres aléatoire &quot;Random.org&quot;} &amp; \text{\tiny Source: http://boallen.com/random-numbers.html}
+\end{array}\end{split}\]</div>
+<p>Un exemple d’utilisation: un chercheur étudie le procédé d’infection de
+virus sur des cellules, et qui a pour cela besoin de simuler le
+comportement alétoire de dizaines de milliers de cellules et de
+centaines de milliers de cellules. Un générateur de nombres aléatoires
+performant devient alors indispensable.[3] A notre échelle, la fonction
+ALEA() d’excel sera largement suffisante !</p>
+</div>
+<div class="section" id="leffet-rateau">
+<h3>L’effet “rateau”<a class="headerlink" href="#leffet-rateau" title="Permalink to this headline">¶</a></h3>
+<p>Dans les images ci-dessous, laquelle est celle dont la répartition est
+la plus conforme au hasard pur ?[4]</p>
+<div class="math notranslate nohighlight">
+\[\includegraphics[width=440pt]{images/alea2.jpg}\]</div>
+<p>Notre imaginaire nous trompe facilement sur ce à quoi ressemble un
+hasard pur (tirage uniforme), et tend à le confondre avec une
+répartition uniforme. Nous sommes habitués, dans de nombreuses
+situations naturelles et courantes, à une répartitions relativement
+homogènes: dans le métro chacun s’écarte des autres pour lui laisser une
+zone de confort minimale, les arbres poussent à des distances homogènes
+les uns des autres pour ne pas se priver mutuellement de lumière, les
+poissons dans un banc et les oiseaux dans une nuée, se positionnent de
+façon à ne pas s’entrechoquer tout en profitant de leur influence
+mutuelle, …<br />
+Cependant la seule image produite à l’aide s’une série de tirages
+uniformes indépendants (et donc représentant un hasard pur) est la
+première: les deux autres ont été obtenues grâce à un procédé qui étale
+artificiellement les données.[5]<br />
+Cette attente excessive d’étalement est appelé l’<em>effet râteau</em>.<br />
+Attention donc, un <em>tirage</em> uniforme donne une <em>répartition</em> non
+uniforme !</p>
+</div>
+</div>
+<div class="section" id="elements-de-vocabulaire-et-notions-cles">
+<h2>Eléments de vocabulaire et Notions clés<a class="headerlink" href="#elements-de-vocabulaire-et-notions-cles" title="Permalink to this headline">¶</a></h2>
+<p>L’objectif de ce chapitre est définir la notion de variable aléatoire et
+de rappeler les principales lois de probabilité. Commençons par
+introduire certaines notions à l’aide d’un exemple.</p>
+<div class="section" id="ensemble-des-eventualites-variable-aleatoire">
+<h3>Ensemble des éventualités, Variable aléatoire<a class="headerlink" href="#ensemble-des-eventualites-variable-aleatoire" title="Permalink to this headline">¶</a></h3>
+<p>Soit un jeu de lancer de pièce, où l’on observe le résultat du lancer:
+pile, ou face. Notons <span class="math notranslate nohighlight">\(\Omega\)</span> l’ensemble des évènements élémentaires
+possibles, composé des évènements élémentaires notés <span class="math notranslate nohighlight">\(\omega\)</span>. Ici on
+aura par exemple <span class="math notranslate nohighlight">\(\Omega=\{pile,face\}\)</span>, avec les deux évènements
+élémentaires <span class="math notranslate nohighlight">\(\omega_{1}=pile\)</span> et <span class="math notranslate nohighlight">\(\omega_{2}=face\)</span>.<br />
+Il faut maintenant décrire les résultats possibles: codons chacun de ces
+évènement à l’aide de chiffre : on attribue un <span class="math notranslate nohighlight">\(0\)</span> pour le résultat
+“pile” et un <span class="math notranslate nohighlight">\(1\)</span> pour le résultat “face”.</p>
+<p>On notera <span class="math notranslate nohighlight">\(X\)</span> cette fonction donnant le résultat en fonction de
+l’évènement élémentaire: on l’appelle <strong>variable aléatoire</strong>:
+$<span class="math notranslate nohighlight">\(X : \omega \in \Omega \mapsto X(\omega) \in \mathbb R,\)</span>$</p>
+<p>Ainsi, dans notre exemple <span class="math notranslate nohighlight">\(X(\omega)\)</span> sera un élément de l’ensemble
+<span class="math notranslate nohighlight">\(\{0,1\}\)</span>.<br />
+<strong>Exemples</strong></p>
+<ol class="simple">
+<li><p>On jette deux dés distincts et on s’intéresse à la somme des points.
+On note <span class="math notranslate nohighlight">\(X\)</span> cette variable aléatoire, elle est définie par:<br />
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+X : \quad &amp;\Omega &amp;\rightarrow &amp;\quad\mathbb R\quad\text{ avec }\Omega = \{(1, 1),(1, 2), . . . ,(6, 5),(6, 6)\}\\
+&amp;(\omega_{1},\omega_{2}) &amp;\rightarrow &amp;\quad\omega_{1}+\omega_{2}
+\end{aligned}\)</span><span class="math notranslate nohighlight">\( L’ensemble des valeurs possibles de \)</span>X<span class="math notranslate nohighlight">\( est
+\)</span>{2, 3, … , 12}$.</p></li>
+<li><p>On lance toujours deux dés, mais cette fois on s’intéresse au plus
+grand chiffre <span class="math notranslate nohighlight">\(Y\)</span> obtenu. On a alors: $<span class="math notranslate nohighlight">\(\begin{aligned}
+Y : \quad &amp;\Omega &amp;\rightarrow &amp;\quad\mathbb R\quad\text{ avec }\Omega = \{(1, 1),(1, 2), . . . ,(6, 5),(6, 6)\}\\
+&amp;(\omega_{1},\omega_{2}) &amp;\rightarrow &amp;\quad max(\omega_{1},\omega_{2})
+\end{aligned}\)</span>$</p></li>
+</ol>
+<p>La variable <span class="math notranslate nohighlight">\(Y\)</span> est à valeurs dans <span class="math notranslate nohighlight">\(\{1, 2, . . . , 6\}\)</span>.<br />
+3. On observe deux bactéries et on s’intéresse à la durée de vie <span class="math notranslate nohighlight">\(T\)</span> de
+la bactérie qui disparaîtra la première. L’ensemble fondamental est
+<span class="math notranslate nohighlight">\(\Omega = [0, +\infty [ \times [0, +\infty [\)</span>. La variable <span class="math notranslate nohighlight">\(T\)</span> s’écrit
+alors: $<span class="math notranslate nohighlight">\(\begin{aligned}
+T : \quad &amp;\Omega &amp;\rightarrow &amp;\quad\mathbb R\\
+&amp;(\omega_{1},\omega_{2}) &amp;\rightarrow &amp;\quad inf\{\omega_{1},\omega_{2}\}
+\end{aligned}\)</span>$</p>
+</div>
+<div class="section" id="mesure-de-probabilite">
+<h3>Mesure de probabilité<a class="headerlink" href="#mesure-de-probabilite" title="Permalink to this headline">¶</a></h3>
+<p>Quelle proportion associer à ces évènements ? Et comment la mesurer ?
+C’est une <strong>mesure de probabilité</strong>, notée <span class="math notranslate nohighlight">\(\mathbb{P}\)</span> qui jouera ce
+rôle en mesurant la probabilité d’un évènement donné. Pour attribuer
+maintenant les valeurs possibles pour cette mesure, il faut faire preuve
+de bon sens : si la pièce est équilibrée, il n’y a, a priori, pas plus
+de raison que la pièce tombe sur pile plutôt que sur face. Il est donc
+raisonnable de supposer qu’une fois sur deux elle tombera sur pile, et
+une fois sur deux sur face. On dira donc que la fonction <span class="math notranslate nohighlight">\(X\)</span> (ou encore
+la <strong>variable aléatoire</strong> <span class="math notranslate nohighlight">\(X\)</span>) prendra la valeur <span class="math notranslate nohighlight">\(0\)</span> avec une
+probabilité de <span class="math notranslate nohighlight">\(1/2\)</span> et qu’elle prend la valeur <span class="math notranslate nohighlight">\(1\)</span> avec une probabilité
+de <span class="math notranslate nohighlight">\(1/2\)</span> et on notera :</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{P}(\{\omega\in \Omega:\ X(\omega)=0\})=1/2,\quad \mathbb{P}(\{\omega\in \Omega:\ X(\omega)=1\})=1/2.\]</div>
+<p>Cet ensemble de données sera appelé <strong>la loi de <span class="math notranslate nohighlight">\(X\)</span></strong>.Certaines de ces
+lois sont classiques: en l’occurrence, il s’agit d’une loi de Bernoulli
+de paramètre <span class="math notranslate nohighlight">\(1/2\)</span>, on écrira $<span class="math notranslate nohighlight">\(X\sim \mathcal{B}(\dfrac{1}{2}).\)</span>$</p>
+</div>
+<div class="section" id="fonction-de-repartition">
+<h3>Fonction de répartition<a class="headerlink" href="#fonction-de-repartition" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition.</strong> La loi de la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> est déterminée par
+sa fonction de répartition <span class="math notranslate nohighlight">\(F_X\)</span>. C’est la fonction de <span class="math notranslate nohighlight">\(\mathbb R\)</span> dans
+<span class="math notranslate nohighlight">\([0,1]\)</span> définie comme :
+$<span class="math notranslate nohighlight">\(F_X : x \mapsto \mathbb{P}(X\leqslant x) = \mathbb{P}(\{\omega \in \Omega :\ X(\omega) \leqslant x\})  \in [0,1].\)</span><span class="math notranslate nohighlight">\(
+**Remarque :** Cette application permet de mesurer dans quelle
+proportion le résultat “\)</span>X<span class="math notranslate nohighlight">\( appartient à l’intervalle \)</span>I<span class="math notranslate nohighlight">\(” se réalise,
+elle est donc à valeur dans \)</span>[0,1]$.</p>
+<p>En particulier, si on désire mesurer la proportion du résultat “<span class="math notranslate nohighlight">\(X\)</span>
+appartient à l’intervalle <span class="math notranslate nohighlight">\([a,b]\)</span>”, <span class="math notranslate nohighlight">\(a\leqslant b\)</span>, on calcule :
+$<span class="math notranslate nohighlight">\(\mathbb{P}(X\in [a,b]) = \mathbb P(X \leqslant b) - \mathbb{P}(X&lt;a).\)</span>$</p>
+<p>Ainsi, si <span class="math notranslate nohighlight">\(X\)</span> est une variable aléatoire à valeur dans <span class="math notranslate nohighlight">\(I\)</span>, alors
+$<span class="math notranslate nohighlight">\(\mathbb{P}(X\in I) =1.\)</span>$</p>
+<p>On notera que plus le réel <span class="math notranslate nohighlight">\(x\)</span> est grand, plus l’évènement considéré est
+“grand”. La fonction <span class="math notranslate nohighlight">\(F_X\)</span> est donc croissante et
+$<span class="math notranslate nohighlight">\(\lim_{x\to -\infty}F_X(x)=0 \text{ et }\lim_{x\to +\infty} F_X(x)  =1.\)</span><span class="math notranslate nohighlight">\(
+On notera donc que pour toute variable aléatoire réelle,
+\)</span><span class="math notranslate nohighlight">\(\mathbb{P}(X\leqslant x) = 1- \mathbb{P} ( X &gt; x)\)</span>$</p>
+</div>
+<div class="section" id="independance-de-variables-aleatoires">
+<h3>Indépendance de variables aléatoires<a class="headerlink" href="#independance-de-variables-aleatoires" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition.</strong> Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> deux variables aléatoires. On dit que
+<span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> sont indépendantes si, pour tout intervalle <span class="math notranslate nohighlight">\(I\)</span> et <span class="math notranslate nohighlight">\(J\)</span> de
+<span class="math notranslate nohighlight">\(\mathbb R\)</span> :
+$<span class="math notranslate nohighlight">\(\mathbb{P}(X\in I \text{ et } Y \in J) = \mathbb{P}(X\in I) \times \mathbb{P}(Y\in J).\)</span>$
+En résumé, deux variables aléatoires sont indépendantes si elles n’ont
+aucune influence l’une sur l’autre.</p>
+<p><strong>Propriété 1.1</strong>. Soient <span class="math notranslate nohighlight">\(X_1,\cdots,X_n\)</span>, <span class="math notranslate nohighlight">\(n\)</span> variable aléatoires
+indépendantes et <span class="math notranslate nohighlight">\(I_1,\cdots,I_n\)</span> des intervalles de <span class="math notranslate nohighlight">\(\mathbb R\)</span>. Alors
+: $<span class="math notranslate nohighlight">\(\begin{aligned}
+&amp;&amp;\mathbb{P}(X_1\in I_1 \text{ et } X_2\in I_2 \text{ et }\cdots \text{ et } X_n \in I_n) = \mathbb{P}(X_1\in I_1)\times \cdots \times  \mathbb{P}(X_n\in I_n)\\
+\\
+&amp;&amp;\mathbb{P}(X_1\in I_1 \text{ ou } X_2\in I_2 \text{ ou }\cdots \text{ ou } X_n \in I_n)= \mathbb{P}(X_1\in I_1) + \cdots +  \mathbb{P}(X_n\in I_n)\end{aligned}\)</span>$</p>
+<p><strong>Remarque.</strong> Lorsque <span class="math notranslate nohighlight">\(X_1,\ldots,X_n\)</span> sont <span class="math notranslate nohighlight">\(n\)</span> variable aléatoires
+indépendantes et de même loi, on dit qu’elles sont i.i.d. (indépendantes
+et identiquement distribuées).</p>
+<p>Nous allons maintenant distinguer deux types de variables aléatoire :
+les variable aléatoires <strong>discrètes</strong> et les variables aléatoires
+<strong>continues</strong>.</p>
+</div>
+<div class="section" id="probabilites-conditionnelles">
+<h3>Probabilités conditionnelles<a class="headerlink" href="#probabilites-conditionnelles" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Probabilités conditionnelles<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La probabilité conditionnelle de <span class="math notranslate nohighlight">\(A\)</span> sachant <span class="math notranslate nohighlight">\(B\)</span> est
+définie, lorsque <span class="math notranslate nohighlight">\(\mathbb{P}(B)\)</span> est non nulle, par:
+$<span class="math notranslate nohighlight">\(\mathbb{P}(A|B)=\dfrac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}\)</span>$</p>
+<p>Cette formule porte le nom de formule de Bayes.</p>
+</div>
+<div class="section" id="probabilites-totales">
+<h4>Probabilités totales<a class="headerlink" href="#probabilites-totales" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> Soit <span class="math notranslate nohighlight">\((B_{k})_{k=1,2, ...}\)</span> une famille finie ou infinie
+dénombrable d’évènements deux à deux incompatibles (c’est-à-dire que
+<span class="math notranslate nohighlight">\(\forall k,i \text{ tels que } k \neq i,\text{ on a } B_{k} \cap B_{i} = \varnothing )\)</span>
+telle que <span class="math notranslate nohighlight">\(\bigcup\limits_{k}B_{k}=\Omega\)</span>. Une telle famille est
+appelée système complet d’évènements.<br />
+<strong>Exemple.</strong> Soit une expérience de lancer de dés. Alors les deux
+évènements <span class="math notranslate nohighlight">\(B_{1}\)</span> : “le résultat est pair” et <span class="math notranslate nohighlight">\(B_{2}\)</span> : “le résultat
+est impair” sont incompatibles, et leur union représente l’ensemble des
+évènements possibles. Alors on dira que la famille <span class="math notranslate nohighlight">\((B_{1},B_{2})\)</span> forme
+un système complet d’évènements.<br />
+<strong>Propriété - Formule des probabilités totales</strong> Soit
+<span class="math notranslate nohighlight">\((B_{k})_{k=1,2, ...}\)</span> un système complet d’évènements. Alors pour tout
+évènement <span class="math notranslate nohighlight">\(A\)</span>, on aura:
+$<span class="math notranslate nohighlight">\(\mathbb{P}(A)=\sum_{k}\mathbb{P}(B_{k}).\mathbb{P}(A|B_{k})\)</span>$</p>
+<p>ou encore</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{P}(B_{k}|A)=\dfrac{\mathbb{P}(B_{k}).\mathbb{P}(A|B_{k})}{\sum_{i}\mathbb{P}(B_{i}).\mathbb{P}(A|B_{i})}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="le-cas-discret">
+<h2>Le cas discret<a class="headerlink" href="#le-cas-discret" title="Permalink to this headline">¶</a></h2>
+<p>Lorsqu’une variable aléatoire est à valeurs dans un ensemble discret
+fini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n\}\)</span> ou infini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n,\cdots \}\)</span>
+(dénombrable), on dira que la variable aléatoire est <strong>discrète</strong>. Dans
+ce cas précis, <strong>il suffit de connaitre la probabilité de chacun des
+éléments de l’ensemble pour déterminer sa loi</strong>.</p>
+<p>En effet, la fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> s’écrit, pour tout réel <span class="math notranslate nohighlight">\(x\)</span>
+:
+$<span class="math notranslate nohighlight">\(F_X(x) = \mathbb{P}(X\leqslant x) = \sum_{\forall k\ {\rm\text{tel que}}\ x_k \leqslant x} \mathbb{P}(X = x_k).\)</span>$</p>
+<p>Il suffit donc de connaître la famille de poids
+<span class="math notranslate nohighlight">\((\mathbb{P}(X = x_k))_{k \geqslant 0}\)</span> pour déterminer la loi de <span class="math notranslate nohighlight">\(X\)</span>.
+On appelle loi de <span class="math notranslate nohighlight">\(X\)</span> cette famille.</p>
+<div class="section" id="esperance-et-variance-dune-variable-aleatoire-discrete">
+<h3>Espérance et variance d’une variable aléatoire discrète<a class="headerlink" href="#esperance-et-variance-dune-variable-aleatoire-discrete" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition 1.1</strong>. Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire discrète à valeur
+dans un sous ensemble fini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n\}\)</span> de loi <span class="math notranslate nohighlight">\(\mathbb{P}\)</span>. On
+appelle espérance de <span class="math notranslate nohighlight">\(X\)</span>, et on note <span class="math notranslate nohighlight">\(\mathbb{E}[X]\)</span> la quantité :
+$<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \sum_{i=1}^n x_i\times \mathbb{P}(X=x_i).\)</span><span class="math notranslate nohighlight">\( Soit \)</span>X<span class="math notranslate nohighlight">\(
+une variable aléatoire discrète à valeur dans un sous ensemble infini
+\)</span>{x_1,\cdots,x_n,\cdots }<span class="math notranslate nohighlight">\( de loi \)</span>\mathbb{P}<span class="math notranslate nohighlight">\(. On appelle espérance
+de \)</span>X<span class="math notranslate nohighlight">\(, et on note \)</span>\mathbb{E}[X]<span class="math notranslate nohighlight">\( la quantité :
+\)</span><span class="math notranslate nohighlight">\(\mathbb{E}[X] = \sum_{i\geqslant 0} x_i \times \mathbb{P}(X=x_i),\)</span>$
+lorsqu’elle existe.</p>
+<p><strong>Définition 1.2</strong>. Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire discrète à valeur
+dans un sous ensemble fini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n\}\)</span> de loi <span class="math notranslate nohighlight">\(\mathbb{P}\)</span>. On
+appelle espérance de <span class="math notranslate nohighlight">\(X\)</span>, et on note <span class="math notranslate nohighlight">\(\mathbb{E}[X]\)</span> la quantité :
+$<span class="math notranslate nohighlight">\({\rm Var}(X) = \sum_{i=1}^n (x_i-\mathbb{E}[X])^2 \times \mathbb{P}(X=x_i).\)</span><span class="math notranslate nohighlight">\(
+Soit \)</span>X<span class="math notranslate nohighlight">\( une variable aléatoire discrète à valeur dans un sous ensemble
+infini \)</span>{x_1,\cdots,x_n,\cdots }<span class="math notranslate nohighlight">\( de loi \)</span>\mathbb{P}<span class="math notranslate nohighlight">\(. On appelle
+espérance de \)</span>X<span class="math notranslate nohighlight">\(, et on note \)</span>\mathbb{E}[X]<span class="math notranslate nohighlight">\( la quantité :
+\)</span><span class="math notranslate nohighlight">\({\rm Var}(X) = \sum_{i\geqslant 0} (x_i-\mathbb{E}[X])^2 \times \mathbb{P}(X=x_i),\)</span>$
+lorsqu’elle existe.</p>
+<p><strong>Exemple 1.1</strong>. Considérons la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> à valeur dans
+<span class="math notranslate nohighlight">\(\{0,2,3\}\)</span> avec la loi <span class="math notranslate nohighlight">\(\mathbb{P}_X\)</span> donnée par
+$<span class="math notranslate nohighlight">\(\mathbb{P}(X=1)=1/4,\quad \mathbb{P}_X(X=2)=1/4,\quad \mathbb{P}(X=3)=1/2,\)</span><span class="math notranslate nohighlight">\(
+alors \)</span>X<span class="math notranslate nohighlight">\( prend trois valeurs distincte. Ainsi, en appliquant la
+définition avec \)</span>x_1=1<span class="math notranslate nohighlight">\(, \)</span>x_2=2<span class="math notranslate nohighlight">\( et \)</span>x_3=3<span class="math notranslate nohighlight">\( on obtient :
+\)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+\mathbb{E}[X] &amp;=&amp; 0 \times \mathbb{P}(X=0) + 2\times \mathbb{P}(X=2) + 3\times \mathbb{P}(X=3)\\
+&amp;=&amp; 0 \times \frac{1}{4}+ 2 \times \frac{1}{4} +  3\times \frac{1}{2}\\
+&amp;=&amp; \frac{1}{2} + \frac{3}{2}\\
+&amp;=&amp; 2.\end{aligned}\)</span>$</p>
+<p><strong>Exemple 1.2</strong>. Si on reprend l’exemple précédent, on obtient :
+$<span class="math notranslate nohighlight">\(\begin{aligned}
+{\rm Var}[X] &amp;=&amp; (0-2)^2 \times \mathbb{P}(X=0) + (2-2)^2\times \mathbb{P}(X=2) + (3-2)^2\times \mathbb{P}(X=3)\\
+&amp;=&amp; 4 \times \frac{1}{4}+ 0 \times \frac{1}{4} + 1 \times \frac{1}{2}\\
+&amp;=&amp; 1 + 0 + \frac{1}{2}\\
+&amp;=&amp; \frac{3}{2}\end{aligned}\)</span>$</p>
+<p><strong>Propriété 1.2</strong>. Il découle de la définition de la variance et
+l’espérance les propriétés suivantes:</p>
+<ol class="simple">
+<li><p>Linéarité de l’espérance : pour toute variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>,
+pour tout réel <span class="math notranslate nohighlight">\(\lambda\)</span> et <span class="math notranslate nohighlight">\(\mu\)</span>:
+$<span class="math notranslate nohighlight">\(\mathbb E[\lambda X + \mu Y] = \lambda \mathbb E[X] + \mu \mathbb E[Y].\)</span>$</p></li>
+<li><p>La variance n’est elle pas linéaire : pour toute variable aléatoire
+<span class="math notranslate nohighlight">\(X\)</span> et tout réel <span class="math notranslate nohighlight">\(\lambda\)</span>
+$<span class="math notranslate nohighlight">\({\rm Var}(\lambda X) = \lambda^2 {\rm Var}(X).\)</span>$</p></li>
+<li><p>Mais dans le cas de deux variables aléatoires <strong>indépendantes</strong> <span class="math notranslate nohighlight">\(X\)</span>
+et <span class="math notranslate nohighlight">\(Y\)</span> : $<span class="math notranslate nohighlight">\({\rm Var}(X+Y) = {\rm Var}(X) + {\rm Var}(Y)\)</span>$</p></li>
+<li><p>On a
+$<span class="math notranslate nohighlight">\({\rm Var}(X) = \mathbb E[(X-\mathbb E[X])^2] = \mathbb E[X^2] - (\mathbb E[X])^2.\)</span>$</p></li>
+</ol>
+</div>
+<div class="section" id="les-lois-discretes-usuelles">
+<h3>Les lois discrètes usuelles<a class="headerlink" href="#les-lois-discretes-usuelles" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="loi-uniforme-sur-un-ensemble-fini-de-reels">
+<h4>Loi uniforme sur un ensemble fini de réels<a class="headerlink" href="#loi-uniforme-sur-un-ensemble-fini-de-reels" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi uniforme sur
+l’ensemble de réels à <span class="math notranslate nohighlight">\(n\)</span> éléments <span class="math notranslate nohighlight">\(\{x_{1}, . . . , x_{n}\}\)</span> si on a
+équiprobabilité sur cet ensemble.</p>
+<div class="math notranslate nohighlight">
+\[\forall k \in \{0,1,\cdots,n\}, \qquad \mathbb{P}(X=x_{k})=\frac{1}{n}\]</div>
+<p><strong>Exemples d’utilisation.</strong> La loi uniforme est la plus évidente quand
+il n’y a aucune raison qu’une issue soit favorisée par rapport à
+l’autre. Par exemple dans le cas d’un jet de dé non truqué, alors le
+nombre de points indiqué par un dé suit la loi uniforme sur
+<span class="math notranslate nohighlight">\(\{1, 2, 3, 4, 5, 6\}\)</span>.</p>
+</div>
+<div class="section" id="loi-de-bernoulli">
+<h4>Loi de Bernoulli<a class="headerlink" href="#loi-de-bernoulli" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi de Bernoulli de
+paramètre <span class="math notranslate nohighlight">\(p\)</span> (<span class="math notranslate nohighlight">\(p \in [0,1]\)</span>), si elle ne prend que deux valeurs <span class="math notranslate nohighlight">\(0\)</span> et
+<span class="math notranslate nohighlight">\(1\)</span> (en notation mathématiques on dira <span class="math notranslate nohighlight">\(X \in \{0,1\}\)</span>), avec :
+$<span class="math notranslate nohighlight">\(\mathbb{P}(X=1)=p\qquad \mathbb{P}(X=0)=1-p\)</span><span class="math notranslate nohighlight">\( On notera
+\)</span>X\sim \mathcal{B}(p).$</p>
+<p><strong>Espérance, Variance.</strong> Soit <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(p)\)</span>, alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = p\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = p(1-p)\)</span>.</p></li>
+</ol>
+<p><strong>Exemples d’utilisation.</strong> La loi de Bernoulli est typique d’une
+expérience “Succès” ou “Échec”, par exemple un lancer de pièce (truqué
+ou non).</p>
+<p><strong>Exemple.</strong> Soit un lancer d’une pièce truquée, qui tombe sur face 2
+fois sur 3, et sur pile le reste du temps. On veut étudier la
+probabilité de tomber sur pile.<br />
+On a <span class="math notranslate nohighlight">\(\Omega=\{pile,face\}\)</span>. On peut définir la <em>variable aléatoire</em> <span class="math notranslate nohighlight">\(X\)</span>
+qui est donnée par :<br />
+<span class="math notranslate nohighlight">\(\left\lbrace\begin{array}{lll}
+X=1 &amp; \text{si } \omega=&quot;pile&quot; &amp; \text{(cas de succès)}\\
+X=0 &amp; \text{si } \omega=&quot;face&quot; &amp; \text{(cas d'échec)}
+\end{array} \right.\)</span><br />
+<span class="math notranslate nohighlight">\(X\)</span> suit alors la loi de Bernoulli de paramètre <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>, ce qu’on
+peut noter $<span class="math notranslate nohighlight">\(X \sim \mathcal{B}(\frac{1}{3})\)</span>$</p>
+</div>
+<div class="section" id="loi-binomiale">
+<h4>Loi binomiale<a class="headerlink" href="#loi-binomiale" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi de binomiale de
+paramètre <span class="math notranslate nohighlight">\((n,p)\)</span>, où <span class="math notranslate nohighlight">\(n \in \mathbb{N}^*\)</span> et <span class="math notranslate nohighlight">\(p\in [0,1]\)</span>, si <span class="math notranslate nohighlight">\(X\)</span> est à
+valeur dans <span class="math notranslate nohighlight">\(\{0,1,\cdots,n\}\)</span> et
+$<span class="math notranslate nohighlight">\(\forall k \in \{0,1,\cdots,n\}, \qquad \mathbb{P}(X=k)=C_n^k p^k(1-p)^{n-k},\)</span>$</p>
+<p>On note <span class="math notranslate nohighlight">\(X\sim \mathcal{B}(n,p).\)</span><br />
+<strong>Rappel.</strong>
+<span class="math notranslate nohighlight">\(C_n^k = \frac{n!}{k!(n-k)!} \quad \text{On note aussi } C_n^k = \begin{pmatrix}
+n\\k
+\end{pmatrix}\)</span>. <span class="math notranslate nohighlight">\(C_n^k\)</span> donne le nombre de combinaisons possibles de k
+éléments parmi n éléments. Par exemple <span class="math notranslate nohighlight">\(C_4^3 =\begin{pmatrix}
+4\\3
+\end{pmatrix}= 4\)</span> car j’ai 4 choix possibles de “paquets” de 3
+éléments.<br />
+<strong>Espérance, Variance.</strong> Soit <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(n,p)\)</span>, alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = np\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = np(1-p)\)</span>.</p></li>
+</ol>
+<p><strong>Utilisation.</strong> La loi binomiale intervient comme loi d’une répétition
+d’épreuves indépendantes de Bernoulli (qui se traduisent par une issue
+du type succès/échec). Le paramètre <span class="math notranslate nohighlight">\(p\)</span> représente la probabilité de
+succès d’une épreuve et le paramètre <span class="math notranslate nohighlight">\(n\)</span> le nombre de répétition de
+cette épreuve.<br />
+<strong>Exemple.</strong> Soit une pièce truquée, qui tombe sur face 2 fois sur 3, et
+sur pile le reste du temps. On lance la pièce 100 fois, et on veut
+étudier la probabilité de tomber sur pile exactement 40 fois.<br />
+On a <span class="math notranslate nohighlight">\(\Omega=\{pile,face\}^{100}\)</span>. On peut définir la <em>variable
+aléatoire</em> <span class="math notranslate nohighlight">\(X\)</span> qui est donnée par le nombre de fois où la pièce est
+tombée sur pile durant les 100 lancers. On aura alors
+<span class="math notranslate nohighlight">\(X \in \{0,1,\cdots,99,100\}\)</span><br />
+<span class="math notranslate nohighlight">\(X\)</span> suit alors la loi de Bernoulli de paramètres <span class="math notranslate nohighlight">\(n=100\)</span> et
+<span class="math notranslate nohighlight">\(p=\frac{1}{3}\)</span>, ce qu’on peut noter
+<span class="math notranslate nohighlight">\(X \sim \mathcal{B}(100,\frac{1}{3})\)</span>.<br />
+La probabilité de tomber exactement 40 fois sur pile vaudra:<br />
+<span class="math notranslate nohighlight">\(\mathbb{P}(X=40)=C_{100}^{40} (\frac{1}{3})^{40}(1-\frac{1}{3})^{100-40} = C_{100}^{40} (\frac{1}{3})^{40}(\frac{2}{3})^{60} = 0,031\)</span></p>
+</div>
+<div class="section" id="loi-de-poisson">
+<h4>Loi de poisson<a class="headerlink" href="#loi-de-poisson" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi de poisson de
+paramètre <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>, si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>
+et
+$<span class="math notranslate nohighlight">\(\forall k\in \mathbb{N}, \quad \mathbb{P}(X=k)=\frac{\lambda^k}{k!}e^{-\lambda},\)</span><span class="math notranslate nohighlight">\(
+On note \)</span>X\sim \mathcal{P}(\lambda).<span class="math notranslate nohighlight">\(  
+**Espérance, Variance.** Soit \)</span>X \sim \mathcal{P}(\lambda)$, alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = \lambda\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = \lambda\)</span>.</p></li>
+</ol>
+<p><strong>Utilisation.</strong> La loi de Poisson est la loi dite “<strong>des évènements
+rares</strong>”: elle est en effet une bonne approximation d’une loi Binomiale
+pour un grand nombre d’essais <span class="math notranslate nohighlight">\(n\)</span> et une faible probabilité de
+réalisation <span class="math notranslate nohighlight">\(p\)</span>. On l’utilise par exemple dans le calcul de la
+probabilité d’une panne, d’un sinistre, d’un accident, des appels sur un
+standard, la gestion d’une file d’attente, …<br />
+Elle est donc utile pour un évènement rare et dont la probabilité ne
+“vieillit” pas: la probabilité d’une issue dans la minute qui suit est
+la même qu’au cours de la minute qui a précédé.<br />
+On considérera qu’une loi Binomiale <span class="math notranslate nohighlight">\(\mathcal{B}(n,p)\)</span> peut être
+approchée avec une bonne précision par une loi de Poisson
+<span class="math notranslate nohighlight">\(\mathcal{P}(\lambda)\)</span> où <span class="math notranslate nohighlight">\(\lambda=np\)</span> si:<br />
+$<span class="math notranslate nohighlight">\(\begin{array}{lll}
+\left\lbrace\begin{array}{l}
+n\text{ est grand}\\
+p\text{ est petit}\\
+np\text{ est de l'ordre de l'unité}
+\end{array} \right.
+&amp;\text{ par exemple }&amp;
+\left\lbrace\begin{array}{l}
+n &gt; 30\\
+p &lt; 0,1\\
+1 &lt; np &lt;10
+\end{array}\right.
+\end{array}\)</span><span class="math notranslate nohighlight">\(  
+**Exemple.** Il y a \)</span>7.10^6<span class="math notranslate nohighlight">\( joueurs qui misent au loto. La probabilité
+de gagner est environ 1 chance sur \)</span>5.10^6<span class="math notranslate nohighlight">\(.  
+En principe, la loi qui décrit le nombre de joueurs gagnants est une loi
+binomiale \)</span>\mathcal{B}(7.10^6,\frac{1}{5.10^6})<span class="math notranslate nohighlight">\(.  
+Mais à l’évidence cette loi décrit une très faible probabilité pour un
+grand nombre d’expériences, c’est-à-dire qu’elle décrit des événements
+rares. On remplace la loi binomiale par la loi de Poisson de même
+espérance, \)</span>\lambda=7.10^6.\frac{1}{5.10^6}=\frac{7}{5}<span class="math notranslate nohighlight">\( soit
+\)</span>\lambda=1,4<span class="math notranslate nohighlight">\(.  
+On peut donc écrire : \)</span><span class="math notranslate nohighlight">\(\mathbb{P}(X=k)=\frac{1,4^k}{k!}e^{-1,4}\)</span>$</p>
+<p>On a :<br />
+<span class="math notranslate nohighlight">\(\begin{array}{lll}
+\mathbb{P}(X=0)=0,246 &amp;\quad \mathbb{P}(X=2)=0.241&amp;\quad \mathbb{P}(X=4)= 0.039\\
+\mathbb{P}(X=1)= 0.345&amp;\quad \mathbb{P}(X=3)=0.112&amp;\quad \mathbb{P}(X=5)=0.011
+\end{array}\)</span></p>
+<p><strong>Allure des lois de Poisson.</strong></p>
+<p>Diagrammes représentant les probabilités <span class="math notranslate nohighlight">\(\mathbb{P}(X=k)\)</span> en fonction
+de <span class="math notranslate nohighlight">\(k\)</span> pour une variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suivant la loi de Poisson
+<span class="math notranslate nohighlight">\(\mathcal{P}(\lambda)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{cc}
+\includegraphics[width=200pt]{images/poisson1.png} &amp; \includegraphics[width=200pt]{images/poisson4.png}\\
+\lambda = 1 &amp; \lambda = 4
+\end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c} \includegraphics[width=200pt]{images/poisson10.png}\\
+\lambda = 10\end{array}\end{split}\]</div>
+</div>
+<div class="section" id="loi-geometrique">
+<h4>Loi géométrique<a class="headerlink" href="#loi-geometrique" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi géométrique de
+paramètre <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(p\in [0,1]\)</span> si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb{N}^*\)</span> et
+$<span class="math notranslate nohighlight">\(\forall k\in \mathbb{N}^*, \quad \mathbb{P}(X=k)=p.(1-p)^{k-1}.\)</span><span class="math notranslate nohighlight">\( On
+note \)</span>X\sim \mathcal{G}(p).<span class="math notranslate nohighlight">\(  
+**Espérance, Variance.** Soit \)</span>X \sim \mathcal{G}(p)$, alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = 1/p\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = (1-p)/p^2\)</span>.</p></li>
+</ol>
+<p><strong>Fonction de répartition.</strong> Soit <span class="math notranslate nohighlight">\(X \sim \mathcal{G}(p)\)</span>, alors la
+fonction de répartition de la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> vaut:
+<span class="math notranslate nohighlight">\(F_X(k)=\mathbb{P}(X\leqslant k) = 1-(1-p)^k\)</span><br />
+<strong>Utilisation.</strong> (Un problème de temps d’attente)<br />
+Considérons une épreuve de Bernoulli avec une probabilité de succès <span class="math notranslate nohighlight">\(p\)</span>.
+On renouvelle cette épreuve de manière indépendante jusqu’au premier
+succès. On appelle <span class="math notranslate nohighlight">\(X\)</span> la variable aléatoire donnant le rang du premier
+succès. Alors <span class="math notranslate nohighlight">\(X\)</span> suit la loi géométrique <span class="math notranslate nohighlight">\(\mathcal{G}(p)\)</span>.<br />
+<strong>Exemple.</strong> Soit un joueur jouant tous les matins à un jeu de hasard.
+Le jeu a toujours la même probabilité 1/10 de succès. Quelle est la
+probabilité qu’il n’ait rien gagné au bout de 3 jours ?<br />
+Soit <span class="math notranslate nohighlight">\(X\)</span> la variable aléatoire donnant le jour du premier succès du
+joueur.<br />
+<span class="math notranslate nohighlight">\(\mathbb{P}(X=1)=\frac{1}{10}.(\frac{9}{10})^0=0,1\)</span><br />
+<span class="math notranslate nohighlight">\(\mathbb{P}(X=2)=\frac{1}{10}.(\frac{9}{10})^1=0,09\)</span><br />
+<span class="math notranslate nohighlight">\(\mathbb{P}(X=3)=\frac{1}{10}.(\frac{9}{10})^2=0,081\)</span><br />
+Alors la probabilité pour qu’il n’ait rien gagné au bout de 3 jours vaut
+<span class="math notranslate nohighlight">\(1-\mathbb{P}(X=1)-\mathbb{P}(X=2)-\mathbb{P}(X=3)\)</span>, soit <span class="math notranslate nohighlight">\(0,729\)</span>.<br />
+On aurait également pu calculer directement
+<span class="math notranslate nohighlight">\(1-F_X(3)=(1-\frac{1}{10})^3\)</span>, ce qui donne (heureusement) le même
+résultat.<br />
+<strong>Allure des lois géométriques.</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c} \includegraphics[width=400pt]{images/geometrique.png}\\
+p=0,5\end{array}\end{split}\]</div>
+<p>Diagramme représentant la probabilité <span class="math notranslate nohighlight">\(\mathbb{P}(X=k)\)</span> en fonction de
+<span class="math notranslate nohighlight">\(k\)</span> pour une variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suivant la loi géométrique
+<span class="math notranslate nohighlight">\(\mathcal{G}(p)\)</span>, avec p=0,5.</p>
+<p><strong>Remarque.</strong> La loi géométrique est une version discrétisée de la loi
+exponentielle. Ce sont toutes les deux des lois “sans mémoire”.</p>
+</div>
+</div>
+</div>
+<div class="section" id="le-cas-continu">
+<h2>Le cas continu<a class="headerlink" href="#le-cas-continu" title="Permalink to this headline">¶</a></h2>
+<p>Lorsqu’une variable aléatoire est à valeur dans un ensemble continu
+(dans un intervalle de <span class="math notranslate nohighlight">\(\mathbb R\)</span>), elle prend alors une infinité non
+dénombrable de valeur. On ne peut alors plus décrire dans quelle
+proportion la variable aléatoire prendra chacune de ces valeurs, et
+déterminer de cette façon sa loi.<br />
+Il est en revanche possible de décrire la loi à travers la donnée d’une
+<strong>fonction de densité</strong>, c’est-à-dire d’une fonction continue (ou
+éventuellement continue par morceaux), <strong>positive</strong> et <strong>d’intégrale sur
+<span class="math notranslate nohighlight">\(\mathbb R\)</span> égale à 1</strong>.<br />
+<strong>Définition.</strong> On dit que <span class="math notranslate nohighlight">\(X:\Omega\to \mathbb R\)</span> est une variable
+aléatoire de densité <span class="math notranslate nohighlight">\(f_X\)</span> telle que :
+$<span class="math notranslate nohighlight">\(\forall a,b \in \mathbb R,\ a&lt;b,\quad \mathbb{P}(X\in [a,b]) =\mathbb{P}(X\in ]a,b[)= \int_a^b f_X(x) {\rm d}x.\)</span>$</p>
+<p><strong>Fonction de répartition.</strong> On notera qu’en conséquence, si
+<span class="math notranslate nohighlight">\(X:\Omega\to \mathbb R\)</span> est une variable aléatoire de densité <span class="math notranslate nohighlight">\(f_X\)</span>
+alors sa fonction de répartition <span class="math notranslate nohighlight">\(F_X\)</span> est donnée par :
+$<span class="math notranslate nohighlight">\(F_X(x) = \mathbb{P}(X\leqslant x) = \mathbb{P}(X\in ]-\infty;x[) = \int_{-\infty}^x f_X(y){\rm d}y,\)</span><span class="math notranslate nohighlight">\(
+pour tout \)</span>x<span class="math notranslate nohighlight">\( appartenant à \)</span>\mathbb R<span class="math notranslate nohighlight">\(. En particulier, \)</span>F_X<span class="math notranslate nohighlight">\( est une
+**primitive** de \)</span>f_X<span class="math notranslate nohighlight">\(.  
+**Remarque.** Ici (et dans la suite), il faut comprendre les intégrales
+\)</span><span class="math notranslate nohighlight">\(\int_{-\infty}^{b} f_X(y){\rm d}y,\ \int_{a}^{+\infty} f_X(y){\rm d}y\text{ et }\int_{-\infty}^{+\infty} f_X(y){\rm d}y,\)</span><span class="math notranslate nohighlight">\(
+comme
+\)</span><span class="math notranslate nohighlight">\(\lim_{a\to -\infty},\ \lim_{b\to +\infty},\ \lim_{a\to -\infty,\ b\to +\infty} \int_{a}^{b} f_X(y){\rm d}y.\)</span>$</p>
+<div class="section" id="esperance-et-variance-dune-variable-aleatoire-continue">
+<h3>Éspérance et variance d’une variable aléatoire continue<a class="headerlink" href="#esperance-et-variance-dune-variable-aleatoire-continue" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition.</strong> Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire continue de densité
+<span class="math notranslate nohighlight">\(f_X\)</span>. On appelle espérance de <span class="math notranslate nohighlight">\(X\)</span> la quantité définie par
+$<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \int_{-\infty}^{+\infty} x f_X(x) {\rm d}x,\)</span><span class="math notranslate nohighlight">\(
+lorsqu’elle existe.  
+**Définition.** Soit \)</span>X<span class="math notranslate nohighlight">\( une variable aléatoire continue de densité
+\)</span>f_X<span class="math notranslate nohighlight">\(. On appelle variance de \)</span>X<span class="math notranslate nohighlight">\(, et on note \)</span>{\rm Var}[X]<span class="math notranslate nohighlight">\( la quantité
+:
+\)</span><span class="math notranslate nohighlight">\({\rm Var}[X] = \int_{-\infty}^{+\infty} (x-\mathbb{E}[X])^2 f_X(x) {\rm d}x,\)</span>$
+lorsqu’elle existe.</p>
+<p><strong>Propriété 1.3</strong>. Les propriétés valables dans le cas discrets sont
+aussi vérifiées dans le cas continu:</p>
+<ol class="simple">
+<li><p>Linéarité de l’espérance : pour toute v.a. <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span>, pour tout
+réels <span class="math notranslate nohighlight">\(\lambda\)</span> et <span class="math notranslate nohighlight">\(\mu\)</span>:
+$<span class="math notranslate nohighlight">\(\mathbb E[\lambda X + \mu Y] = \lambda \mathbb E[X] + \mu \mathbb E[Y].\)</span>$</p></li>
+<li><p>La variance n’est, elle, pas linéaire : pour toute v.a. <span class="math notranslate nohighlight">\(X\)</span> et tout
+réel <span class="math notranslate nohighlight">\(\lambda\)</span> $<span class="math notranslate nohighlight">\({\rm Var}(\lambda X) = \lambda^2 {\rm Var}(X).\)</span>$</p></li>
+<li><p>Mais dans le cas de deux variables aléatoires <strong>indépendantes</strong> <span class="math notranslate nohighlight">\(X\)</span>
+et <span class="math notranslate nohighlight">\(Y\)</span> : $<span class="math notranslate nohighlight">\({\rm Var}(X+Y) = {\rm Var}(X) + {\rm Var}(Y)\)</span>$</p></li>
+<li><p>On a
+$<span class="math notranslate nohighlight">\({\rm Var}(X) = \mathbb E[(X-\mathbb E[X])^2] = \mathbb E[X^2] - (\mathbb E[X])^2.\)</span>$</p></li>
+</ol>
+</div>
+<div class="section" id="les-lois-continues-usuelles">
+<h3>Les lois continues usuelles<a class="headerlink" href="#les-lois-continues-usuelles" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="loi-uniforme">
+<h4>Loi uniforme<a class="headerlink" href="#loi-uniforme" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> Soient <span class="math notranslate nohighlight">\(a,b\)</span>, deux réels tels que <span class="math notranslate nohighlight">\(a&lt;b\)</span>. On dit que <span class="math notranslate nohighlight">\(X\)</span>
+suit une loi uniforme sur l’intervalle <span class="math notranslate nohighlight">\([a,b]\)</span> et on note
+<span class="math notranslate nohighlight">\(X\sim \mathcal{U}([a,b])\)</span> si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\([a,b]\)</span> et admet une
+densité <span class="math notranslate nohighlight">\(f_X\)</span> donnée par :
+$<span class="math notranslate nohighlight">\(f_X(x) = \frac{1}{b-a}\mathbf{1}_{[a,b]}(x),\)</span><span class="math notranslate nohighlight">\( pour tout \)</span>x<span class="math notranslate nohighlight">\(
+appartenant à \)</span>\mathbb R$.</p>
+<p><strong>Rappel.</strong> On note <span class="math notranslate nohighlight">\(\mathbf{1}_{[a,b]}(x)\)</span> pour un intervalle
+<span class="math notranslate nohighlight">\([a,b] \subset \mathbb R\)</span> la fonction qui vaut: $<span class="math notranslate nohighlight">\(f(x)=
+\left\lbrace\begin{array}{ll}
+1&amp;\text{ pour } x \in [a,b] \\
+0&amp;\text{ pour } x \not\in [a,b]
+\end{array} \right.\)</span><span class="math notranslate nohighlight">\( On l’appelle la **fonction indicatrice** de
+\)</span>[a,b]<span class="math notranslate nohighlight">\(.  
+**Proposition.** Soient \)</span>a,b<span class="math notranslate nohighlight">\(, deux réels tels que \)</span>a&lt;b<span class="math notranslate nohighlight">\(. Soit
+\)</span>X \sim \mathcal{U}([a,b])$. Alors :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{a+b}{2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{(b-a)^2}{2}\)</span>.</p></li>
+</ol>
+<p><strong>Allure de la loi uniforme.[6]</strong> $<span class="math notranslate nohighlight">\(\begin{array}{cc}
+\includegraphics[width=200pt]{images/densite-uniforme.png} &amp; \includegraphics[width=200pt]{images/repartition-uniforme.png}
+\end{array}\)</span>$</p>
+</div>
+<div class="section" id="loi-exponentielle">
+<h4>Loi exponentielle<a class="headerlink" href="#loi-exponentielle" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> On dit que la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi
+exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda\)</span> (<span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>) si <span class="math notranslate nohighlight">\(X\)</span> est à valeur
+dans <span class="math notranslate nohighlight">\(\mathbb R^+\)</span> et admet une densité <span class="math notranslate nohighlight">\(f_X\)</span> donnée par :
+$<span class="math notranslate nohighlight">\(f_X(x) = \lambda e^{-\lambda x} \mathbf{1}_{\mathbb R^+}(x).\)</span>$</p>
+<p><strong>Notation.</strong> On note <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span>.</p>
+<p><strong>Proposition.</strong> Soit <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span>. Alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{1}{\lambda}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] =  \dfrac{1}{\lambda^2}\)</span>.</p></li>
+</ol>
+<p><strong>Fonction de répartition.</strong> $<span class="math notranslate nohighlight">\(F(x)= 1-e^{-\lambda x}\)</span><span class="math notranslate nohighlight">\( En effet:
+\)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+F(x)&amp;=\mathbb{P}(X\leqslant x)\\
+&amp;= \int_{-\infty}^x f_X(y){\rm d}y\\
+&amp;= \int_{0}^x \lambda e^{-\lambda y}{\rm d}y\\
+&amp;= [-e^{-\lambda y}]_{y=0}^{y=x}\\
+&amp;= e^{-\lambda 0}-e^{-\lambda x}\\
+&amp;= 1-e^{-\lambda x}
+\end{aligned}\)</span>$</p>
+<p><strong>Utilisation.</strong> La loi exponentielle est une loi “sans mémoire” ou
+“sans vieillissement” : cela se traduit par le fait qu’un phénomène
+suivant une telle loi a autant de chances de se produire sur un laps de
+temps donné après l’instant <span class="math notranslate nohighlight">\(t_{1}\)</span> qu’après l’instant <span class="math notranslate nohighlight">\(t_{2}\)</span>. La
+probabilité qu’il survienne aujourd’hui sachant qu’on l’attend depuis un
+siècle est la même que si on l’attendait depuis un jour.<br />
+La loi exponentielle est souvent utilisée pour prédire des durées de vie
+(par exemple de composants électroniques).</p>
+<p><strong>Allure de la loi uniforme.[7]</strong> $<span class="math notranslate nohighlight">\(\begin{array}{cc}
+\includegraphics[width=200pt]{images/densite-exp.png} &amp; \includegraphics[width=200pt]{images/repartition-exp.png}
+\end{array}\)</span>$</p>
+<p><strong>Exemple.</strong> La durée de vie d’un matériel électronique exprimée en
+jours suit une loi exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda = 0,004\)</span>. Quelle
+est la probabilité qu’il fonctionne encore 300 jours après sa
+fabrication ?<br />
+D’abord, la formule (fonction de répartition puisqu’on cherche un
+cumul).
+<span class="math notranslate nohighlight">\(\mathbb{P}(X &gt; 300) = 1-\mathbb{P}(X &lt; 300) = 1-(1-e^{-0,004. 300})= e^{-1,2}=0,301\)</span></p>
+<p><strong>Remarque.</strong> Si <span class="math notranslate nohighlight">\(X\)</span> est une variable de loi exponentielle de paramètre
+<span class="math notranslate nohighlight">\(1\)</span>, pour tout <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span>, la loi de <span class="math notranslate nohighlight">\(\dfrac{X}{\lambda}\)</span> est la loi
+exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+</div>
+<div class="section" id="loi-normale">
+<h4>Loi normale<a class="headerlink" href="#loi-normale" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition.</strong> On dit que <span class="math notranslate nohighlight">\(X\)</span> suit une loi normale de paramètre <span class="math notranslate nohighlight">\(\mu\)</span>
+et <span class="math notranslate nohighlight">\(\sigma\)</span> (<span class="math notranslate nohighlight">\(\mu\)</span> un réel et <span class="math notranslate nohighlight">\(\sigma\)</span> un réel positif), et on note
+<span class="math notranslate nohighlight">\(X\sim \mathcal{N}(\mu,\sigma)\)</span>, si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb R\)</span> et
+admet une densité <span class="math notranslate nohighlight">\(f_X\)</span> donnée par :
+$<span class="math notranslate nohighlight">\(f_X(x) = \frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{1}{2\sigma}(x-\mu)^2}, \quad \forall x \in \mathbb R.\)</span>$</p>
+<p>Lorsque <span class="math notranslate nohighlight">\(\mu=0\)</span> et <span class="math notranslate nohighlight">\(\sigma=1\)</span>, on dit que <span class="math notranslate nohighlight">\(X\)</span> suit une loi normale
+centrée réduite.<br />
+<strong>Remarque.</strong> On trouve parfois une notation avec <span class="math notranslate nohighlight">\(\sigma^2\)</span> (la
+variance) au lieu de <span class="math notranslate nohighlight">\(\sigma\)</span> (l’espérance): cela ne change rien au
+fonctionnement de la loi, il s’agit juste d’un choix de notations. On
+aura alors <span class="math notranslate nohighlight">\(X\sim \mathcal{N}(\mu,\sigma^2)\)</span>.<br />
+<strong>Proposition.</strong> La loi normale est entièrement caractérisée par sa
+moyenne et sa variance, en particulier :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb E[X] = \mu\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = \sigma^2\)</span>.</p></li>
+</ol>
+<p><strong>Allure de la loi normale.[8]</strong> $<span class="math notranslate nohighlight">\(\begin{array}{cc}
+\includegraphics[width=200pt]{images/normale-centree.png} &amp; \includegraphics[width=200pt]{images/normale.png}\\
+\text{Densité de la loi }\mathcal{N}(\mu,\sigma) &amp; \text{Densité de la loi }\mathcal{N}(0,1)
+\end{array}\)</span>$</p>
+<p><strong>Influence de <span class="math notranslate nohighlight">\(\mu\)</span> et <span class="math notranslate nohighlight">\(\sigma\)</span></strong> $<span class="math notranslate nohighlight">\(\begin{array}{c}
+\includegraphics[width=300pt]{images/Loi-normale2.jpg}
+\end{array}\)</span>$</p>
+<p><strong>Répartition</strong> $<span class="math notranslate nohighlight">\(\begin{array}{c}
+\includegraphics{images/Loi-normale-ecarts-types.jpg}
+\end{array}\)</span>$</p>
+<p><strong>Remarque.</strong> Il n’existe pas de formule explicite pour la fonction de
+répartition de la loi normale. On peut cependant l’approcher, et des
+valeurs précises sont facilement disponibles sous forme de tableau.<br />
+La loi normale, ou de Gauss, possède les propriétés suivantes :</p>
+<p><strong>Propriété 1.4</strong>.</p>
+<ol>
+<li><p>Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> deux variables aléatoires indépendantes suivant
+une loi normale de paramètres respectivement <span class="math notranslate nohighlight">\((\mu_X,\sigma_X)\)</span> et
+<span class="math notranslate nohighlight">\((\mu_Y,\sigma_Y)\)</span>. Alors, la variable aléatoire <span class="math notranslate nohighlight">\(X+Y\)</span> suit elle
+aussi une loi normale d’espérance <span class="math notranslate nohighlight">\(\mu_X + \mu_Y\)</span> et de variance
+<span class="math notranslate nohighlight">\(\sigma_X^2+\sigma_Y^2\)</span> :
+$<span class="math notranslate nohighlight">\(X+Y \sim \mathcal{N}(\mu_X+\mu_Y,\sqrt{\sigma_X^2+\sigma_Y^2}).\)</span>$</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire centré réduite, <span class="math notranslate nohighlight">\(\mu\)</span> un réel et
+<span class="math notranslate nohighlight">\(\sigma\)</span> un réel positif alors
+$<span class="math notranslate nohighlight">\(\mu + \sigma X \sim \mathcal{N}(\mu,\sigma).\)</span>$</p></li>
+<li><p>De façon symétrique, soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire suivant la loi
+normale <span class="math notranslate nohighlight">\(\mathcal{N}(\mu,\sigma)\)</span>, <span class="math notranslate nohighlight">\(\mu\)</span> un réel et <span class="math notranslate nohighlight">\(\sigma\)</span> un réel
+positif, alors la variable aléatoire <span class="math notranslate nohighlight">\(Z=\dfrac{X-\mu}{\sigma}\)</span> suit
+la loi normale centrée réduite: $<span class="math notranslate nohighlight">\(Z \sim \mathcal{N}(0,1).\)</span>$</p>
+<p>La variable aléatoire <span class="math notranslate nohighlight">\(Z\)</span> s’appelle la variable aléatoire centrée
+réduite associée à <span class="math notranslate nohighlight">\(X\)</span>. En fait, pour faire des calculs effectifs de
+probabilité, grâce à ce résultat, on commencera systématiquement par
+se ramener d’une loi normale quelconque <span class="math notranslate nohighlight">\(\mathcal{N}(\mu,\sigma)\)</span> à
+la loi normale centrée réduite <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>. On pourra alors
+utiliser la table des valeurs pour cette loi.</p>
+</li>
+</ol>
+<p><strong>Utilisation.</strong> La loi normale est très probablement la plus couramment
+retrouvée, dans une multitude de phénomènes. Elle tient donc une place
+fondamentale en théorie des probabilités et en statistique. Cela tient
+notamment du fait que la loi normale est la loi limite moyenne, comme
+nous le verrons grâce à la dernière partie, dune suite infinie
+d’épreuves répétées indépendantes.<br />
+En pratique elle sert à modéliser les effets additifs de petits
+phénomènes aléatoires indépendants répétés souvent.<br />
+Elle est donc la loi limite des lois binomiales et de poisson pour un
+très grand nombre d’essais. On utilisera les deux approximations
+suivantes:<br />
+$<span class="math notranslate nohighlight">\(\begin{array}{|c|c|c|}
+\hline
+\text{Loi de }X &amp; \text{Loi approchée de }X &amp; \text{Conditions requises}\\
+\hline
+&amp; &amp; \\
+\mathcal{B}(n,p) &amp; \mathcal{N}(np,\sqrt{np(1-p)}) &amp; n \geqslant 30,\quad np \geqslant 10, \quad n(1-p) \geqslant 10\\
+&amp; &amp; \\
+\mathcal{P}(\lambda) &amp; \mathcal{N}(\lambda,\sqrt{\lambda}) &amp; \lambda \geqslant 10\\
+&amp; &amp; \\
+\hline
+\end{array}\)</span>$</p>
+</div>
+<div class="section" id="loi-du-khi-deux">
+<h4>Loi du khi-deux<a class="headerlink" href="#loi-du-khi-deux" title="Permalink to this headline">¶</a></h4>
+<p><strong>Introduction.</strong> Soient <span class="math notranslate nohighlight">\(X_{1}, . . . , X_{n}\)</span> des variables aléatoires
+indépendantes de même loi <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>. Posons
+<span class="math notranslate nohighlight">\(\chi^2=\sum_{k=1}^nX_{i}\)</span><br />
+Par définition, la variable aléatoire <span class="math notranslate nohighlight">\(\chi^2\)</span> suit une loi du khi-deux
+à n degrés de liberté (abréviation d.d.l.). On note cette loi
+<span class="math notranslate nohighlight">\(\chi^2(n)\)</span>.<br />
+<strong>Définition.</strong> On dit qu’une variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi du
+khi-deux à <span class="math notranslate nohighlight">\(n\)</span> degrés de liberté si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb R^+\)</span>
+et admet une densité <span class="math notranslate nohighlight">\(f_X\)</span> donnée par :
+$<span class="math notranslate nohighlight">\(f_X(x) = \frac{1}{2^{n/2}\Gamma(n/2)}x^{n/2-1}e^{-x/2}, \text{pour tout réel positif } x\)</span><span class="math notranslate nohighlight">\(
+et où \)</span>\Gamma<span class="math notranslate nohighlight">\( est la fonction gamma donnée par :
+\)</span>\Gamma(n) = (n-1)!, \forall n \in \mathbb N^*.<span class="math notranslate nohighlight">\(  
+**Notation.** On note \)</span>X\sim \chi^2(n)<span class="math notranslate nohighlight">\(  
+**Allure de la loi du \)</span>\chi^2(\nu)<span class="math notranslate nohighlight">\(.[9]** \)</span><span class="math notranslate nohighlight">\(\begin{array}{c}
+\includegraphics[width=400pt]{images/khi-deux.png}
+\end{array}\)</span>$</p>
+<p><strong>Proposition.</strong> Soit <span class="math notranslate nohighlight">\(X \sim \chi^2(n)\)</span>. Alors</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}[X] = n\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\({\rm Var}[X] = 2n\)</span>.</p></li>
+</ol>
+<p><strong>Utilisation.</strong> Ne prenez pas peur ! Cette loi ne sera pas utilisée
+directement dans les exercices de ce chapitre de probabilités, mais
+c’est une loi très utile en statistique, car elle permet de tester
+l’indépendance de plusieurs variables ou encore de tester l’adéquation
+d’une série de données à une loi de probabilités.<br />
+Dans la pratique on utilise une table de valeurs de sa fonction de
+répartition.</p>
+</div>
+</div>
+</div>
+<div class="section" id="loi-des-grands-nombres-et-tcl">
+<h2>Loi des grands nombres et TCL<a class="headerlink" href="#loi-des-grands-nombres-et-tcl" title="Permalink to this headline">¶</a></h2>
+<p><strong>Théorème 1.1</strong>. <strong>Loi forte des grands nombres</strong><br />
+Soient <span class="math notranslate nohighlight">\(X_1,\ldots,X_n\)</span>, <span class="math notranslate nohighlight">\(n\)</span> variables aléatoires [v.a.] i.i.d.
+d’espérance <span class="math notranslate nohighlight">\(\mu\)</span> et de variance <span class="math notranslate nohighlight">\(\sigma^2\)</span>. Alors, la moyenne
+arithmétique de ces variables aléatoires tend presque sûrement vers la
+moyenne théorique <span class="math notranslate nohighlight">\(\mu\)</span> :
+$<span class="math notranslate nohighlight">\(\lim_{n\to +\infty}\frac{1}{n}\sum_{i=1}^n X_i \to \mu,\ {\text{presque sûrement}}.\)</span>$</p>
+<p>Par presque sûrement il faut comprendre que l’événement “la moyenne
+arithmétique ne tend pas vers la moyenne théorique” est de probabilité
+nulle.</p>
+<p>Ce théorème nous dit que la moyenne arithmétique converge vers la
+moyenne théorique.</p>
+<p><strong>Théorème 1.2</strong>. <strong>Théorème central Limite</strong><br />
+Soient <span class="math notranslate nohighlight">\(X_1,\ldots,X_n\)</span>, <span class="math notranslate nohighlight">\(n\)</span> variables aléatoires i.i.d. d’espérance
+<span class="math notranslate nohighlight">\(\mu\)</span> et de variance <span class="math notranslate nohighlight">\(\sigma^2\)</span>. Alors,
+$<span class="math notranslate nohighlight">\(\sqrt{n}.\frac{\frac{1}{n}\sum_{i=1}^n X_i -\mu}{\sigma}\to \mathcal{N}(0,1).\)</span>$</p>
+<p>On utilisera fréquemment ce résultat de la manière suivante : si
+<span class="math notranslate nohighlight">\(X_1,\ldots,X_n\)</span> sont <span class="math notranslate nohighlight">\(n\)</span> v.a. i.i.d. alors on dira que pourra <span class="math notranslate nohighlight">\(n\)</span>
+suffisamment grand la v.a.
+$<span class="math notranslate nohighlight">\(\sqrt{n}.\frac{\frac{1}{n}\sum_{i=1}^n X_i -\mu}{\sigma},\)</span><span class="math notranslate nohighlight">\( suit
+approximativement une loi \)</span>\mathcal{N}(0,1)<span class="math notranslate nohighlight">\(. Entre autre, si \)</span>Y<span class="math notranslate nohighlight">\( est
+une variable aléatoire suivant une loi \)</span>\mathcal{N}(0,1)<span class="math notranslate nohighlight">\( alors pour
+tout \)</span>x\in \mathbb R<span class="math notranslate nohighlight">\(:
+\)</span><span class="math notranslate nohighlight">\(\mathbb{P}\left(\sqrt{n}.\dfrac{\frac{1}{n}\sum_{i=1}^n X_i -\mu}{\sigma} \leqslant x\right) \approx \mathbb{P}(Y\leqslant x).\)</span>$</p>
+<p>[1] Cette introduction est reprise du cours: “<em>Introduction au Calcul
+des Probabilités</em>” de Charles SUQUET, Professeur à l’Université Lille I</p>
+<p>[2] Tiré du site de Bo Allen: <a class="reference external" href="http://boallen.com/random-numbers.html">http://boallen.com/random-numbers.html</a></p>
+<p>[3] Exemple tiré d’un témoignage du site <em><a class="reference external" href="http://Random.org">Random.org</a></em></p>
+<p>[4] Image tirée de “<em>Les inattendus mathématiques</em>” de Jean-Paul
+DELAHAYE</p>
+<p>[5] “<em>Les inattendus mathématiques</em>” de Jean-Paul DELAHAYE</p>
+<p>[6] Images tirées d’un cours “Lois de probabilité usuelles” de
+l’Université de Poitiers</p>
+<p>[7] Images tirées d’un cours “Lois de probabilité usuelles” de
+l’Université de Poitiers</p>
+<p>[8] Images tirées d’un cours “Lois de probabilité usuelles” de
+l’Université de Poitiers</p>
+<p>[9] Images tirées d’un cours “Lois de probabilité usuelles” de
+l’Université de Poitiers</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part3/Part4.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart3/Part4.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part3/Part4.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p>IUT de Chambéry - 2 année GCCD 2017-2018</p>
+<p><strong>Exercice 1</strong>. (* à ***) En utilisant les définitions du cours,
+montrer que :</p>
+<ol>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(p)\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = p\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}[X]=p(1-p)\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{U}([1,2])\)</span> alors <span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{3}{2}\)</span>
+et <span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{1}{12}\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(X \sim \mathcal{E}(\lambda)\)</span> alors
+<span class="math notranslate nohighlight">\(\mathbb{E}[X] = \dfrac{1}{\lambda}\)</span> et
+<span class="math notranslate nohighlight">\({\rm Var}(X) = \dfrac{1}{\lambda^2}\)</span>.</p>
+<p>Ce dernier cas est plus difficile.<br />
+Indication: Utiliser une intégration par parties.</p>
+</li>
+</ol>
+<p><em>Corrigé 1</em>.</p>
+<ol class="simple">
+<li><p>Dans ce cas, la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> est discrète à valeur dans
+l’ensemble fini <span class="math notranslate nohighlight">\(\{0,1\}\)</span>. D’après la définition du cours,
+$<span class="math notranslate nohighlight">\(\mathbb{E}[X] = 0\times \mathbb{P}(X=0) + 1\times \mathbb{P}(X=1),\)</span><span class="math notranslate nohighlight">\(
+et on déduit du fait que \)</span>X<span class="math notranslate nohighlight">\( suive une loi de Bernoulli de paramètre
+\)</span>p<span class="math notranslate nohighlight">\( que : \)</span><span class="math notranslate nohighlight">\(\mathbb{E}[X] = 0\times (1-p) + 1\times p =p.\)</span><span class="math notranslate nohighlight">\( Par les
+même arguments on obtient que : \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+{\rm Var}[X] &amp;=&amp; (0-\mathbb{E}[X])^2\times \mathbb{P}(X=0) + (1-\mathbb{E}[X])^2 \times \mathbb{P}(X=1)\\
+&amp;=&amp; p^2 (1-p) + (1-p)^2 p\\
+&amp;=&amp; p^2-p^3 + p - 2p^2 +p^3\\
+&amp;=&amp; p-p^2\\
+&amp;=&amp; p(1-p).\end{aligned}\)</span>$</p></li>
+<li><p>Dans ce cas, la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> est continue et a pour
+densité la fonction $<span class="math notranslate nohighlight">\(f_X(x)  = \left\lbrace\begin{array}{ll}
+1/(2-1)=1\text{ si }x \text{ est dans l'intervalle }[0,1],\\
+0 \text{ sinon.}
+\end{array}\right.\)</span><span class="math notranslate nohighlight">\( Ainsi, d’après la définition du cours :
+\)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+\mathbb{E}[X] = \int_{-\infty}^{+\infty}xf_X(x){\rm d}x &amp;=&amp; \int_{1}^{2} x {\rm d}x\\
+&amp;=&amp; \frac{1}{2}[x^2]_1^2 = \frac{4}{2} - \frac{1}{2} = \frac{3}{2}. \end{aligned}\)</span><span class="math notranslate nohighlight">\(
+Pour la variance, on applique la formule : \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+{\rm Var}[X] &amp;=&amp; \int_{-\infty}^{+\infty}(x-\mathbb{E}[X])^2f_X(x){\rm d}x\\
+&amp;=&amp; \int_{1}^{2} \left(x-\frac{3}{2}\right)^2  {\rm d}x\\
+&amp;=&amp; \int_{1}^{2} x^2-3x+\frac{9}{4} {\rm d}x\\
+&amp;=&amp; \left[\frac{1}{3}x^3 - \frac{3}{2}x^2 + \frac{9}{4}x\right]_1^2\\
+&amp;=&amp; \frac{1}{12} \end{aligned}\)</span>$</p></li>
+</ol>
+<p><strong>Exercice 2</strong>. (**) Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire. Calculer la
+fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> lorsque :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(X \sim \mathcal{U}([a,b])\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(X\sim \mathcal{E}(\lambda)\)</span></p></li>
+</ol>
+<p><em>Corrigé 2</em>. D’après la définition du cours, on sait que la fonction de
+répartition de <span class="math notranslate nohighlight">\(X\)</span> est la fonction <span class="math notranslate nohighlight">\(F_X\)</span> donnée par :
+$<span class="math notranslate nohighlight">\(F_X(x) = \mathbb{P}(X\leqslant x),\)</span><span class="math notranslate nohighlight">\( pour tout \)</span>x<span class="math notranslate nohighlight">\( appartenant à
+\)</span>\mathbb{R}$.</p>
+<ol class="simple">
+<li><p>Par définition, puisque <span class="math notranslate nohighlight">\(X\)</span> est une v.a. continue :
+$<span class="math notranslate nohighlight">\(F_X(x) = \mathbb{P}(X\leqslant x)=\int_{-\infty}^x f_X(y) {\rm d}y,\)</span><span class="math notranslate nohighlight">\(
+ou \)</span>f_X<span class="math notranslate nohighlight">\( est la densité de \)</span>X<span class="math notranslate nohighlight">\(. Et puisque \)</span>X<span class="math notranslate nohighlight">\( suit une loi uniforme
+sur \)</span>[a,b]<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(\int_{-\infty}^x f_X(y) {\rm d}y = \left\lbrace\begin{array}{lll}
+0, \text{ si } x\leqslant a\\
+\int_{a}^x f_X(y) {\rm d}y = (x-a)(b-a)\text{ si } a&lt;x&lt;b\\
+1 \text{ sinon.}
+\end{array}
+\right.\)</span>$</p></li>
+<li><p>Par définition de la fonction de répartition et puisque <span class="math notranslate nohighlight">\(X\)</span> suit une
+loi exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda\)</span> :
+$<span class="math notranslate nohighlight">\(F_X(x) = \int_{-\infty}^x f_X(y) {\rm d}y = \lim_{a\to -\infty} \int_a^x \lambda e^{-\lambda y} {\rm d}y = 1-e^{-\lambda x}.\)</span>$</p></li>
+</ol>
+<p><strong>Exercice 3</strong>. (*) Madame Michel et Monsieur Boulanger vont chaque
+semaine au marché hebdomadaire. Madame Michel arrive à une heure
+aléatoire entre 8h et 12h et elle reste 30 minutes ; on suppose que son
+heure d’arrivée suit une loi uniforme. Monsieur Boulanger arrive à 10h
+pile et reste également 30 minutes. Quelle est la probabilité pour
+qu’ils se trouvent ensemble au marché à un certain moment ?</p>
+<p><em>Corrigé 3</em>. Il faut que Mme Michel arrive entre 9h30 et 10h30.
+Intervalle de temps d’1h sur 4h, donc proba = 1/4.</p>
+<p><strong>Exercice 4</strong>. (*) Max a un rendez-vous avec une amie. Ils vont au
+restaurant, puis au cinéma. Le temps passé au restaurant est une
+variable aléatoire suivant une loi exponentielle de paramètre
+<span class="math notranslate nohighlight">\(\lambda = 1\)</span>. (temps compté en heures)</p>
+<ol class="simple">
+<li><p>Le film commence 1 heure après leur entrée au restaurant. On néglige
+les temps d’attente et de déplacement, quelle est alors la
+probabilité pour qu’ils ratent le début du film ?</p></li>
+<li><p>Le film dure 1h30. Quelle est la probabilité qu’ils ne voient qu’une
+partie du film seulement ?</p></li>
+<li><p>Le temps passé au cinéma est une variable aléatoire de loi
+exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda = \frac{1}{2}\)</span>. Combien de temps
+Max peut-il espérer passer avec son amie ce soir ?</p></li>
+</ol>
+<p><strong>Exercice 5</strong>. (*)</p>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire suivant une loi normale
+<span class="math notranslate nohighlight">\(N(m,\sigma)\)</span>. Quelle est la probabilité que <span class="math notranslate nohighlight">\(X\)</span> soit supérieure à
+<span class="math notranslate nohighlight">\(m\)</span> ?</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(Y\)</span> une variable aléatoire suivant une loi normale <span class="math notranslate nohighlight">\(N(0,1)\)</span>.
+Quelle est la loi de <span class="math notranslate nohighlight">\(-Y\)</span> ? la loi de <span class="math notranslate nohighlight">\(\sigma Y+m\)</span> ?</p></li>
+<li><p>En utilisant la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>, déterminer
+<span class="math notranslate nohighlight">\(P(0\leqslant Y\leqslant 0,8)\)</span>, <span class="math notranslate nohighlight">\(P(-0,6\leqslant Y\leqslant 0)\)</span> et
+<span class="math notranslate nohighlight">\(P(Y\leqslant 0,8)\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 6</strong>. (*) La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi normale
+<span class="math notranslate nohighlight">\(N(12,4)\)</span>. Calculer:
+$<span class="math notranslate nohighlight">\(P(X\leqslant 15), \qquad P(X\geqslant 18), \qquad P(X\geqslant 7), \qquad P(X\leqslant 9), \qquad P(8\leqslant X\leqslant 17).\)</span>$</p>
+<p><strong>Exercice 7</strong>. (*) Une machine produit des rondelles métalliques en
+grande série. Une rondelle est acceptée si son diamètre extérieur est
+compris entre 21,9 et 22,1 mm. On suppose que sur l’ensemble de la
+production le diamètre extérieur des rondelles est une variable
+aléatoire X suivant la loi normale de moyenne <span class="math notranslate nohighlight">\(m\)</span> = 22 mm et
+d’écart-type <span class="math notranslate nohighlight">\(\sigma\)</span> = 0,05 mm. Quelle est la probabilité qu’une pièce
+soit refusée ?</p>
+<p><strong>Exercice 8</strong>. (*) Le nombre de clients d’un magasin suit chaque
+samedi une loi normale <span class="math notranslate nohighlight">\(N(365,30)\)</span>. Quelle est la probabilité pour qu’il
+y ait un samedi donné:</p>
+<ol class="simple">
+<li><p>plus de 400 clients ?</p></li>
+<li><p>moins de 300 clients ?</p></li>
+<li><p>entre 320 et 380 clients ?</p></li>
+</ol>
+<p><strong>Exercice 9</strong>. (**) Dans une population, le poids des individus est
+une variable aléatoire suivant une loi normale de moyenne égale à 60 kg
+et un écart-type égal à 15 kg. Un ascenseur a une capacité égale à 2200
+kg. Calculer :</p>
+<ol class="simple">
+<li><p>La probabilité que 20 individus pèsent ensemble plus de 2200 kg.</p></li>
+<li><p>Le nombre maximum de personnes pouvant rentrer dans l’ascenseur de
+sorte que celui-ci ne soit en surcharge qu’avec une probabilité
+inférieure à 0,01.</p></li>
+</ol>
+<p><em>Corrigé 4</em>.</p>
+<ol>
+<li><p>On désigne par.</p>
+<p>Dans cet exercice on considère <span class="math notranslate nohighlight">\(n=20\)</span> individus. On les numérote de
+<span class="math notranslate nohighlight">\(1\)</span> à <span class="math notranslate nohighlight">\(n\)</span> et on note <span class="math notranslate nohighlight">\(X_i\)</span> la variable aléatoire représentant le
+poids de la <span class="math notranslate nohighlight">\(i\)</span>ème personne. Par hypothèse, cette v.a. suit une loi
+normale de paramètre <span class="math notranslate nohighlight">\(\mu =60\)</span> et <span class="math notranslate nohighlight">\(\sigma=15\)</span>. On cherche à calculer
+la probabilité que le poids de ces 20 individus soit supérieur à
+2200kg, i.e. on considère la variable aléatoire
+<span class="math notranslate nohighlight">\(X = \sum_{i=1}^{20} X_i\)</span> et on cherche la probabilité que <span class="math notranslate nohighlight">\(X\)</span> soit
+supérieur à 2200kg :
+$<span class="math notranslate nohighlight">\(\mathbb{P}\left(\sum_{i=1}^{20} X_i \geqslant 2200 \right).\)</span>$</p>
+<p>Puisque les <span class="math notranslate nohighlight">\(X_i\)</span>, <span class="math notranslate nohighlight">\(1\leqslant i \leqslant 20\)</span> sont i.i.d., on sait
+que <span class="math notranslate nohighlight">\(\sum_{i=1}^{20} X_i\)</span> suit une loi normale d’espérance <span class="math notranslate nohighlight">\(60n\)</span> et
+de variance,<span class="math notranslate nohighlight">\(15^2n\)</span>. Ainsi, si <span class="math notranslate nohighlight">\(Z\)</span> désigne une v.a de loi normale
+centrée réduite $<span class="math notranslate nohighlight">\(\begin{aligned}
+\mathbb{P}\left(\sum_{i=1}^{20} X_i \geqslant 2200 \right) &amp;=&amp; \mathbb{P}\left(15\sqrt{n}Z+60n \geqslant 2200 \right) \\
+&amp;=&amp; \mathbb{P}\left(Z \geqslant(2200-60n)/(15\sqrt{n}) \right)\\
+&amp;=&amp; \mathbb{P}\left( Z \geqslant 14.9 \right) = 1-\mathbb{P}\left( \mathcal{N}(0,1) &lt; 14.9 \right).\end{aligned}\)</span>$</p>
+</li>
+<li><p>Notons <span class="math notranslate nohighlight">\(N\)</span> le nombre maximum de personne pouvant rentrer dans
+l’ascenseur de sorte que celui-ci ne soit en surcharge qu’avec une
+probabilité inférieure à <span class="math notranslate nohighlight">\(\alpha = 0,01\)</span>. En suivant le même
+raisonnement qu’à la question précédente, on en déduit que <span class="math notranslate nohighlight">\(N\)</span> est
+tel que:</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{P}\left(\sum_{i=1}^N X_i \geqslant 2200 \right) \leqslant\alpha. \quad (1)\]</div>
+<p>L’idée est à nouveaux de faire apparaître la loi normale centrée
+réduite. On sait que si $<span class="math notranslate nohighlight">\(X \sim \mathcal{N}(m,\sigma^2)\)</span><span class="math notranslate nohighlight">\( alors
+\)</span><span class="math notranslate nohighlight">\(\sum_{i=1}^N X_i \sim \mathcal{N}(Nm,N\sigma^2).\)</span><span class="math notranslate nohighlight">\( Par conséquent,
+\)</span><span class="math notranslate nohighlight">\(\frac{\sum_{i=1}^N X_i - Nm}{\sqrt{N}\sigma} \sim \mathcal{N}(0,1).\)</span><span class="math notranslate nohighlight">\(
+En remplaçant dans \)</span>(1)<span class="math notranslate nohighlight">\(, on en déduit que \)</span>N$ est solution de:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    &amp;&amp;\mathbb{P}\left(\frac{\sum_{i=1}^N X_i - Nm}{\sqrt{N}\sigma} \geqslant(2200-Nm)/\sqrt{N}\sigma \right) \leqslant\alpha \\
+    &amp;&amp;\Leftrightarrow \mathbb{P}\left( \mathcal{N}(0,1) \geqslant(2200-Nm)/\sqrt{N}\sigma \right) \leqslant\alpha.\end{aligned}\end{split}\]</div>
+<p>Notons <span class="math notranslate nohighlight">\(t(\alpha,N):= (2200-Nm)/\sqrt{N}\sigma\)</span>. <span class="math notranslate nohighlight">\(t(\alpha,N)\)</span> est
+donc tel que:</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{P}\left( \mathcal{N}(0,1) \geqslant t(\alpha,N) \right) \leqslant\alpha \Leftrightarrow \mathbb{P}\left( \mathcal{N}(0,1) \leqslant t(\alpha,N) \right) \geqslant 1-\alpha.\]</div>
+<p>Cette valeur (<span class="math notranslate nohighlight">\(x\)</span>), peut être lue dans la table de la loi normale
+<span class="math notranslate nohighlight">\((t(\alpha,N)=x)\)</span>. <span class="math notranslate nohighlight">\(N\)</span> est donc la partie entière inférieure (on
+cherche le nombre maximum de personnes) de la solution “<span class="math notranslate nohighlight">\(x\)</span>” de
+l’équation: $<span class="math notranslate nohighlight">\((2200-xm) =\sqrt{x}\sigma.\)</span><span class="math notranslate nohighlight">\( En posant \)</span>m=60<span class="math notranslate nohighlight">\(,
+\)</span>\sigma^2 =15<span class="math notranslate nohighlight">\(, on en déduit \)</span>N$.</p>
+</li>
+</ol>
+<p><strong>Exercice 10</strong>. (**) Une machine est conçue pour confectionner des
+paquets d’un poids de 500g, mais ils n’ont pas exactement tous le même
+poids. On a constaté que la distribution des poids autour de la valeur
+moyenne de 500g avait un écart-type de 25g.</p>
+<ol class="simple">
+<li><p>Par quelle loi est-il raisonnable de modéliser le poids des paquets
+?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant entre
+480g et 520g ? (<em>utiliser la table de <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span></em>)</p></li>
+<li><p>Combien de paquets pèsent entre 480g et 490g ?</p></li>
+<li><p>Sur 1000 paquets, quel est le nombre moyen de paquets pesant plus de
+450g ?</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(a\)</span> tel que les 9/10 de cette production aient un poids
+compris entre <span class="math notranslate nohighlight">\(500-a\)</span> et <span class="math notranslate nohighlight">\(500+a\)</span>.</p></li>
+</ol>
+<p><em>Corrigé 5</em>.</p>
+<ol class="simple">
+<li><p>L’énoncé suggère que le poids en grammes des paquets est une
+variable aléatoire qui suit une loi normale d’espérance 500 et
+d’écart-type 25. Soit <span class="math notranslate nohighlight">\(X\)</span> la variable aléatoire correspondante, et
+<span class="math notranslate nohighlight">\(Y=(X-500)/25\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(480\leqslant X\leqslant 520)=P(|Y|\leqslant 0,8)=0,576.\)</span> On
+s’attend donc à ce que, sur 1000 paquets, il y en ait 576 dont le
+poids est compris entre 480g et 520g.</p></li>
+<li><p>$<span class="math notranslate nohighlight">\(\begin{aligned}
+P(480\leqslant X\leqslant 490)&amp;=&amp;P(-0,8\leqslant Y\leqslant-0,4)\\
+&amp;=&amp;P(0,4\leqslant Y\leqslant 0,8)\\
+&amp;=&amp;p(Y\leqslant 0,8)-p(Y\leqslant 0,4)=0,1327.\end{aligned}\)</span>$ On
+s’attend donc à ce que, sur 1000 paquets, il y en ait 132 dont le
+poids est compris entre 480g et 490g.</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(450\leqslant X)=0,5+P(0\leqslant Y\leqslant 2)=0,5+\frac 12 P(-2\leqslant Y\leqslant 2)=0,5+0,4772=0,9772.\)</span>
+On s’attend donc à ce que, sur 1000 paquets, il y en ait 977 dont le
+poids est supérieur à 450g.</p></li>
+<li><p>Il faut trouver <span class="math notranslate nohighlight">\(t\)</span> tel que <span class="math notranslate nohighlight">\(p(|Y|&lt;t)=0,9\)</span>. La table donne
+<span class="math notranslate nohighlight">\(t=1,645\)</span>, puis <span class="math notranslate nohighlight">\(a=25t=41\)</span>. Par conséquent, environ 90% de la
+production a un poids compris entre <span class="math notranslate nohighlight">\(500-41=459\)</span>g et <span class="math notranslate nohighlight">\(500+41=541\)</span>g.</p></li>
+</ol>
+<p><strong>Exercice 11</strong>. (***) Une entreprise d’édition a retenu la technique
+du placard publicitaire vantant quelques articles sans en donner le
+prix, invitant le lecture à recevoir à domicile gratuitement et san
+engagement de sa part des documents le renseignant de façon détaillée.
+L’expérience montre que le client qui se manifeste a une chance sur cinq
+de passer commande. En utilisant une approximation appropriée, calculer
+la probabilité d’observer lorsque l’on envoie 500 articles de
+renseignement :</p>
+<ol class="simple">
+<li><p>exactement 110 commandes</p></li>
+<li><p>plus de 110 commandes</p></li>
+</ol>
+<p><strong>Exercice 12</strong>. (***) La demande de fabrication d’une pièce X à une
+entreprise suit une loi normale. Elle a une probabilité 0,1 d’être
+inférieure à 15.000, et une probabilité 0,1 d’être supérieure à 25.000.</p>
+<ol class="simple">
+<li><p>Déterminer les paramètres de la loi normale.</p></li>
+<li><p>La marge sur une pièce est de 10 euros, les charges fixes mensuelles
+de l’entreprise sont de 175.000 euros. Déterminer la loi de
+probabilité suivie par le résultat mensuel de l’entreprise.</p></li>
+<li><p>En déduire la probabilité que le seuil de rentabilité mensuel soit
+atteint.</p></li>
+<li><p>Quelle est la probabilité que le seuil de rentabilité trimestriel
+soit atteint ?</p></li>
+</ol>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
