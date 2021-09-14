@@ -3,6 +3,13 @@
 
 # # Travaux Dirigés
 
+# In[6]:
+
+
+from random import randint
+randint(1,29)
+
+
 # ```{note}
 # Dans tout le TD, on se place dans un repère orthonormé $\mathcal{E} = (O,\vec{i},\vec{j},\vec{k})$.
 # ```
@@ -58,3 +65,9 @@
 # $(D):  \left\{ \begin{array}{l}
 # -2x+y-3z=1\\ x+z=1  \end{array} \right.$
 # 
+
+# In[ ]:
+
+
+
+

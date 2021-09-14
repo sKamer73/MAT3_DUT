@@ -108,6 +108,33 @@
    Travaux Dirigés
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Correction.html">
+   Correction du TD
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -165,14 +192,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/sKamer73/MAT3"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/sKamer73/MAT3/issues/new?title=Issue%20on%20page%20%2FPart1/Cours.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart1/Cours.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/sKamer73/MAT3/edit/main/Part1/Cours.ipynb"><button
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part1/Cours.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -192,7 +219,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/Outils/f4011d808a7377783eebea343c630a93dec2205f/v2/gh/sKamer73/MAT3/main?urlpath=tree/Part1/Cours.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part1/Cours.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -461,17 +488,18 @@ z = \lambda (z_B-z_A)+ z_A
 \vec{AB} \wedge \vec{AM} = \vec{0}
 \]</div>
 <p>L’ensemble des points <span class="math notranslate nohighlight">\(M\)</span> de coordonnées <span class="math notranslate nohighlight">\((x,y,z)\)</span> appartenant à <span class="math notranslate nohighlight">\((AB)\)</span> est donc caractérisé par un système d’équations.\</p>
-<p>En effet, étant donné un point <span class="math notranslate nohighlight">\(M\)</span> de la droite <span class="math notranslate nohighlight">\((AB)\)</span> et en notant les coordonnées de <span class="math notranslate nohighlight">\(\vec{AB} = \begin{pmatrix}\alpha\cr \beta \cr \gamma \end{pmatrix}\)</span> on retrouve le système:
-<span class="math notranslate nohighlight">\(
-\gamma(y-y_A) - \beta(z-z_A) = 0 \label{eq:1} \tag{1} 
-\)</span>
-<span class="math notranslate nohighlight">\(
-\alpha(z-z_A)-\gamma(x-x_A)=0 \label{eq:2} \tag{2}
-\)</span>
-<span class="math notranslate nohighlight">\(
-\beta(x-x_A) - \alpha (y-y_A)=0 \label{eq:3} \tag{3}.
-\)</span>
-On remarque que <span class="math notranslate nohighlight">\(\alpha \times \eqref{eq:1} + \beta \times \eqref{eq:2}  =-\gamma \eqref{eq:3}\)</span> et qu’en conséquence l’équation <span class="math notranslate nohighlight">\(\eqref{eq:3}\)</span> est superflue. La droite <span class="math notranslate nohighlight">\((AB)\)</span> est donc caractérisée par le système d’équations:</p>
+<p>En effet, étant donné un point <span class="math notranslate nohighlight">\(M\)</span> de la droite <span class="math notranslate nohighlight">\((AB)\)</span> et en notant les coordonnées de <span class="math notranslate nohighlight">\(\vec{AB} = \begin{pmatrix}\alpha\cr \beta \cr \gamma \end{pmatrix}\)</span> on retrouve le système:</p>
+<div class="math notranslate nohighlight" id="equation-eq-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-1" title="Permalink to this equation">¶</a></span>\[\gamma(y-y_A) - \beta(z-z_A) = 0 \]</div>
+<div class="math notranslate nohighlight" id="equation-eq-2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-2" title="Permalink to this equation">¶</a></span>\[
+\alpha(z-z_A)-\gamma(x-x_A)=0 
+\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-3">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-3" title="Permalink to this equation">¶</a></span>\[
+\beta(x-x_A) - \alpha (y-y_A)=0 
+\]</div>
+<p>On remarque que <span class="math notranslate nohighlight">\(\alpha \times\)</span> <a class="reference internal" href="#equation-eq-1">(1)</a> <span class="math notranslate nohighlight">\(+ \beta \times \)</span> <a class="reference internal" href="#equation-eq-2">(2)</a>  <span class="math notranslate nohighlight">\(=-\gamma \)</span> <a class="reference internal" href="#equation-eq-3">(3)</a> et qu’en conséquence l’équation <a class="reference internal" href="#equation-eq-3">(3)</a> est superflue. La droite <span class="math notranslate nohighlight">\((AB)\)</span> est donc caractérisée par le système d’équations:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \gamma(y-y_A) - \beta(z-z_A) = 0\\

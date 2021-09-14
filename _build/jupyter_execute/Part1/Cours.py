@@ -194,16 +194,22 @@
 # L'ensemble des points $M$ de coordonnées $(x,y,z)$ appartenant à $(AB)$ est donc caractérisé par un système d'équations.\
 # 
 # En effet, étant donné un point $M$ de la droite $(AB)$ et en notant les coordonnées de $\vec{AB} = \begin{pmatrix}\alpha\cr \beta \cr \gamma \end{pmatrix}$ on retrouve le système:
-# $
-# \gamma(y-y_A) - \beta(z-z_A) = 0 \label{eq:1} \tag{1} 
-# $
-# $
-# \alpha(z-z_A)-\gamma(x-x_A)=0 \label{eq:2} \tag{2}
-# $
-# $
-# \beta(x-x_A) - \alpha (y-y_A)=0 \label{eq:3} \tag{3}.
-# $
-# On remarque que $\alpha \times \eqref{eq:1} + \beta \times \eqref{eq:2}  =-\gamma \eqref{eq:3}$ et qu'en conséquence l'équation $\eqref{eq:3}$ est superflue. La droite $(AB)$ est donc caractérisée par le système d'équations:
+# 
+# ```{math}
+# :label: eq_1
+# \gamma(y-y_A) - \beta(z-z_A) = 0 
+# ```
+# 
+# 
+# $$
+# \alpha(z-z_A)-\gamma(x-x_A)=0 
+# $$ (eq_2)
+# 
+# $$
+# \beta(x-x_A) - \alpha (y-y_A)=0 
+# $$ (eq_3)
+# 
+# On remarque que $\alpha \times$ {eq}`eq_1` $+ \beta \times $ {eq}`eq_2`  $=-\gamma $ {eq}`eq_3` et qu'en conséquence l'équation {eq}`eq_3` est superflue. La droite $(AB)$ est donc caractérisée par le système d'équations:
 # 
 # $$
 # \gamma(y-y_A) - \beta(z-z_A) = 0\\

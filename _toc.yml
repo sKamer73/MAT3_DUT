@@ -9,4 +9,10 @@
   chapters:
   - file: Part1/Cours
   - file: Part1/TD
-
+  - file: Part1/Correction
+- part: Matrices
+  numbered: false
+  chapters:
+  - file: Part2/Cours
+  - file: Part2/TD
+  - file: Part2/Correction
