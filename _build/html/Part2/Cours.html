@@ -1,0 +1,1446 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Travaux Dirigés" href="TD.html" />
+    <link rel="prev" title="Correction du TD" href="../Part1/Correction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Examens et Corrections
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/EXAM-1.html">
+   Sujet Contrôle DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/Correction_Ct1.html">
+   Brève Correction - DSC1
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part2/Cours.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart2/Cours.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part2/Cours.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part2/Cours.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-et-definition">
+   Introduction et Définition
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quest-ce-quune-matrice">
+     Qu’est-ce qu’une matrice ?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#matrices-particulieres">
+     Matrices particulières
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addition-de-matrices">
+   Addition de matrices
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplication-de-matrices">
+   Multiplication de matrices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-du-produit">
+     Définition du produit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exemples">
+     Exemples
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pieges-a-eviter">
+     Pièges à éviter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proprietes-du-produit-de-matrices">
+     Propriétés du produit de matrices
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#la-matrice-identite">
+     La matrice identité
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#puissance-dune-matrice">
+     Puissance d’une matrice
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#determinant-dune-matrice">
+   Déterminant d’une matrice
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#un-outil-la-transposition">
+     Un outil: la transposition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-du-determinant">
+     Définition du déterminant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proprietes-du-determinant">
+     Propriétés du déterminant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#determinant-en-dimension-2-et-3">
+     Déterminant en dimension
+     <span class="math notranslate nohighlight">
+      \(2\)
+     </span>
+     et
+     <span class="math notranslate nohighlight">
+      \(3\)
+     </span>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#matrice-2-times-2">
+       Matrice
+       <span class="math notranslate nohighlight">
+        \(2 \times 2\)
+       </span>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#matrice-n-times-n">
+       Matrice
+       <span class="math notranslate nohighlight">
+        \(n \times n\)
+       </span>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#matrice-3-times-3">
+       Matrice
+       <span class="math notranslate nohighlight">
+        \(3 \times 3\)
+       </span>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interpretation-geometrique-du-determinant">
+       Interprétation géométrique du déterminant
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inverse-dune-matrice">
+   Inverse d’une matrice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resolution-de-systemes-et-inversion-de-matrices">
+   Résolution de systèmes et inversion de matrices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lien-entre-inversion-de-matrices-et-resolution-de-systemes">
+     Lien entre inversion de matrices et résolution de systèmes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-de-gauss">
+     Méthode de Gauss
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resolution-de-systemes-par-inversion-directe-avec-la-methode-de-la-comatrice">
+     Résolution de systèmes par inversion directe avec la méthode de la comatrice
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="cours">
+<h1>Cours<a class="headerlink" href="#cours" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-et-definition">
+<h2>Introduction et Définition<a class="headerlink" href="#introduction-et-definition" title="Permalink to this headline">¶</a></h2>
+<p>Les matrices sont aujourd’hui une des bases de l’informatique moderne,
+sont très utiles dans les domaines de la mécanique nécessitant des
+changement de bases, des calculs d’efforts, etc.. Une vidéo de M. Ouin
+sur le sujet est disponible à l’adresse suivante:
+<a class="reference external" href="https://www.youtube.com/watch?v=CS8oAl9G94E">https://www.youtube.com/watch?v=CS8oAl9G94E</a>.</p>
+<div class="section" id="quest-ce-quune-matrice">
+<h3>Qu’est-ce qu’une matrice ?<a class="headerlink" href="#quest-ce-quune-matrice" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition 1.1</strong>.</p>
+<ul class="simple">
+<li><p>Une <em><strong>matrice</strong></em> <span class="math notranslate nohighlight">\(A\)</span> est un tableau rectangulaire d’éléments de
+<span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.</p></li>
+<li><p>Elle est dite de <em><strong>taille</strong></em> <span class="math notranslate nohighlight">\(n \times p\)</span> si le tableau possède <span class="math notranslate nohighlight">\(n\)</span>
+lignes et <span class="math notranslate nohighlight">\(p\)</span> colonnes.</p></li>
+<li><p>Les nombres du tableau sont appelés les <em><strong>coefficients</strong></em> de <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p>Le coefficient situé à la <span class="math notranslate nohighlight">\(i\)</span>-ème ligne et à la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne est
+noté <span class="math notranslate nohighlight">\(a_{i,j}\)</span>.</p></li>
+</ul>
+<p>Un tel tableau est représenté de la manière suivante :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A=\begin{pmatrix} 
+a_{1,1}&amp; a_{1,2}&amp; \dots &amp; a_{1,j}&amp; \dots &amp; a_{1,p}\cr 
+a_{2,1}&amp; a_{2,2}&amp; \dots &amp; a_{2,j}&amp; \dots &amp;a_{2,p}\cr
+\dots &amp; \dots &amp; \dots &amp; \dots &amp; \dots &amp; \dots \cr
+a_{i,1}&amp; a_{i,2} &amp; \dots &amp; a_{i,j}&amp; \dots &amp;a_{i,p} \cr
+\dots &amp; \dots &amp; \dots &amp; \dots &amp; \dots &amp; \dots \cr
+a_{n,1}&amp; a_{n,2}&amp; \dots &amp; a_{n,j}&amp; \dots &amp; a_{n,p}\cr 
+\end{pmatrix}
+\quad \text{ ou } \quad
+A= \big(a_{i,j}\big)_{\substack{1\leqslant i \leqslant n \\ 1\leqslant j \leqslant p}}
+\quad \text{ ou } \quad
+\big(a_{i,j}\big).\end{split}\]</div>
+<p><strong>Exemple 1.1</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A  =  \left(
+ \begin{array}{ccc}
+1 &amp; -2 &amp; 5\\
+0 &amp; 3  &amp; 7
+\end{array}
+\right)\end{split}\]</div>
+<p>est une matrice <span class="math notranslate nohighlight">\(2\times 3\)</span> avec, par exemple, <span class="math notranslate nohighlight">\(a_{1,1}=1\)</span> et <span class="math notranslate nohighlight">\(a_{2,3}=7\)</span>.</p>
+<p><strong>Remarque 1.1</strong>. On note indifféremment <span class="math notranslate nohighlight">\(a_{ij}\)</span> où <span class="math notranslate nohighlight">\(a_{i,j}\)</span>.</p>
+<p>Encore quelques définitions :</p>
+<p><strong>Définition 1.2</strong>.</p>
+<ul class="simple">
+<li><p>Deux matrices sont <em><strong>égales</strong></em> lorsqu’elles ont la même taille et
+que les coefficients correspondants sont égaux.</p></li>
+<li><p>L’ensemble des matrices à <span class="math notranslate nohighlight">\(n\)</span> lignes et <span class="math notranslate nohighlight">\(p\)</span> colonnes à coefficients
+dans <span class="math notranslate nohighlight">\(\mathbb R\)</span> est noté <span class="math notranslate nohighlight">\(M_{n,p}(\mathbb R)\)</span> et ses éléments sont
+appelés <em><strong>matrices réelles</strong></em>.</p></li>
+</ul>
+</div>
+<div class="section" id="matrices-particulieres">
+<h3>Matrices particulières<a class="headerlink" href="#matrices-particulieres" title="Permalink to this headline">¶</a></h3>
+<p>Voici quelques types de matrices intéressantes :</p>
+<ul>
+<li><p>Si <span class="math notranslate nohighlight">\(n=p\)</span> (même nombre de lignes que de colonnes), la matrice est
+dite <em><strong>matrice carrée</strong></em>. On note <span class="math notranslate nohighlight">\(M_{n}(\mathbb R)\)</span> au lieu de
+<span class="math notranslate nohighlight">\(M_{n,n}(\mathbb R)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+     {\color{myred}a_{1,1}} &amp; a_{1,2} &amp; \dots &amp; a_{1,n}\\
+     a_{2,1} &amp; {\color{myred}a_{2,2}} &amp; \dots &amp; a_{2,n}\\
+     \vdots&amp; \vdots &amp; {\color{myred}\ddots}  &amp; \vdots\\
+     a_{n,1} &amp; a_{n,2} &amp; \dots &amp; {\color{myred}a_{n,n}}  
+    \end{pmatrix}\end{split}\]</div>
+<p>Les éléments <span class="math notranslate nohighlight">\(a_{1,1}, a_{2,2}, \ldots, a_{n,n}\)</span> forment la
+<em><strong>diagonale principale</strong></em> de la matrice.</p>
+</li>
+<li><p>Une matrice qui n’a qu’une seule ligne (<span class="math notranslate nohighlight">\(n=1\)</span>) est appelée
+<em><strong>matrice ligne</strong></em> ou <em><strong>vecteur ligne</strong></em>. On la note
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix} 
+a_{1,1}&amp; a_{1,2}&amp;  \ldots &amp; a_{1,p}\cr
+\end{pmatrix}.\)</span></p></li>
+<li><p>De même, une matrice qui n’a qu’une seule colonne (<span class="math notranslate nohighlight">\(p=1\)</span>) est
+appelée <em><strong>matrice colonne</strong></em> ou <em><strong>vecteur colonne</strong></em>. On la note
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix} 
+a_{1,1}\cr 
+a_{2,1}\cr
+\enspace \vdots \hfill \cr
+a_{n,1}\cr 
+\end{pmatrix}.\)</span></p></li>
+<li><p>La matrice (de taille <span class="math notranslate nohighlight">\(n\times p\)</span>) dont tous les coefficients sont
+des zéros est appelée la <em><strong>matrice nulle</strong></em> et est notée <span class="math notranslate nohighlight">\(0_{n,p}\)</span>
+ou plus simplement <span class="math notranslate nohighlight">\(0\)</span>. Dans le calcul matriciel, la matrice nulle
+joue le rôle du nombre <span class="math notranslate nohighlight">\(0\)</span> pour les réels.</p></li>
+</ul>
+<p><strong>Exemple 1.2</strong>. Les matrices de rotation sont utilisées dans de très
+nombreux domaines: sciences industrielles, mécaniques du solide, …<br />
+En 2D, une matrice de rotation d’un angle <span class="math notranslate nohighlight">\(\theta\)</span> s’écrit:
+<span class="math notranslate nohighlight">\(R_\theta = \begin{pmatrix} \cos(\theta) &amp;&amp; \sin(\theta) \\ -\sin(\theta) &amp;&amp; \cos(\theta) \end{pmatrix}\)</span>.
+Un vecteur du plan multipliée par cette matrice est alors rotatée d’un
+angle (orienté) <span class="math notranslate nohighlight">\(\theta\)</span>. En 3D, il est nécessaire de choisir un axe qui
+restera immobile; la rotation se fera autour de cet axe.</p>
+</div>
+</div>
+<div class="section" id="addition-de-matrices">
+<h2>Addition de matrices<a class="headerlink" href="#addition-de-matrices" title="Permalink to this headline">¶</a></h2>
+<p><strong>Définition 1.3</strong> (Somme de deux matrices). Soient <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> deux
+matrices <em><strong>ayant la même taille</strong></em> <span class="math notranslate nohighlight">\(n\times p\)</span>. Leur <em><strong>somme</strong></em>
+<span class="math notranslate nohighlight">\(C=A+B\)</span> est la matrice de taille <span class="math notranslate nohighlight">\(n\times p\)</span> définie par
+<span class="math notranslate nohighlight">\(c_{ij}=a_{ij}+b_{ij}.\)</span></p>
+<p>En d’autres termes, on somme coefficients par coefficients.</p>
+<p><strong>Exemple 1.3</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{Si} \qquad 
+A  =  \begin{pmatrix}
+3 &amp; -2\\
+1 &amp; 7                         
+\end{pmatrix}
+\qquad \text{et} \qquad 
+B = \begin{pmatrix}
+0 &amp; 5 \\
+2 &amp; -1      
+    \end{pmatrix}
+\qquad \text{alors} \qquad A + B = \begin{pmatrix}
+3 &amp; 3\\
+3 &amp; 6                 
+\end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{Par contre si } \qquad
+D =  \begin{pmatrix}
+-2\\8  \end{pmatrix}
+\qquad \text{ alors } \quad A+D \quad \text{ n'est pas définie.}\end{split}\]</div>
+<p><strong>Définition 1.4</strong> (Produit d’une matrice par un scalaire). Le produit
+d’une matrice <span class="math notranslate nohighlight">\(A=\big(a_{ij}\big)\)</span> de <span class="math notranslate nohighlight">\(M_{n,p}(\mathbb R)\)</span> par un
+scalaire <span class="math notranslate nohighlight">\(\alpha \in \mathbb R\)</span> est la matrice <span class="math notranslate nohighlight">\(\big(\alpha a_{ij}\big)\)</span>
+formée en multipliant chaque coefficient de <span class="math notranslate nohighlight">\(A\)</span> par <span class="math notranslate nohighlight">\(\alpha\)</span>. Elle est
+notée <span class="math notranslate nohighlight">\(\alpha \cdot A\)</span> (ou simplement <span class="math notranslate nohighlight">\(\alpha A\)</span>).</p>
+<p><strong>Exemple 1.4</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\text{Si} \qquad 
+A  = \begin{pmatrix} 
+1&amp; 2 &amp; 3\cr 
+0&amp; 1&amp; 0\cr
+\end{pmatrix}
+\qquad \text{et} \qquad \alpha = 2
+\qquad \text{alors} \qquad
+\alpha A =
+\begin{pmatrix} 
+2&amp; 4 &amp; 6\cr 
+0&amp; 2&amp; 0\cr
+\end{pmatrix}.\]</div>
+<div class="math notranslate nohighlight">
+\[\text{On note plus simplement:}
+\qquad 2.A =
+\begin{pmatrix} 
+2&amp; 4 &amp; 6\cr 
+0&amp; 2&amp; 0\cr
+\end{pmatrix}.\]</div>
+<p><strong>Définition 1.5</strong> (Différence de deux matrices). La matrice <span class="math notranslate nohighlight">\((-1)A\)</span> est
+l’<em><strong>opposée</strong></em> de <span class="math notranslate nohighlight">\(A\)</span> et est notée <span class="math notranslate nohighlight">\(-A\)</span>. La <em><strong>différence</strong></em> <span class="math notranslate nohighlight">\(A-B\)</span> est
+définie par <span class="math notranslate nohighlight">\(A + (-B)\)</span>.</p>
+<p><strong>Exemple 1.5</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{Si} \qquad A =  \begin{pmatrix} 
+2 &amp; -1 &amp; 0\\
+4 &amp; -5 &amp; 2
+\end{pmatrix}
+\qquad \text{et} \qquad 
+B  =  \begin{pmatrix} 
+-1 &amp; 4 &amp; 2\\
+7 &amp; -5 &amp; 3
+\end{pmatrix}\end{split}\]</div>
+<p>Alors <span class="math notranslate nohighlight">\(A-B  = \begin{pmatrix}  
+3 &amp; -5 &amp; -2\\
+-3 &amp; 0 &amp; -1
+\end{pmatrix}.\)</span></p>
+<p>L’addition de matrices (de même taille !) et la multiplication par un
+scalaire ne présentent pas de difficultés particulières :</p>
+<p><strong>Proposition 1.1</strong>. Soient <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span> trois matrices appartenant à
+<span class="math notranslate nohighlight">\(M_{n,p}(\mathbb R)\)</span>. Soient <span class="math notranslate nohighlight">\(\alpha \in \mathbb R\)</span> et
+<span class="math notranslate nohighlight">\(\beta \in \mathbb R\)</span> deux scalaires.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(A + B = B + A\)</span> : la somme est commutative,</p></li>
+<li><p><span class="math notranslate nohighlight">\(A + (B+C) = (A + B) + C\)</span> : la somme est associative,</p></li>
+<li><p><span class="math notranslate nohighlight">\(A + 0 = A\)</span> : la matrice nulle est l’élément neutre de l’addition,</p></li>
+<li><p>Multiplication par un scalaire
+<span class="math notranslate nohighlight">\((\alpha + \beta )A =\alpha A + \beta A\)</span><br />
+et <span class="math notranslate nohighlight">\(\alpha (A+B)=\alpha A + \alpha B\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="multiplication-de-matrices">
+<h2>Multiplication de matrices<a class="headerlink" href="#multiplication-de-matrices" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definition-du-produit">
+<h3>Définition du produit<a class="headerlink" href="#definition-du-produit" title="Permalink to this headline">¶</a></h3>
+<p>Le produit <span class="math notranslate nohighlight">\(AB\)</span> de deux matrices <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> est défini si et seulement
+si le nombre de colonnes de <span class="math notranslate nohighlight">\(A\)</span> est égal au nombre de lignes de <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p><strong>Définition 1.6</strong> (Produit de deux matrices). Soient <span class="math notranslate nohighlight">\(A=(a_{ij})\)</span> une
+matrice de taille <span class="math notranslate nohighlight">\(n\times p\)</span> et <span class="math notranslate nohighlight">\(B=(b_{ij})\)</span> une matrice de taille
+<span class="math notranslate nohighlight">\(p\times q\)</span>. Alors le produit <span class="math notranslate nohighlight">\(C=AB\)</span> est une matrice <span class="math notranslate nohighlight">\(n\times q\)</span> dont
+les coefficients <span class="math notranslate nohighlight">\(c_{ij}\)</span> sont définis par :</p>
+<div class="math notranslate nohighlight">
+\[
+c_{ij} = \sum_{k=1}^p a_{ik}b_{kj}\]</div>
+<p>On peut écrire le coefficient de façon plus développée, à savoir :</p>
+<div class="math notranslate nohighlight">
+\[c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+ \dots + 
+a_{ik}b_{kj}+ \dots + a_{ip}b_{pj}.\]</div>
+<p>Il est commode de disposer les calculs de la façon suivante.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{ccl}
+&amp;\begin{pmatrix}
+&amp;&amp;&amp;{\color{myred}\times}&amp;&amp;\\
+&amp;&amp;&amp;{\color{myred}\times}&amp;&amp;\\
+\hphantom{-}&amp;\hphantom{-}&amp;\hphantom{-}&amp;{\color{myred}\times}&amp;\hphantom{-}&amp;\hphantom{-}\\
+&amp;&amp;&amp;{\color{myred}\times}&amp;&amp;
+\end{pmatrix}&amp;\leftarrow B\\
+A\to\begin{pmatrix}
+&amp;&amp;&amp;\\
+&amp;&amp;&amp;\\
+{\color{myred}\times}&amp;{\color{myred}\times}&amp;{\color{myred}\times}&amp;{\color{myred}\times}\\
+&amp;&amp;&amp;
+\end{pmatrix}
+&amp;\begin{pmatrix}
+&amp;&amp;&amp;|&amp;&amp;\\
+&amp;&amp;&amp;|&amp;&amp;\\
+-&amp;-&amp;-&amp;{\color{blue}c_{ij}}&amp;\hphantom{-}&amp;\hphantom{-}\\
+&amp;&amp;&amp;&amp;&amp;
+\end{pmatrix}&amp;\leftarrow AB\\
+\end{array}\end{split}\]</div>
+<p>Le coefficient <span class="math notranslate nohighlight">\(c_{ij}\)</span> sur la <span class="math notranslate nohighlight">\(i\)</span>-ème ligne et la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne de C
+s’obtient en additionnant les produits deux à deux des coefficients de
+la <span class="math notranslate nohighlight">\(i\)</span>-ème ligne de <span class="math notranslate nohighlight">\(A\)</span> avec ceux de la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne de <span class="math notranslate nohighlight">\(B\)</span>.</p>
+</div>
+<div class="section" id="exemples">
+<h3>Exemples<a class="headerlink" href="#exemples" title="Permalink to this headline">¶</a></h3>
+<p><strong>Exemple 1.6</strong>.</p>
+<div class="math notranslate nohighlight">
+\[A =\begin{pmatrix}
+1 &amp; 2 &amp; 3\cr 
+2 &amp; 3 &amp; 4\cr
+\end{pmatrix}\qquad B =
+\begin{pmatrix}
+1&amp;2\cr
+-1&amp;1 \cr
+1&amp;1\cr
+\end{pmatrix}\]</div>
+<p>On dispose d’abord le produit correctement : la matrice obtenue est de
+taille <span class="math notranslate nohighlight">\(2\times2\)</span>. Puis on calcule chacun des coefficients, en
+commençant par le premier coefficient
+<span class="math notranslate nohighlight">\(c_{11} = 1\times 1\ +\ 2\times(-1)\ +\ 3\times1=2\)</span>, puis les autres.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{cc}
+  &amp;  \begin{pmatrix}
+1&amp;2\cr
+-1&amp;1 \cr
+1&amp;1\cr
+\end{pmatrix} \\
+\begin{pmatrix}
+1 &amp; 2 &amp; 3\cr 
+2 &amp; 3&amp; 4\cr
+\end{pmatrix}
+   &amp; 
+ \begin{pmatrix} c_{11} &amp; c_{12} \\ c_{21} &amp; c_{22} \end{pmatrix}
+  \end{array}
+   \qquad   \qquad  
+ \begin{array}{cc}
+  &amp; \begin{pmatrix}
+{\color{myred}1}&amp;2\cr
+{\color{myred}-1}&amp;1 \cr
+{\color{myred}1}&amp;1\cr
+\end{pmatrix}  \\
+\begin{pmatrix}
+{\color{myred}1} &amp; {\color{myred}2} &amp; {\color{myred}3}\cr 
+2 &amp; 3&amp; 4\cr
+\end{pmatrix}
+   &amp; \begin{pmatrix} {\color{blue}2} &amp; c_{12} \\ c_{21} &amp; c_{22} \end{pmatrix}
+  \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{cc}
+  &amp;   
+\begin{pmatrix}
+1&amp;2\cr
+-1&amp;1 \cr
+1&amp;1\cr
+\end{pmatrix}\\
+\begin{pmatrix}
+1 &amp; 2 &amp; 3\cr 
+2 &amp; 3&amp; 4\cr
+\end{pmatrix}
+   &amp; \begin{pmatrix} 2 &amp; 7 \cr 3 &amp; 11 \end{pmatrix}
+  \end{array}\end{split}\]</div>
+<p><strong>Exemple 1.7</strong> (Produit scalaire). Un exemple intéressant est le
+produit d’un vecteur ligne par un vecteur colonne :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}u = \begin{pmatrix} a_1 &amp; a_2 &amp; \cdots &amp; a_n \end{pmatrix} \quad 
+v = \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}\end{split}\]</div>
+<p>Alors <span class="math notranslate nohighlight">\(u \times v\)</span> est une matrice de taille <span class="math notranslate nohighlight">\(1\times 1\)</span> dont l’unique
+coefficient est <span class="math notranslate nohighlight">\(a_1 b_1 + a_2 b_2 + \cdots + a_n b_n\)</span>. Ce nombre
+s’appelle le <em><strong>produit scalaire</strong></em> des vecteurs <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span>.</p>
+<p>Calculer le coefficient <span class="math notranslate nohighlight">\(c_{ij}\)</span> dans le produit <span class="math notranslate nohighlight">\(A\times B\)</span> revient
+donc à calculer le produit scalaire des vecteurs formés par la <span class="math notranslate nohighlight">\(i\)</span>-ème
+ligne de <span class="math notranslate nohighlight">\(A\)</span> et la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne de <span class="math notranslate nohighlight">\(B\)</span>.</p>
+</div>
+<div class="section" id="pieges-a-eviter">
+<h3>Pièges à éviter<a class="headerlink" href="#pieges-a-eviter" title="Permalink to this headline">¶</a></h3>
+<p><strong>Premier piège. Le produit de matrices n’est généralement pas
+commutatif.</strong></p>
+<p>En effet, il se peut que <span class="math notranslate nohighlight">\(AB\)</span> soit défini mais pas <span class="math notranslate nohighlight">\(BA\)</span>, ou que <span class="math notranslate nohighlight">\(AB\)</span> et
+<span class="math notranslate nohighlight">\(BA\)</span> soient tous deux définis mais pas de la même taille. Mais même dans
+le cas où <span class="math notranslate nohighlight">\(AB\)</span> et <span class="math notranslate nohighlight">\(BA\)</span> sont définis et de la même taille, on a en
+général <span class="math notranslate nohighlight">\(AB\neq BA\)</span>.</p>
+<p><strong>Exemple 1.8</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+5&amp;1\\3&amp;-2
+\end{pmatrix}
+\begin{pmatrix}
+2&amp;0\\4&amp;3
+\end{pmatrix}=
+\begin{pmatrix}
+14&amp;3\\-2&amp;-6
+\end{pmatrix}
+\qquad \text{ mais } \qquad
+\begin{pmatrix}
+2&amp;0\\4&amp;3
+\end{pmatrix}
+\begin{pmatrix}
+5&amp;1\\3&amp;-2
+\end{pmatrix}=
+\begin{pmatrix}
+10&amp;2\\29&amp;-2
+\end{pmatrix}.\end{split}\]</div>
+<p><strong>Deuxième piège. <span class="math notranslate nohighlight">\(AB=0\)</span> n’implique pas <span class="math notranslate nohighlight">\(A=0\)</span> ou <span class="math notranslate nohighlight">\(B=0\)</span>.</strong></p>
+<p>Il peut arriver que le produit de deux matrices non nulles soit nul. En
+d’autres termes, on peut avoir <span class="math notranslate nohighlight">\(A \neq 0\)</span> et <span class="math notranslate nohighlight">\(B \neq 0\)</span> mais <span class="math notranslate nohighlight">\(AB = 0\)</span>.</p>
+<p><strong>Exemple 1.9</strong>. $<span class="math notranslate nohighlight">\(A  = \begin{pmatrix}
+ 0 &amp; -1\\
+ 0 &amp; 5\end{pmatrix}\qquad B  = 
+\begin{pmatrix}
+2 &amp; -3\\
+0 &amp; 0 \end{pmatrix}
+\qquad \text{et} \qquad 
+ AB  =  \begin{pmatrix}
+ 0 &amp; 0\\
+ 0 &amp; 0\end{pmatrix}.\)</span>$</p>
+<p><strong>Troisième piège. <span class="math notranslate nohighlight">\(AB=AC\)</span> n’implique pas <span class="math notranslate nohighlight">\(B=C\)</span>.</strong> On peut avoir
+<span class="math notranslate nohighlight">\(AB = AC\)</span> et <span class="math notranslate nohighlight">\(B \neq C\)</span>.</p>
+<p><strong>Exemple 1.10</strong>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A  =  \begin{pmatrix}
+ 0 &amp; -1\\
+ 0 &amp; 3\end{pmatrix}
+ \qquad  
+ B  = \begin{pmatrix} 
+4 &amp; -1\\
+5 &amp; 4 \end{pmatrix}
+ \qquad 
+ C  = \begin{pmatrix} 
+ 2 &amp; 5\\
+ 5 &amp; 4\end{pmatrix}\end{split}\]</div>
+<p>et <span class="math notranslate nohighlight">\(AB  = AC = \begin{pmatrix}
+  -5 &amp; -4\\
+  15 &amp; 12\end{pmatrix}.\)</span></p>
+</div>
+<div class="section" id="proprietes-du-produit-de-matrices">
+<h3>Propriétés du produit de matrices<a class="headerlink" href="#proprietes-du-produit-de-matrices" title="Permalink to this headline">¶</a></h3>
+<p>Malgré les difficultés soulevées au-dessus, le produit vérifie les
+propriétés suivantes :</p>
+<p><strong>Proposition 1.2</strong>.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(A (BC) = (AB) C\)</span> : associativité du produit,</p></li>
+<li><p><span class="math notranslate nohighlight">\(A(B+C) = AB + AC\)</span> et <span class="math notranslate nohighlight">\((B+C) A = BA + CA\)</span> : distributivité du
+produit par rapport à la somme,</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\cdot 0 = 0\)</span> et <span class="math notranslate nohighlight">\(0\cdot A= 0\)</span>.</p></li>
+</ol>
+<p><em>Démonstration, pour les curieux..</em> Posons
+<span class="math notranslate nohighlight">\(A=(a_{ij}) \in M_{n,p}(\mathbb R)\)</span>, <span class="math notranslate nohighlight">\(B=(b_{ij})\in M_{p,q}(\mathbb R)\)</span>
+et <span class="math notranslate nohighlight">\(C=(c_{ij})\in M_{q,r}(\mathbb R)\)</span>. Prouvons que <span class="math notranslate nohighlight">\(A(BC) = (AB) C\)</span> en
+montrant que les matrices <span class="math notranslate nohighlight">\(A(BC)\)</span> et <span class="math notranslate nohighlight">\((AB) C\)</span> ont les mêmes
+coefficients.</p>
+<p>Le terme d’indice <span class="math notranslate nohighlight">\((i,k)\)</span> de la matrice <span class="math notranslate nohighlight">\(AB\)</span> est
+<span class="math notranslate nohighlight">\(x_{ik}={\displaystyle \sum_{\ell=1}^{p}}a_{i \ell}b_{\ell k}\)</span>. Le terme
+d’indice <span class="math notranslate nohighlight">\((i,j)\)</span> de la matrice <span class="math notranslate nohighlight">\((AB)C\)</span> est donc</p>
+<div class="math notranslate nohighlight">
+\[\sum_{k=1}^{q}x_{ik}c_{kj}=\sum_{k=1}^{q}
+\left ( \sum_{\ell=1}^{p}a_{i\ell}b_{\ell k} \right )c_{kj}.\]</div>
+<p>Le terme
+d’indice <span class="math notranslate nohighlight">\((\ell,j)\)</span> de la matrice <span class="math notranslate nohighlight">\(BC\)</span> est
+<span class="math notranslate nohighlight">\(y_{\ell j}={\displaystyle \sum_{k=1}^{q}}b_{\ell k}c_{kj}\)</span>. Le terme
+d’indice <span class="math notranslate nohighlight">\((i,j)\)</span> de la matrice <span class="math notranslate nohighlight">\(A(BC)\)</span> est donc</p>
+<div class="math notranslate nohighlight">
+\[\sum_{\ell=1}^{p}a_{i\ell}\left (  \sum_{k=1}^{q}b_{\ell k}c_{kj}\right ).\]</div>
+<p>Comme dans <span class="math notranslate nohighlight">\(\mathbb R\)</span> la multiplication est distributive et
+associative, les coefficients de <span class="math notranslate nohighlight">\((AB)C\)</span> et <span class="math notranslate nohighlight">\(A(BC)\)</span> coïncident. Les
+autres démonstrations se font comme celle de l’associativité. ◻</p>
+</div>
+<div class="section" id="la-matrice-identite">
+<h3>La matrice identité<a class="headerlink" href="#la-matrice-identite" title="Permalink to this headline">¶</a></h3>
+<p>La matrice carrée suivante s’appelle <em><strong>la matrice identité</strong></em> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}I_n = \left(
+ \begin{array}{cccc}
+1 &amp; 0 &amp; \dots &amp; 0\\
+0&amp; 1&amp; \dots &amp; 0\\
+ \vdots&amp; \vdots &amp; \ddots  &amp; \vdots\\
+0 &amp; 0 &amp; \dots &amp;1
+\end{array}
+\right)\end{split}\]</div>
+<p>Ses éléments diagonaux sont égaux à <span class="math notranslate nohighlight">\(1\)</span> et tous ses autres éléments sont
+égaux à <span class="math notranslate nohighlight">\(0\)</span>. Elle se note <span class="math notranslate nohighlight">\(I_n\)</span> ou simplement <span class="math notranslate nohighlight">\(I\)</span>. Dans le calcul
+matriciel, la matrice identité joue un rôle analogue à celui du nombre
+<span class="math notranslate nohighlight">\(1\)</span> pour les réels. C’est l’élément neutre pour la multiplication. En
+d’autres termes :</p>
+<p><strong>Proposition 1.3</strong>. Si <span class="math notranslate nohighlight">\(A\)</span> est une matrice <span class="math notranslate nohighlight">\(n \times p\)</span>, alors</p>
+<div class="math notranslate nohighlight">
+\[I_n \cdot A = A \qquad \text{et} \qquad A \cdot I_p = A.\]</div>
+<p><em>Démonstration, pour les curieux..</em> Nous allons détailler la preuve.
+Soit <span class="math notranslate nohighlight">\(A \in M_{n,p}(\mathbb R)\)</span> de terme général <span class="math notranslate nohighlight">\(a_{ij}\)</span>. La matrice
+unité d’ordre <span class="math notranslate nohighlight">\(p\)</span> est telle que tous les éléments de la diagonale
+principale sont égaux à <span class="math notranslate nohighlight">\(1\)</span>, les autres étant tous nuls.</p>
+<p>On peut formaliser cela en introduisant le symbole de Kronecker. Si <span class="math notranslate nohighlight">\(i\)</span>
+et <span class="math notranslate nohighlight">\(j\)</span> sont deux entiers, on appelle <em><strong>symbole de Kronecker</strong></em>, et on
+note <span class="math notranslate nohighlight">\(\delta_{i,j}\)</span>, le réel qui vaut <span class="math notranslate nohighlight">\(0\)</span> si <span class="math notranslate nohighlight">\(i\)</span> est différent de <span class="math notranslate nohighlight">\(j\)</span>,
+et <span class="math notranslate nohighlight">\(1\)</span> si <span class="math notranslate nohighlight">\(i\)</span> est égal à <span class="math notranslate nohighlight">\(j\)</span>. Donc <span class="math notranslate nohighlight">\(\delta_{i,j}=\begin{cases}
+0 &amp; \text{ si } \;\; i\neq j \\
+1 &amp; \text{ si } \;\; i=j. 
+\end{cases}\)</span></p>
+<p>Alors le terme général de la matrice identité <span class="math notranslate nohighlight">\(I_{p}\)</span> est <span class="math notranslate nohighlight">\(\delta_{i,j}\)</span>
+avec <span class="math notranslate nohighlight">\(i\)</span> et <span class="math notranslate nohighlight">\(j\)</span> entiers, compris entre <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>La matrice produit <span class="math notranslate nohighlight">\(AI_{p}\)</span> est une matrice appartenant à
+<span class="math notranslate nohighlight">\(M_{n,p}(\mathbb R)\)</span> dont le terme général <span class="math notranslate nohighlight">\(c_{ij}\)</span> est donné par la
+formule <span class="math notranslate nohighlight">\(c_{ij}={\displaystyle \sum_{k=1}^{p}a_{ik}\delta_{kj}}\)</span>. Dans
+cette somme, <span class="math notranslate nohighlight">\(i\)</span> et <span class="math notranslate nohighlight">\(j\)</span> sont fixés et <span class="math notranslate nohighlight">\(k\)</span> prend toutes les valeurs
+comprises entre <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(p\)</span>. Si <span class="math notranslate nohighlight">\(k\neq j\)</span> alors <span class="math notranslate nohighlight">\(\delta_{kj}=0\)</span>, et si
+<span class="math notranslate nohighlight">\(k=j\)</span> alors <span class="math notranslate nohighlight">\(\delta_{kj}=1\)</span>. Donc dans la somme qui définit <span class="math notranslate nohighlight">\(c_{ij}\)</span>,
+tous les termes correspondant à des valeurs de <span class="math notranslate nohighlight">\(k\)</span> différentes de <span class="math notranslate nohighlight">\(j\)</span>
+sont nuls et il reste donc <span class="math notranslate nohighlight">\(c_{ij}=a_{ij}\delta_{jj}=a_{ij}1=a_{ij}\)</span>.
+Donc les matrices <span class="math notranslate nohighlight">\(AI_{p}\)</span> et <span class="math notranslate nohighlight">\(A\)</span> ont le même terme général et sont donc
+égales. L’égalité <span class="math notranslate nohighlight">\(I_{n}A=A\)</span> se démontre de la même façon. ◻</p>
+</div>
+<div class="section" id="puissance-dune-matrice">
+<h3>Puissance d’une matrice<a class="headerlink" href="#puissance-dune-matrice" title="Permalink to this headline">¶</a></h3>
+<p>Dans l’ensemble <span class="math notranslate nohighlight">\(M_{n}(\mathbb R)\)</span> des matrices carrées de taille
+<span class="math notranslate nohighlight">\(n \times n\)</span> à coefficients dans <span class="math notranslate nohighlight">\(\mathbb R\)</span>, la multiplication des
+matrices est une opération interne : si <span class="math notranslate nohighlight">\(A,B \in M_n(\mathbb R)\)</span> alors
+<span class="math notranslate nohighlight">\(AB \in M_n(\mathbb R)\)</span>.</p>
+<p>En particulier, on peut multiplier une matrice carrée par elle-même : on
+note <span class="math notranslate nohighlight">\(A^2 = A \times A\)</span>, <span class="math notranslate nohighlight">\(A^3 = A \times A \times A\)</span>.</p>
+<p>On peut ainsi définir les puissances successives d’une matrice :</p>
+<p><strong>Définition 1.7</strong>. Pour tout <span class="math notranslate nohighlight">\(A\in M_n(\mathbb R)\)</span>, on définit les
+puissances successives de <span class="math notranslate nohighlight">\(A\)</span> par <span class="math notranslate nohighlight">\(A^0=I_n\)</span> et <span class="math notranslate nohighlight">\(A^{p+1}=A^p \times A\)</span>
+pour tout <span class="math notranslate nohighlight">\(p\in\mathbb N\)</span>. Autrement dit,
+<span class="math notranslate nohighlight">\(A^p = \underbrace{A \times A \times \cdots \times A}_{p \text{ facteurs}}\)</span>.</p>
+<p><strong>Exemple 1.11</strong>. On cherche à calculer <span class="math notranslate nohighlight">\(A^{p}\)</span> avec <span class="math notranslate nohighlight">\(A=\begin{pmatrix} 1 &amp; 0 &amp; 1 \cr 0 &amp; -1 &amp; 0\cr 0 &amp; 0 &amp; 2 \cr \end{pmatrix}\)</span>. On calcule <span class="math notranslate nohighlight">\(A^{2}\)</span>, <span class="math notranslate nohighlight">\(A^3\)</span> et <span class="math notranslate nohighlight">\(A^{4}\)</span> et on obtient :</p>
+<div class="math notranslate nohighlight">
+\[A^{2}= \begin{pmatrix}
+1 &amp; 0 &amp; 3 \cr
+0 &amp; 1 &amp; 0\cr
+0 &amp; 0 &amp; 4 \cr
+\end{pmatrix}
+\qquad
+A^{3}=A^2 \times A =
+\begin{pmatrix}
+1 &amp; 0 &amp; 7 \cr
+0 &amp; -1&amp; 0\cr
+0 &amp; 0 &amp; 8 \cr
+\end{pmatrix}\]</div>
+<div class="math notranslate nohighlight">
+\[A^{4}=A^3 \times A =
+\begin{pmatrix}
+1 &amp; 0 &amp; 15 \cr
+0 &amp; 1&amp; 0\cr
+0 &amp; 0 &amp; 16 \cr
+\end{pmatrix}.\]</div>
+<p>L’observation de ces premières puissances permet de
+penser que la formule est : <span class="math notranslate nohighlight">\(A^{p}= \begin{pmatrix} 1 &amp; 0 &amp; 2^p-1 \cr 0 &amp; (-1)^{p}&amp; 0\cr 0 &amp; 0 &amp; 2^p \cr \end{pmatrix}\)</span>. Démontrons ce résultat par récurrence.</p>
+<p>Il est vrai pour <span class="math notranslate nohighlight">\(p=0\)</span> (on trouve l’identité). On le suppose vrai pour
+un entier <span class="math notranslate nohighlight">\(p\)</span> et on va le démontrer pour <span class="math notranslate nohighlight">\(p+1\)</span>. On a, d’après la
+définition, <span class="math notranslate nohighlight">\(A ^{p+1}=A ^{p} \times A = 
+\begin{pmatrix}
+1 &amp; 0       &amp; 2^p-1 \cr
+0 &amp; (-1)^{p}&amp; 0\cr
+0 &amp; 0       &amp; 2^p \cr
+\end{pmatrix} \times
+\begin{pmatrix}
+1 &amp; 0 &amp; 1 \cr
+0 &amp; -1&amp; 0\cr
+0 &amp; 0 &amp; 2 \cr
+\end{pmatrix}
+=\begin{pmatrix}
+1 &amp; 0       &amp; 2^{p+1}-1 \cr
+0 &amp; (-1)^{p+1}&amp; 0\cr
+0 &amp; 0       &amp; 2^{p+1} \cr
+\end{pmatrix}
+.\)</span></p>
+<p>Donc la propriété est démontrée.</p>
+</div>
+</div>
+<div class="section" id="determinant-dune-matrice">
+<h2>Déterminant d’une matrice<a class="headerlink" href="#determinant-dune-matrice" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="un-outil-la-transposition">
+<h3>Un outil: la transposition<a class="headerlink" href="#un-outil-la-transposition" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition 1.8</strong>. Transposition</p>
+<p>On appelle matrice transposée de la matrice <span class="math notranslate nohighlight">\(A\)</span>, et on note <span class="math notranslate nohighlight">\(A^T\)</span>, la
+matrice dont les coefficients de la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne sont les
+coefficients de la <span class="math notranslate nohighlight">\(j\)</span>-ème ligne de <span class="math notranslate nohighlight">\(A^T\)</span>.</p>
+<p>Si on note <span class="math notranslate nohighlight">\(a_{ij}\)</span> le coefficient sur le <span class="math notranslate nohighlight">\(i\)</span>-ème ligne et la <span class="math notranslate nohighlight">\(j\)</span>-ème
+colonne de <span class="math notranslate nohighlight">\(A\)</span>, alors <span class="math notranslate nohighlight">\(a_{ij}\)</span> se trouve sur le <span class="math notranslate nohighlight">\(j\)</span>-ème ligne et la
+<span class="math notranslate nohighlight">\(i\)</span>-ème colonne de la matrice <span class="math notranslate nohighlight">\(A^T\)</span>.</p>
+<p>On a donc, si
+<span class="math notranslate nohighlight">\(A = \big(a_{i,j}\big)_{\substack{1\leqslant i \leqslant n \\ 1\leqslant j \leqslant p}}\)</span>,
+alors
+<span class="math notranslate nohighlight">\(A^T = \big(a_{j,i}\big)_{\substack{1\leqslant j \leqslant p \\ 1\leqslant i \leqslant n}}\)</span>.</p>
+<p><strong>Exemple 1.12</strong>.</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{pmatrix}  2 &amp; 5 &amp; -1\\  0 &amp; 4 &amp; 3\end{pmatrix}\)</span> alors <span class="math notranslate nohighlight">\(A^T = \begin{pmatrix}  2 &amp; 0\\  5 &amp; 4\\  -1 &amp; 3\end{pmatrix}\)</span></p>
+<p><strong>Remarque 1.2</strong>. La matrice transposée est en quelque sorte une matrice
+“miroir”:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{cc}
+  &amp;   
+\begin{pmatrix} 
+ 2 &amp; 0\\
+ 5 &amp; 4\\
+ -1 &amp; 3\end{pmatrix}\\
+ &amp; \\
+\begin{pmatrix} 
+ 2 &amp; 5 &amp; -1\\
+ 0 &amp; 4 &amp; 3\end{pmatrix}
+  \end{array}\end{split}\]</div>
+</div>
+<div class="section" id="definition-du-determinant">
+<h3>Définition du déterminant<a class="headerlink" href="#definition-du-determinant" title="Permalink to this headline">¶</a></h3>
+<p><strong>Définition 1.9</strong>. Définition formelle (elle n’est pas à connaître)
+Nous allons caractériser le déterminant comme une application, qui à une
+matrice carrée associe un scalaire:
+<span class="math notranslate nohighlight">\(\det : M_n(\mathbb R) \longrightarrow \mathbb R,\)</span> telle que
+<span class="math notranslate nohighlight">\(\forall A \in M_n(\mathbb R),\quad \det(A) = \sum_{\sigma \in \Sigma_n} \varepsilon(\sigma)\prod_{i=1}^n a_{\sigma(i),i},\)</span>
+où <span class="math notranslate nohighlight">\(\Sigma_n\)</span> est l’ensemble des permutations de <span class="math notranslate nohighlight">\(\{1,\ldots,n\}\)</span> et
+<span class="math notranslate nohighlight">\(\varepsilon(\sigma)\)</span> la signature de la permutation <span class="math notranslate nohighlight">\(\sigma\)</span>.</p>
+<hr class="docutils" />
+<p><strong>Remarque 1.3</strong>. Qu’est-ce qu’une permutation ? (pour les curieux)</p>
+<p>Une permutation <span class="math notranslate nohighlight">\(\sigma\)</span> d’un ensemble de n éléments, par exemple
+<span class="math notranslate nohighlight">\(\{1,\ldots,n\}\)</span>, est un réarrangement des positions des éléments de cet
+ensemble. On les “réordonne”.<br />
+Par exemple, voici une permutation possible <span class="math notranslate nohighlight">\(\sigma\)</span> sur
+<span class="math notranslate nohighlight">\(\{1,\ldots,n\}\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\sigma(1) = 1\)</span>(pas de changement)<br />
+<span class="math notranslate nohighlight">\(\sigma(2) = 4\)</span>(2 est remplacé par 4)<br />
+<span class="math notranslate nohighlight">\(\sigma(3) = 2\)</span>(3 est remplacé par 2)<br />
+<span class="math notranslate nohighlight">\(\sigma(4) = 3\)</span>(4 est remplacé par 3)</p>
+<p>On note la permutation à l’aide d’un tableau, où la première ligne sont
+les éléments dans l’ordre naturel, et la seconde sont les éléments
+permutés correspondants: <span class="math notranslate nohighlight">\(\sigma : \begin{pmatrix} 
+ 1 &amp; 2 &amp; 3 &amp; 4\\
+ 1 &amp; 4 &amp; 2 &amp; 3\end{pmatrix}\)</span></p>
+<p><strong>Remarque 1.4</strong>. Signature d’une permutation (pour les curieux)</p>
+<p>Soit <span class="math notranslate nohighlight">\(\sigma\)</span> une permutation de <span class="math notranslate nohighlight">\(\{1,\ldots,n\}\)</span>.</p>
+<ul class="simple">
+<li><p>Soient <span class="math notranslate nohighlight">\(i &lt; j\)</span> deux entiers compris entre <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(n\)</span>. On dit que la
+paire <span class="math notranslate nohighlight">\(\{i,j\}\)</span> est en inversion pour <span class="math notranslate nohighlight">\(\sigma\)</span> si <span class="math notranslate nohighlight">\(\sigma(i)&gt;\sigma(j)\)</span></p></li>
+<li><p>Une permutation est dite <em><strong>paire</strong></em> si elle présente un nombre pair
+d’inversions, <em><strong>impaire</strong></em> sinon.</p></li>
+<li><p>La <em><strong>signature</strong></em> d’une permutation paire est 1 (on note
+<span class="math notranslate nohighlight">\(\varepsilon(\sigma) = 1\)</span>); celle d’une permutation impaire est -1 (on
+note <span class="math notranslate nohighlight">\(\varepsilon(\sigma) = -1\)</span>).</p></li>
+</ul>
+<p><strong>Exemple 1.13</strong>. Soit une matrice <span class="math notranslate nohighlight">\(A = \begin{pmatrix}  1 &amp; 4 &amp; -1\\  -2 &amp; 5 &amp; -3\\  6 &amp; 7 &amp; 8\end{pmatrix}\)</span></p>
+<p>Calculons son déterminant.</p>
+<p>Il existe 6 permutations de <span class="math notranslate nohighlight">\(\{1,2,3\}\)</span> dans <span class="math notranslate nohighlight">\(\{1,2,3\}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sigma_1=\begin{pmatrix} 
+ 1 &amp; 2 &amp; 3\\
+ 1 &amp; 2 &amp; 3\end{pmatrix}
+ \qquad
+\sigma_2=\begin{pmatrix} 
+1 &amp; 2 &amp; 3\\
+1 &amp; 3 &amp; 2\end{pmatrix}
+ \qquad
+\sigma_3=\begin{pmatrix} 
+1 &amp; 2 &amp; 3\\
+2 &amp; 1 &amp; 3\end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\sigma_4=\begin{pmatrix} 
+ 1 &amp; 2 &amp; 3\\
+ 2 &amp; 3 &amp; 1\end{pmatrix}
+ \qquad
+\sigma_5=\begin{pmatrix} 
+1 &amp; 2 &amp; 3\\
+3 &amp; 1 &amp; 2\end{pmatrix}
+ \qquad
+\sigma_6=\begin{pmatrix} 
+1 &amp; 2 &amp; 3\\
+3 &amp; 2 &amp; 1\end{pmatrix}\end{split}\]</div>
+<p>Par exemple pour la permutation <span class="math notranslate nohighlight">\(\sigma_3=\begin{pmatrix} 1 &amp; 2 &amp; 3\\ 2 &amp; 1 &amp; 3\end{pmatrix}\)</span>, on a <span class="math notranslate nohighlight">\(\varepsilon(\sigma_3) = - 1\)</span> car il y a
+une seule inversion. En effet <span class="math notranslate nohighlight">\(1&lt;2\)</span> mais <span class="math notranslate nohighlight">\(\sigma_3(1)&gt;\sigma_3(2)\)</span> car
+<span class="math notranslate nohighlight">\(\sigma_3(1)=2\)</span> et <span class="math notranslate nohighlight">\(\sigma_3(2)=1\)</span>. Les autres paires ne sont pas
+inversées:</p>
+<p><span class="math notranslate nohighlight">\(2&lt;3\)</span>et<span class="math notranslate nohighlight">\(\sigma_3(2)&lt;\sigma_3(3)\)</span><br />
+<span class="math notranslate nohighlight">\(1&lt;3\)</span>et<span class="math notranslate nohighlight">\(\sigma_3(1)&lt;\sigma_3(3)\)</span></p>
+<p>Et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_3(i),i}=a_{\sigma_3(1),1}.a_{\sigma_3(2),2}.a_{\sigma_3(3),3}=a_{2,1}.a_{1,2}.a_{3,3}=(-2).4.8\)</span><br />
+On trouve de la même façon:</p>
+<ul class="simple">
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_1\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_1) = + 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_1(i),i}=1.5.8\)</span></p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_2\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_2) = - 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_2(i),i}=1.7.(-3)\)</span></p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_3\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_3) = - 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_3(i),i}=(-2).4.8\)</span></p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_4\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_4) = + 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_4(i),i}=(-2).7.(-1)\)</span></p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_5\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_5) = + 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_5(i),i}=6.4.(-3)\)</span></p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(\sigma_6\)</span> : <span class="math notranslate nohighlight">\(\varepsilon(\sigma_6) = - 1\)</span>, et
+<span class="math notranslate nohighlight">\(\prod_{i=1}^n a_{\sigma_6(i),i}=6.5.(-1)\)</span><br />
+D’après la formule
+<span class="math notranslate nohighlight">\(\det(A) = \sum_{\sigma \in \Sigma_n} \varepsilon(\sigma)\prod_{i=1}^n a_{\sigma(i),i}\)</span>,<br />
+<span class="math notranslate nohighlight">\(\det(A) = {\color{red}+}1.5.8{\color{red}-}1.7.(-3){\color{red}-}(-2).4.8{\color{red}+}(-2).7.(-1){\color{red}+}6.4.(-3){\color{red}-}6.5.(-1)\)</span><br />
+On trouve finalement <span class="math notranslate nohighlight">\(\det(A)=97\)</span>.</p></li>
+</ul>
+<p><strong>Remarque 1.5</strong>. On note le déterminant d’une matrice <span class="math notranslate nohighlight">\(A = (a_{ij})\)</span>
+par :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det A \qquad \text{ ou } \qquad
+\left|\begin{array}{cccc}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp;  &amp; \vdots \\
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}
+\end{array}\right|.\end{split}\]</div>
+<p><strong>Théorème 1.1</strong> (Existence et d’unicité du déterminant). Il existe une
+unique application de <span class="math notranslate nohighlight">\(M_n(\mathbb R)\)</span> dans <span class="math notranslate nohighlight">\(\mathbb R\)</span>, appelée
+<em><strong>déterminant</strong></em>, telle que</p>
+<ul class="simple">
+<li><p>le déterminant est linéaire par rapport à chaque vecteur colonne,
+les autres étant fixés ;</p></li>
+<li><p>si une matrice <span class="math notranslate nohighlight">\(A\)</span> a deux colonnes identiques, alors son déterminant
+est nul ;</p></li>
+<li><p>le déterminant de la matrice identité <span class="math notranslate nohighlight">\(I_n\)</span> vaut <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="proprietes-du-determinant">
+<h3>Propriétés du déterminant<a class="headerlink" href="#proprietes-du-determinant" title="Permalink to this headline">¶</a></h3>
+<p><strong>Proposition 1.4</strong>. Soit <span class="math notranslate nohighlight">\(A \in M_n(\mathbb R)\)</span> une matrice ayant les
+colonnes <span class="math notranslate nohighlight">\(C_1, C_2, \ldots, C_n\)</span>. On note <span class="math notranslate nohighlight">\(A'\)</span> la matrice obtenue par
+une des opérations élémentaires sur les colonnes, qui sont :</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(C_i \leftarrow \lambda C_i\)</span> avec <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>: <span class="math notranslate nohighlight">\(A'\)</span> est obtenue
+en multipliant une colonne de <span class="math notranslate nohighlight">\(A\)</span> par un scalaire non nul. Alors
+<span class="math notranslate nohighlight">\(\det A' = \lambda \det A\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_i \leftarrow C_i+\lambda C_j\)</span> avec <span class="math notranslate nohighlight">\(\lambda \in \mathbb R\)</span> (et
+<span class="math notranslate nohighlight">\(j\neq i\)</span>): <span class="math notranslate nohighlight">\(A'\)</span> est obtenue en ajoutant à une colonne de <span class="math notranslate nohighlight">\(A\)</span> un
+multiple d’une autre colonne de <span class="math notranslate nohighlight">\(A\)</span>. Alors <span class="math notranslate nohighlight">\(\det A' = \det A\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(C_i \leftrightarrow C_j\)</span>: <span class="math notranslate nohighlight">\(A'\)</span> est obtenue en échangeant deux
+colonnes distinctes de <span class="math notranslate nohighlight">\(A\)</span>. Alors <span class="math notranslate nohighlight">\(\det A' = - \det A\)</span>.</p></li>
+</ol>
+<p><strong>Corollaire 1.1</strong>. Si une colonne <span class="math notranslate nohighlight">\(C_i\)</span> de la matrice <span class="math notranslate nohighlight">\(A\)</span> est
+combinaison linéaire des autres colonnes, alors <span class="math notranslate nohighlight">\(\det A=0\)</span>.</p>
+<p><strong>Théorème 1.2</strong>.   On a <span class="math notranslate nohighlight">\(\det (AB)=\det A \cdot \det B,\)</span> et
+<span class="math notranslate nohighlight">\(\det \big(A^T\big)=\det A.\)</span></p>
+</div>
+<div class="section" id="determinant-en-dimension-2-et-3">
+<h3>Déterminant en dimension <span class="math notranslate nohighlight">\(2\)</span> et <span class="math notranslate nohighlight">\(3\)</span><a class="headerlink" href="#determinant-en-dimension-2-et-3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="matrice-2-times-2">
+<h4>Matrice <span class="math notranslate nohighlight">\(2 \times 2\)</span><a class="headerlink" href="#matrice-2-times-2" title="Permalink to this headline">¶</a></h4>
+<p>En dimension <span class="math notranslate nohighlight">\(2\)</span>, le déterminant est très simple à calculer:
+<span class="math notranslate nohighlight">\(\det \begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix} = ad-bc.\)</span> C’est donc le
+produit des éléments sur la diagonale principale.</p>
+<p><img alt="prod_det_2D" src="../_images/prod_det_2D.jpg" /></p>
+</div>
+<div class="section" id="matrice-n-times-n">
+<h4>Matrice <span class="math notranslate nohighlight">\(n \times n\)</span><a class="headerlink" href="#matrice-n-times-n" title="Permalink to this headline">¶</a></h4>
+<p><strong>Définition 1.10</strong>. Mineur du coefficient - Cofacteur</p>
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> dans <span class="math notranslate nohighlight">\(\mathcal{M}_n(\mathbb R)\)</span>. On appelle <em><strong>mineur</strong></em> du
+coefficient <span class="math notranslate nohighlight">\(a_{ij}\)</span>, noté <span class="math notranslate nohighlight">\(D_{ij}\)</span> le determinant d’ordre <span class="math notranslate nohighlight">\(n-1\)</span> obtenu
+en suprimant à la matrice <span class="math notranslate nohighlight">\(A\)</span> sa <span class="math notranslate nohighlight">\(i\)</span>-ème ligne et sa <span class="math notranslate nohighlight">\(j\)</span>-ème colonne.</p>
+<p>On appelle <em><strong>cofacteur</strong></em> du coefficient <span class="math notranslate nohighlight">\(a_{ij}\)</span> et on note <span class="math notranslate nohighlight">\(A_{ij}\)</span>
+le nombre réel <span class="math notranslate nohighlight">\(A_{ij} = (-1)^{i+j}\times D_{ij}\)</span></p>
+<p><strong>Proposition 1.5</strong>. On peut calculer un déterminant en développant
+suivant une ligne ou une colonne. Par exemple si on calcule un
+déterminant d’ordre <span class="math notranslate nohighlight">\(n\)</span> en développant suivant la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne, on
+additionne les produits entre les coefficients de la <span class="math notranslate nohighlight">\(j\)</span>-ème colonne et
+leurs cofacteurs respectifs. Ce qui donne la formule suivante:</p>
+<div class="math notranslate nohighlight">
+\[det(A) = \sum_{k=1}^n a_{kj}A_{kj}\]</div>
+<p>Exemple : Calcul d’un det <span class="math notranslate nohighlight">\(3\times 3\)</span> en développant suivant la <span class="math notranslate nohighlight">\(1\)</span>-ère
+colonne <span class="math notranslate nohighlight">\(det(A) = a_{11}A_{11} + a_{21}A_{21}+a_{31}A_{31}.\)</span></p>
+<p>On peut aussi développer suivant une ligne : on dit qu’on calcule un
+déterminant d’ordre <span class="math notranslate nohighlight">\(n\)</span> en développant suivant la <span class="math notranslate nohighlight">\(i\)</span>-ème ligne lorsque
+l’on utilise la formule suivante: <span class="math notranslate nohighlight">\(det(A) = \sum_{k=1}^n a_{ik}A_{ik}\)</span></p>
+</div>
+<div class="section" id="matrice-3-times-3">
+<h4>Matrice <span class="math notranslate nohighlight">\(3 \times 3\)</span><a class="headerlink" href="#matrice-3-times-3" title="Permalink to this headline">¶</a></h4>
+<p><strong>Proposition 1.6</strong>. Soit <span class="math notranslate nohighlight">\(A \in M_3(\mathbb R)\)</span> une matrice
+<span class="math notranslate nohighlight">\(3 \times 3\)</span>: <span class="math notranslate nohighlight">\(A = \begin{pmatrix}
+      a_{11} &amp; a_{12} &amp; a_{13} \\
+      a_{21} &amp; a_{22} &amp; a_{23} \\
+      a_{31} &amp; a_{32} &amp; a_{33} \\
+      \end{pmatrix}.\)</span></p>
+<p>La formule suivante permet de calculer le déterminant de la matrice:</p>
+<div class="math notranslate nohighlight">
+\[\det A =
+a_{11} a_{22} a_{33}
++ a_{12} a_{23} a_{31}
++ a_{13} a_{21} a_{32}
+- a_{31} a_{22} a_{13}
+- a_{32} a_{23} a_{11}
+- a_{33} a_{21} a_{12}\; .\]</div>
+<p>Il existe un moyen facile de retenir cette formule, c’est la <em><strong>règle de
+Sarrus</strong></em> : on recopie les deux premières colonnes à droite de la
+matrice (colonnes grisées), puis on additionne les produits de trois
+termes en les regroupant selon la direction de la diagonale descendante
+(à gauche), et on soustrait ensuite les produits de trois termes
+regroupés selon la direction de la diagonale montante (à droite).</p>
+<p><img alt="Sarrus" src="../_images/Sarrus.jpg" /></p>
+<p><strong>Exemple 1.14</strong>. Calculons le déterminant de la matrice <span class="math notranslate nohighlight">\(A = \begin{pmatrix}  2 &amp; 1 &amp; 0\\  1 &amp; -1 &amp; 3\\  3 &amp; 2 &amp; 1 \end{pmatrix}\)</span>.</p>
+<p>Par la règle de Sarrus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\det A 
+&amp;= {\color{blue!100} 2\times (-1) \times 1 }
++{\color{blue!70} 1\times 3 \times  3 }
++{\color{blue!50} 0\times 1 \times 2 }\\
+&amp;\qquad -{\color{orange!100} 3\times (-1) \times 0 }
+-{\color{orange!70} 2\times 3 \times 2 }
+-{\color{orange!50} 1\times 1 \times 1 }
+= -6.  \end{aligned}\end{split}\]</div>
+<p>Attention : cette méthode ne s’applique pas pour les matrices de taille
+supérieure à <span class="math notranslate nohighlight">\(3\)</span>. Nous verrons d’autres méthodes qui s’appliquent aux
+matrices carrées de toute taille et donc aussi aux matrices <span class="math notranslate nohighlight">\(3\times3\)</span>.</p>
+</div>
+<div class="section" id="interpretation-geometrique-du-determinant">
+<h4>Interprétation géométrique du déterminant<a class="headerlink" href="#interpretation-geometrique-du-determinant" title="Permalink to this headline">¶</a></h4>
+<p>Nous allons voir qu’en dimension <span class="math notranslate nohighlight">\(2\)</span>, les déterminants correspondent à
+des aires et en dimension <span class="math notranslate nohighlight">\(3\)</span> à des volumes.</p>
+<p>Donnons-nous deux vecteurs
+<span class="math notranslate nohighlight">\(v_1= \left(\begin{smallmatrix}a\\c\end{smallmatrix}\right)\)</span> et
+<span class="math notranslate nohighlight">\(v_2= \left(\begin{smallmatrix}b\\d\end{smallmatrix}\right)\)</span> du plan
+<span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>. Ces deux vecteurs <span class="math notranslate nohighlight">\(v_1,v_2\)</span> déterminent un
+parallélogramme.</p>
+<p><img alt="det_geom" src="../_images/geom_det.jpg" /></p>
+<p><strong>Proposition 1.7</strong>. L’aire du parallélogramme est donnée par la valeur
+absolue du déterminant: <span class="math notranslate nohighlight">\(\mathcal{A}
+= \Big|\det(v_1,v_2)\Big|
+= \Big|\det
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}\Big|
+.\)</span></p>
+<p>De manière similaire, trois vecteurs de l’espace <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_1=\begin{pmatrix}a_{11}\\a_{21}\\a_{31}\end{pmatrix} \qquad
+v_2=\begin{pmatrix}a_{12}\\a_{22}\\a_{32}\end{pmatrix} \qquad
+v_3=\begin{pmatrix}a_{13}\\a_{23}\\a_{33}\end{pmatrix}\end{split}\]</div>
+<p>définissent un parallélépipède.</p>
+<p><img alt="det_volume" src="../_images/det_volume.jpg" /></p>
+<p>À partir de ces trois vecteurs on définit, en juxtaposant les colonnes,
+une matrice et un déterminant: <span class="math notranslate nohighlight">\(\det(v_1,v_2,v_3)=\det
+\begin{pmatrix}
+a_{11}&amp;a_{12}&amp;a_{13}\\
+a_{21}&amp;a_{22}&amp;a_{23}\\
+a_{31}&amp;a_{32}&amp;a_{33}
+\end{pmatrix}.\)</span></p>
+<p><strong>Proposition 1.8</strong>. Le volume du parallélépipède est donné par la
+valeur absolue du déterminant:</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{V} = \Big|\det(v_1,v_2,v_3)\Big|.\]</div>
+<p>On prendra comme unité d’aire dans <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> l’aire du carré unité
+dont les côtés sont les vecteurs de la base canonique
+<span class="math notranslate nohighlight">\(\left(\left(\begin{smallmatrix} 1 \\ 0 \end{smallmatrix} \right), \left(\begin{smallmatrix} 0 \\ 1 \end{smallmatrix} \right)\right)\)</span>, et
+comme unité de volume dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>, le volume du cube unité.</p>
+<p><em>Démonstration, pour les curieux..</em> Traitons le cas de la dimension <span class="math notranslate nohighlight">\(2\)</span>.
+Le résultat est vrai si
+<span class="math notranslate nohighlight">\(v_1=\left(\begin{smallmatrix}a\\0\end{smallmatrix}\right)\)</span> et
+<span class="math notranslate nohighlight">\(v_2=\left(\begin{smallmatrix}0\\d\end{smallmatrix}\right)\)</span>. En effet,
+dans ce cas on a affaire à un rectangle de côtés <span class="math notranslate nohighlight">\(|a|\)</span> et <span class="math notranslate nohighlight">\(|d|\)</span>, donc
+d’aire <span class="math notranslate nohighlight">\(|ad|\)</span>, alors que le déterminant de la matrice <span class="math notranslate nohighlight">\(\begin{pmatrix}  a&amp;0\\0&amp;d \end{pmatrix}\)</span> vaut <span class="math notranslate nohighlight">\(ad\)</span>.</p>
+<p><img alt="demo_2D" src="../_images/demo_2d.jpg" /></p>
+<p>Si les vecteurs <span class="math notranslate nohighlight">\(v_1\)</span> et <span class="math notranslate nohighlight">\(v_2\)</span> sont colinéaires alors le parallélogramme
+est aplati, donc d’aire nulle ; on calcule facilement que lorsque deux
+vecteurs sont colinéaires, leur déterminant est nul.</p>
+<p>Dans la suite on suppose que les vecteurs ne sont pas colinéaires.
+Notons <span class="math notranslate nohighlight">\(v_1= \left(\begin{smallmatrix}a\\c\end{smallmatrix}\right)\)</span> et
+<span class="math notranslate nohighlight">\(v_2= \left(\begin{smallmatrix}b\\d\end{smallmatrix}\right)\)</span>. Si
+<span class="math notranslate nohighlight">\(a\neq0\)</span>, alors <span class="math notranslate nohighlight">\(v'_2=v_2-\frac{b}{a}v_1\)</span> est un vecteur vertical:
+<span class="math notranslate nohighlight">\(v_2'=\left(\begin{smallmatrix}0\\d-\frac{b}{a}c\end{smallmatrix}\right)\)</span>.</p>
+<p>L’opération de remplacer <span class="math notranslate nohighlight">\(v_2\)</span> par <span class="math notranslate nohighlight">\(v_2'\)</span> ne change pas l’aire du
+parallélogramme.</p>
+<p><img alt="demo2_2D" src="../_images/demo2_2D.jpg" /></p>
+<p>Cette opération ne change pas non plus le déterminant car on a toujours:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det (v_1,v_2')=
+\det \begin{pmatrix}
+a &amp; 0 \\ b &amp; d-\frac{b}{a}c
+\end{pmatrix}
+=ad-bc=\det(v_1,v_2)\, .\end{split}\]</div>
+<p><img alt="demo3_2D" src="../_images/demo3_2D.jpg" /></p>
+<p>On pose alors
+<span class="math notranslate nohighlight">\(v'_1= \left(\begin{smallmatrix}a\\0\end{smallmatrix}\right)\)</span>: c’est un
+vecteur horizontal. Encore une fois l’opération de remplacer <span class="math notranslate nohighlight">\(v_1\)</span> par
+<span class="math notranslate nohighlight">\(v_1'\)</span> ne change ni l’aire des parallélogrammes ni le déterminant car</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det(v_1',v_2')=
+\det \begin{pmatrix}
+a&amp;0\\
+0&amp;d-\frac{b}{a}c
+\end{pmatrix}
+=ad-bc=\det(v_1,v_2)\, .\end{split}\]</div>
+<p>On s’est donc ramené au premier cas d’un rectangle aux côtés parallèles
+aux axes, pour lequel le résultat est déjà acquis. ◻</p>
+</div>
+</div>
+</div>
+<div class="section" id="inverse-dune-matrice">
+<h2>Inverse d’une matrice<a class="headerlink" href="#inverse-dune-matrice" title="Permalink to this headline">¶</a></h2>
+<p><strong>Définition 1.11</strong>. Une matrice <span class="math notranslate nohighlight">\(A\)</span> de <span class="math notranslate nohighlight">\(\mathcal{M}_{n}(\mathbb R)\)</span> est
+inversible si et seulement si il existe une matrice <span class="math notranslate nohighlight">\(B\)</span> dans
+<span class="math notranslate nohighlight">\(\mathcal{M}_{n}(\mathbb R)\)</span> telle que <span class="math notranslate nohighlight">\(AB=BA=I_n.\)</span> On note <span class="math notranslate nohighlight">\(A^{-1}\)</span>
+cette matrice.</p>
+<p>Rappelons la définition des cofacteurs, qui va nous être utile.</p>
+<p><strong>Rappel 1.1</strong>.</p>
+<ul class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(A\)</span> dans <span class="math notranslate nohighlight">\(\mathcal{M}_n(\mathbb R)\)</span>. On appelle <em><strong>mineur</strong></em> du
+coefficient <span class="math notranslate nohighlight">\(a_{ij}\)</span>, noté <span class="math notranslate nohighlight">\(D_{ij}\)</span> le déterminant d’ordre <span class="math notranslate nohighlight">\(n-1\)</span>
+obtenu en suprimant la <span class="math notranslate nohighlight">\(i\)</span>-ème ligne et la <span class="math notranslate nohighlight">\(j\)</span>-ième colonne du
+déterminant de <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p>On appelle <em><strong>cofacteur</strong></em> du coefficient <span class="math notranslate nohighlight">\(a_{ij}\)</span> et on note
+<span class="math notranslate nohighlight">\(A_{ij}\)</span> le nombre réel <span class="math notranslate nohighlight">\(A_{ij} = (-1)^{i+j}\times D_{ij}\)</span></p></li>
+<li><p>La matrice <span class="math notranslate nohighlight">\((A_{ij})\)</span> s’appelle la <em><strong>comatrice de <span class="math notranslate nohighlight">\(A\)</span></strong></em>, on la
+note <span class="math notranslate nohighlight">\({\rm Com}(A)\)</span></p></li>
+</ul>
+<p>On peut alors introduire une méthode systématique pour l’inversion d’une
+matrice :</p>
+<p><strong>Proposition 1.9</strong>. Soit <span class="math notranslate nohighlight">\(A\)</span> une matrice de <span class="math notranslate nohighlight">\(\mathcal{M}_n(\mathbb R)\)</span>
+inversible, alors <span class="math notranslate nohighlight">\(A^{-1} = \frac{1}{det(A)}\times {\rm Com}(A)^T.\)</span></p>
+</div>
+<div class="section" id="resolution-de-systemes-et-inversion-de-matrices">
+<h2>Résolution de systèmes et inversion de matrices<a class="headerlink" href="#resolution-de-systemes-et-inversion-de-matrices" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lien-entre-inversion-de-matrices-et-resolution-de-systemes">
+<h3>Lien entre inversion de matrices et résolution de systèmes<a class="headerlink" href="#lien-entre-inversion-de-matrices-et-resolution-de-systemes" title="Permalink to this headline">¶</a></h3>
+<p>Soit un système de trois équations à trois inconnues:<br />
+<span class="math notranslate nohighlight">\((S) : \left\{ \begin{array}{l}  x + y +2z = 9 \\  4x + y + z =9\\  x-2y+3z=6  \end{array} \right.\)</span><br />
+Alors on peut définir:</p>
+<ul class="simple">
+<li><p>La matrice 3 x 3 dont les coefficients sont les facteurs de <span class="math notranslate nohighlight">\(x, y\)</span>
+et <span class="math notranslate nohighlight">\(z\)</span> sur chaque ligne : <span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;1&amp;2\\
+4&amp;1&amp;1\\
+1&amp;-2&amp;3
+\end{pmatrix}\)</span></p></li>
+<li><p>La matrice colonne dont les coefficients sont les valeurs du
+deuxième terme : <span class="math notranslate nohighlight">\(B=\begin{pmatrix}
+9\\
+9\\
+6
+\end{pmatrix}\)</span></p></li>
+<li><p>Et la matrice colonne dont les coefficients sont les inconnues
+<span class="math notranslate nohighlight">\(x, y\)</span> et <span class="math notranslate nohighlight">\(z\)</span> recherchées : <span class="math notranslate nohighlight">\(X=\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}\)</span></p></li>
+</ul>
+<p>Alors on remarque que le système peut se réécrire comme : <span class="math notranslate nohighlight">\(AX=B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+1&amp;1&amp;2\\
+4&amp;1&amp;1\\
+1&amp;-2&amp;3
+\end{pmatrix}.\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix} = \begin{pmatrix}
+9\\
+9\\
+6
+\end{pmatrix}\end{split}\]</div>
+<p>Si la matrice A est inversible alors on peut écrire:
+<span class="math notranslate nohighlight">\(A^{-1}AX=A^{-1}B\)</span>.Soit <span class="math notranslate nohighlight">\(X=A^{-1}B\)</span></p>
+<p><strong>Proposition 1.10</strong>. On considère un système d’équations linéaires de
+<span class="math notranslate nohighlight">\(n\)</span> équations à <span class="math notranslate nohighlight">\(n\)</span> inconnues écrit sous sa forme générale suivante:<br />
+<span class="math notranslate nohighlight">\(\left\{ \begin{array}{l}  a_{11}x_{1} + a_{12}x_{2} + ... + a_{1j}x_{j} + ... + a_{1n}x_{n} = b_{1} \\  a_{21}x_{1} + a_{22}x_{2} + ... + a_{2j}x_{j} + ... + a_{2n}x_{n} = b_{2} \\  ...\\  a_{i1}x_{1} + a_{i2}x_{2} + ... + a_{ij}x_{j} + ... + a_{in}x_{n} = b_{i} \\  ...\\  a_{n1}x_{1} + a_{n2}x_{2} + ... + a_{nj}x_{j} + ... + a_{nn}x_{n} = b_{n} \\  \end{array} \right.\)</span></p>
+<p>Alors le système peut s’écrire comme l’égalité entre :</p>
+<ul class="simple">
+<li><p>le produit d’une matrice <span class="math notranslate nohighlight">\(A\)</span> carrée d’ordre <span class="math notranslate nohighlight">\(n\)</span> de coefficient
+général <span class="math notranslate nohighlight">\(a_{ij}\)</span> avec une matrice colonne <span class="math notranslate nohighlight">\(X\)</span> contenant les
+inconnues <span class="math notranslate nohighlight">\(x_{1},x_{2},x_{3},...x_{n}\)</span>;</p></li>
+<li><p>et une matrice colonne <span class="math notranslate nohighlight">\(B\)</span> contenant les termes constants
+<span class="math notranslate nohighlight">\(b_{1},b_{2},b_{3},...b_{n}\)</span>.</p></li>
+</ul>
+<p>On a donc l’écriture matricielle suivante: <span class="math notranslate nohighlight">\(A.X = B\)</span></p>
+<p>Si la matrice <span class="math notranslate nohighlight">\(A\)</span> est inversible, on peut alors multiplier chaque terme
+de l’égalité précédente par <span class="math notranslate nohighlight">\(A^{-1}\)</span>:
+<span class="math notranslate nohighlight">\(A^{-1}.A.X=A^{-1}.B\)</span> Soit
+<span class="math notranslate nohighlight">\(X=A^{-1}B\)</span></p>
+<p>On détermine ainsi la matrice colonne <span class="math notranslate nohighlight">\(X\)</span> contenant les inconnues
+<span class="math notranslate nohighlight">\(x_{1},x_{2},x_{3},...x_{n}\)</span> du système, et le système est résolu.</p>
+</div>
+<div class="section" id="methode-de-gauss">
+<h3>Méthode de Gauss<a class="headerlink" href="#methode-de-gauss" title="Permalink to this headline">¶</a></h3>
+<p><strong>Exemple 1.15</strong>. On reprend le même système que tout à l’heure.
+Résoudre le système revient à trouver l’inverse d’une matrice. Une
+technique classique et très efficace est la technique de Gauss: on prend
+la première équation, et on la soustrait aux autres de manière à effacer
+tous les x des deux autres équations. Ensuite, on prend la deuxième
+équation, et on efface tous les y de la dernière équation. Il ne reste
+alors plus que le z dans la dernière équation, ce qui permet ensuite de
+“remonter” et de remplacer le z dans la deuxième équation afin
+d’obtenir le y, puis de remplacer le y et le z dans la première
+équation, trouvant ainsi x.<br />
+<span class="math notranslate nohighlight">\((S) : \left\{ \begin{array}{l}  x + y +2z = 9 \\  4x + y + z =9 \\  x-2y+3z=6  \end{array} \right.\)</span><br />
+<span class="math notranslate nohighlight">\((S) : \left\{ \begin{array}{l}  x + y +2z = 9 \\  -3y -7z =-27 \leftarrow (L.2-4 \times L.1) \\  -3y+z=6 \leftarrow (L.3 - L.1)  \end{array} \right.\)</span><br />
+<span class="math notranslate nohighlight">\((S) : \left\{ \begin{array}{l}  x + y +2z = 9 \\  -3y -7z =-27 \\  8z=33 \leftarrow (L.3 - L.2)  \end{array} \right.\)</span><br />
+On en déduit que <span class="math notranslate nohighlight">\(z=\frac{33}{8}\)</span>, puis que
+<span class="math notranslate nohighlight">\(y=\frac{7z-27}{-3} = -\frac{5}{8}\)</span> et enfin que
+<span class="math notranslate nohighlight">\(x=9-y-2z = \frac{11}{8}\)</span></p>
+<p>Il est possible de résoudre le système <span class="math notranslate nohighlight">\(AX=Y\)</span> avec cette méthode, afin
+d’inverser la matrice A!</p>
+</div>
+<div class="section" id="resolution-de-systemes-par-inversion-directe-avec-la-methode-de-la-comatrice">
+<h3>Résolution de systèmes par inversion directe avec la méthode de la comatrice<a class="headerlink" href="#resolution-de-systemes-par-inversion-directe-avec-la-methode-de-la-comatrice" title="Permalink to this headline">¶</a></h3>
+<p>On commence par calculer le déterminant de la matrice <span class="math notranslate nohighlight">\(A\)</span> (le calculer !
+On pourra par exemple développer par rapport à la première colonne, ou
+bien utiliser la règle de Sarrus):</p>
+<p>On détermine ensuite la comatrice puis sa transposée:</p>
+<p><span class="math notranslate nohighlight">\({\rm Com}(A)\)</span>=et <span class="math notranslate nohighlight">\({\rm Com}(A)^T=\)</span></p>
+<p>On trouve : <span class="math notranslate nohighlight">\(A^{-1} = \frac{1}{det(A)}.{\rm Com}(A)^T\)</span>=</p>
+<p>Finalement <span class="math notranslate nohighlight">\(X=A^{-1}B=\)</span></p>
+<p>On trouve alors les solutions du système d’équations:</p>
+<p><span class="math notranslate nohighlight">\(\left\{ \begin{array}{l}
+                       x =  \\
+                        y =\\
+                        z=
+                     \end{array} \right.\)</span></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../Part1/Correction.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Correction du TD</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="TD.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Travaux Dirigés</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

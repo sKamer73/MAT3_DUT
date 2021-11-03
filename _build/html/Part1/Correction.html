@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correction du TD &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Cours" href="../Part2/Cours.html" />
+    <link rel="prev" title="Travaux Dirigés" href="TD.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Examens et Corrections
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/EXAM-1.html">
+   Sujet Contrôle DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/Correction_Ct1.html">
+   Brève Correction - DSC1
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part1/Correction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart1/Correction.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part1/Correction.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part1/Correction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="correction-du-td">
+<h1>Correction du TD<a class="headerlink" href="#correction-du-td" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans tout le TD, on se place dans un repère orthonormé <span class="math notranslate nohighlight">\(\mathcal{E} = (O,\vec{i},\vec{j},\vec{k})\)</span>.</p>
+</div>
+<p><strong>Exercice 1.</strong> On souhaite exprimer l’aire S d’un triangle à l’aide d’un produit vectoriel. On considère le triangle <span class="math notranslate nohighlight">\(ABC\)</span> et on note les coordonnées des points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>.</p>
+<p>Dans le plan <span class="math notranslate nohighlight">\((ABC)\)</span>, les formules de trigonométrie donnent la relation suivante:</p>
+<div class="math notranslate nohighlight">
+\[
+S=\frac{1}{2}\begin{Vmatrix}\vec{AB}\end{Vmatrix} \times \begin{Vmatrix}\vec{AC}\end{Vmatrix} \times \begin{vmatrix}sin\alpha\end{vmatrix}
+\]</div>
+<p>où <span class="math notranslate nohighlight">\(\alpha\)</span> est l’angle orienté <span class="math notranslate nohighlight">\((\vec{AB},\vec{AC})\)</span>.</p>
+<ul class="simple">
+<li><p>Exprimer l’aire <span class="math notranslate nohighlight">\(S\)</span> à l’aide d’un produit vectoriel.</p></li>
+<li><p>Calculer l’aire <span class="math notranslate nohighlight">\(S\)</span>.</p></li>
+</ul>
+<p><strong>Corrigé.</strong></p>
+<ol class="simple">
+<li><p>On remarque via la formule du cours que <span class="math notranslate nohighlight">\(S=\frac{1}{2} ||\vec{AB} \wedge \vec{AC}||\)</span></p></li>
+<li><p>On fait le calcul: <span class="math notranslate nohighlight">\(\vec{AB} = \begin{pmatrix} 1 \\ 4 \\ -6 \end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(\vec{AC} = \begin{pmatrix} 0 \\ 3 \\ -2 \end{pmatrix}\)</span></p></li>
+</ol>
+<p>On en déduit: <span class="math notranslate nohighlight">\(\vec{AB} \wedge \vec{AC} = \begin{pmatrix} 10 \\ 2 \\ 3 \end{pmatrix}\)</span>
+D’où <span class="math notranslate nohighlight">\(S = \frac{1}{2} \sqrt{100+4+9} = 5.31\)</span> (l’unité de S est alors l’unité que l’on choisit pour les coordonnées des points A,B,C: si les points sont en m, la surface est en m², cm =&gt; cm², etc.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="n">sqrt</span> <span class="p">(</span><span class="mi">100</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">9</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.315072906367325
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exercice 2.</strong> On considère le point <span class="math notranslate nohighlight">\(A(-2;0;5)\)</span> et le vecteur <span class="math notranslate nohighlight">\(\vec{n}\begin{pmatrix}
+2\\-6\\4
+\end{pmatrix}\)</span>.</p>
+<p>Déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> passant par <span class="math notranslate nohighlight">\(A\)</span> et de vecteur normal <span class="math notranslate nohighlight">\(\vec{n}\)</span>.</p>
+<p><strong>Corrigé.</strong></p>
+<p>On utilise la démonstration du cours (plus facile à retenir que la formule): soit M<span class="math notranslate nohighlight">\((x,y,z)\)</span> un point du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>, alors M vérifie l’équation: <span class="math notranslate nohighlight">\(\vec{AM} \cdot \vec{n} = 0\)</span>. Cela s’écrie: <span class="math notranslate nohighlight">\(\begin{pmatrix} x+2 \\ y \\ x-5 \end{pmatrix} \cdot \begin{pmatrix} 2\\-6\\4 \end{pmatrix} = 0 \leftrightarrow 2(x+2)-6y+4(z-5) = 0 \leftrightarrow x-3y+2z-8=0\)</span>.</p>
+<p><strong>Exercice 3.</strong> Soient les points <span class="math notranslate nohighlight">\(A(1;-2;7)\)</span>, <span class="math notranslate nohighlight">\(B(2;2;1)\)</span> et <span class="math notranslate nohighlight">\(C(1;1;5)\)</span>. En utilisant un produit vectoriel, déterminer une équation cartésienne du plan <span class="math notranslate nohighlight">\((ABC)\)</span>.</p>
+<p><strong>Corrigé.</strong> Le produit vectoriel va nous permettre d’obtenir une normale au plan (ABC). Prenons donc deux vecteurs du plan : <span class="math notranslate nohighlight">\(\vec{AB}\)</span> et <span class="math notranslate nohighlight">\(\vec{AC}\)</span>. Le vecteur <span class="math notranslate nohighlight">\(\vec{n} = \vec{AB} \wedge \vec{AC} \)</span> est alors normal au plan.</p>
+<p><span class="math notranslate nohighlight">\(\vec{AB} = \begin{pmatrix} 1 \\ 4 \\ -6 \end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(\vec{AC} = \begin{pmatrix} 0 \\ 3 \\ -2 \end{pmatrix}\)</span></p>
+<p>On en déduit: <span class="math notranslate nohighlight">\(\vec{n} = \begin{pmatrix} 10 \\ 2 \\ 3 \end{pmatrix}\)</span>. On reprend alors la procédure de l’exercice 2:</p>
+<p>On utilise la démonstration du cours (plus facile à retenir que la formule): soit M<span class="math notranslate nohighlight">\((x,y,z)\)</span> un point du plan (ABC), alors M vérifie l’équation: <span class="math notranslate nohighlight">\(\vec{AM} \cdot \vec{n} = 0\)</span>. Cela s’écrie: <span class="math notranslate nohighlight">\(\begin{pmatrix} x-1 \\ y+2 \\ x-7 \end{pmatrix} \cdot \begin{pmatrix} 10 \\ 2 \\ 3 \end{pmatrix} = 0 \leftrightarrow 10(x-1)+2(y+2)+3(x-7)= 0 \leftrightarrow 10x+2y+3x-28=0\)</span>.</p>
+<p><strong>Exercice 4.</strong> On considère la droite <span class="math notranslate nohighlight">\((AB)\)</span> avec <span class="math notranslate nohighlight">\(A(1;2;-1)\)</span> et <span class="math notranslate nohighlight">\(B(0;1;3)\)</span>, ainsi que le plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> d’équation : <span class="math notranslate nohighlight">\(x+y+z-1=0\)</span>.</p>
+<ul class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\((AB)\)</span> et <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> sont sécants.</p></li>
+<li><p>Déterminer les coordonnées de leur point d’intersection <span class="math notranslate nohighlight">\(I\)</span>. On commencera par déterminer une représentation paramétrique de <span class="math notranslate nohighlight">\((AB)\)</span>.</p></li>
+</ul>
+<p><strong>Corrigé.</strong> Dans cet exercice, le plus simple est de faire les deux en même temps. Deux techniques sont possibles: soit par une représentation paramétrique de la droite, soit par une représentation en système. L’énoncé indique d’utiliser une forme paramétrique, ce qui s’écrit:
+Soit I un point de (AB) et de <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>, alors:</p>
+<ul class="simple">
+<li><p><strong>Appartenance de I à la droite (AB):</strong> <span class="math notranslate nohighlight">\(\vec{AI} = \lambda \vec{AB}\)</span>, ce qui s’écrit: <span class="math notranslate nohighlight">\(\begin{pmatrix}x_I-1 \\ y_I - 2 \\ z_I +1 \end{pmatrix} = \lambda \begin{pmatrix} -1 \\ -1 \\ 4 \end{pmatrix}\)</span>, ce qui s’écrit sous la forme d’un système comme:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left\{ \begin{array}{l}x_I=1-\lambda \\ y_I=2-\lambda \\ z_I = -1+4\lambda \end{array} \right. \quad
+\end{split}\]</div>
+<ul class="simple">
+<li><p><strong>Appartenance de I au plan</strong> <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>: En réinjectant les coordonnées de I dans l’équation du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>, on obtient: <span class="math notranslate nohighlight">\(1-\lambda + 2- \lambda -1 + 4 \lambda -1 = 0\)</span>, ce qui done alors: <span class="math notranslate nohighlight">\(1 + 2\lambda = 0\)</span>, d’où: <span class="math notranslate nohighlight">\( \lambda = - \frac{1}{2}\)</span>.</p></li>
+</ul>
+<p>On en déduit les coordonnées de <span class="math notranslate nohighlight">\(I(\frac{3}{2},\frac{5}{2},-3\)</span>) en réinjectant <span class="math notranslate nohighlight">\(\lambda\)</span> dans le système ci-dessus. Si l’on n’avait pas trouvé de solution pour I, cela aurait démontré que les droites ne s’intersectionnent pas.</p>
+<p><strong>Exercice 5.</strong> Montrer que les représentations paramétriques suivantes définissent le même plan :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left\{ \begin{array}{l}x=2+s+2t \\ y=2+2s+t \\ z=1-s-t \end{array} \right.
+\quad \text{ et } \quad  \left\{ \begin{array}{l} x=1+3s'-t'\\ y=3+3s'+t'\\ z=1-2s' \end{array} \right.
+\end{split}\]</div>
+<p><strong>Correction.</strong>
+On  est ici face à une représentation paramétrique du plan, càd la première définition du cours: soit trois points (A,B,C) du plan d’intérêt, alors tout vecteur <span class="math notranslate nohighlight">\(\vec{AM}\)</span> avec M un point du plan peut s’écrire comme une combinaison linéaire de deux vecteurs non colinéaires du plans tels que <span class="math notranslate nohighlight">\(\vec{AB}\)</span> et <span class="math notranslate nohighlight">\(\vec{BC}\)</span> (par exemple). Cela s’écrit formellement: <span class="math notranslate nohighlight">\(\exists (s,t) \in \mathbb{R}², t.q. \ \vec{AM} = s \vec{AB} + t \vec{BC}\)</span>.</p>
+<p>Pour montrer que ces deux représentations se confondent, il faut soit montrer:</p>
+<ol class="simple">
+<li><p>Un point est partagé, les deux normales sont colinéaires.</p></li>
+<li><p>Trois points sont partagés.</p></li>
+<li><p>Les deux équations cartésiennes sont proportionelles.</p></li>
+</ol>
+<p>Nous allons traiter la méthode 1. On détermine tout d’abord, pour chacun des deux plans: 2 vecteurs directeurs du plan, on fait le produit vectoriel pour obtenir une normale. Ensuite, on prend un point dans l’une des deux représentations, et on vérifie que ce point appartient à l’autre représentation.</p>
+<ul class="simple">
+<li><p>Représentation 1. Vecteur <span class="math notranslate nohighlight">\(\vec{u}_1=\begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}\)</span> (valeurs devant le <span class="math notranslate nohighlight">\(s\)</span>) et <span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{pmatrix}2 \\ 1 \\ -1 \end{pmatrix}\)</span> (valeurs devant le <span class="math notranslate nohighlight">\(t\)</span>). On obtient <span class="math notranslate nohighlight">\(\vec{n}_1 = \vec{u}_1 \wedge \vec{v}_1 = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \wedge \begin{pmatrix}2 \\ 1 \\ -1 \end{pmatrix} = \begin{pmatrix} -1 \\ -1 \\ -3 \end{pmatrix}\)</span></p></li>
+<li><p>Représentation 2. Vecteur <span class="math notranslate nohighlight">\(\vec{u}_2=\begin{pmatrix} 3 \\ 3 \\ -2 \end{pmatrix}\)</span> (valeurs devant le <span class="math notranslate nohighlight">\(s'\)</span>) et <span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}\)</span> (valeurs devant le <span class="math notranslate nohighlight">\(t'\)</span>). On obtient <span class="math notranslate nohighlight">\(\vec{n}_2 = \vec{u}_2 \wedge \vec{v}_2 = \begin{pmatrix} 3 \\ 3 \\ -2 \end{pmatrix} \wedge \begin{pmatrix}-1 \\ 1 \\ 0\end{pmatrix} = \begin{pmatrix} 2 \\ 2 \\ 6 \end{pmatrix}\)</span></p></li>
+</ul>
+<p>On a donc que les deux normales sont colinéaires: <span class="math notranslate nohighlight">\(\vec{n}_1 = -\frac{1}{2} \vec{n}_2\)</span>.
+On vérifie ensuite qu’un point de la représentation 1 appartient bien à la représentation2. En prenant le point s=t=0, on trouve que le point A(2,2,1) appartient à la représentation 1. On résoud alors le système en s’ et t’ pour vérifier que le point A vérifie la deuxième représentation.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left\{ \begin{array}{l}x_A=1+3s'-t'\\ y_A=3+3s'+t'\\ z_A=1-2s' \end{array} \right.
+\quad \text{ d'où } \quad  \left\{ \begin{array}{l} 2=1+3s'-t'\\ 2=3+3s'+t'\\ 1=1-2s' \end{array} \right.
+\end{split}\]</div>
+<p>On déduit de la troisième équation que s’=0. On déduit de la deuxième équation que <span class="math notranslate nohighlight">\(t'=-1\)</span>. On réinjecte alors s’ et t’ dans la première équation pour vérifier que A vérifie la représentation paramétrique n°2. On trouve bien: <span class="math notranslate nohighlight">\( 2=2\)</span>. Les deux représentations sont donc bien identiques.</p>
+<p><strong>Exercice 6.</strong></p>
+<p>  1. Déterminer la distance du point <span class="math notranslate nohighlight">\(A\)</span> au plan <span class="math notranslate nohighlight">\((P)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A(1,0,2)\)</span> et <span class="math notranslate nohighlight">\((P): 2x+y+z+4=0\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A(3,2,1)\)</span> et <span class="math notranslate nohighlight">\((P): -x+5y-4z=5\)</span>.</p></li>
+</ul>
+<p>  2. (** Un peu plus difficile) Calculer la distance du point <span class="math notranslate nohighlight">\(A(1,2,3)\)</span> à la droite
+<span class="math notranslate nohighlight">\((D):  \left\{ \begin{array}{l}
+-2x+y-3z=1\\ x+z=1  \end{array} \right.\)</span></p>
+<p><strong>Correction.</strong></p>
+<p>  1.</p>
+<p>On applique la formule du cours:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d(A,\mathcal{P}) = \frac{|2x_A+y_A+z_A+4|}{\sqrt{2²+1²+1²}} = 4.08\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(d(A,\mathcal{P}) = \frac{|-x_A+5 y_A-4z_A-5|}{\sqrt{1²+5²+4²}} = 0.308\)</span></p></li>
+</ul>
+<p>La formule du cours est bien expliqué <a class="reference external" href="https://fr.wikipedia.org/wiki/Distance_d%27un_point_%C3%A0_un_plan">ici</a></p>
+<p>  2.</p>
+<p>La formule nécessaire est <a class="reference external" href="https://fr.wikipedia.org/wiki/Distance_d%27un_point_%C3%A0_une_droite#Dans_l%27espace">ici</a>.
+Comment la trouver seul.e? En faisant un dessin, et en appliquant SOHCAHTOA.</p>
+<p>On trouve un vecteur directeur <span class="math notranslate nohighlight">\(\vec{u}\)</span> avec deux points; par exemple, en prenant x=0 dans la représentation paramétrique de la droite, on trouve le point B(0,4,1) et en prenant z=0 on trouve le point C(1,3,0), ce qui donne <span class="math notranslate nohighlight">\(\vec{u} = \vec{BC} = \begin{pmatrix} 1 \\ -1 \\ -1 \end{pmatrix}\)</span>.</p>
+<p>On trouve alors <span class="math notranslate nohighlight">\( d(A,\mathcal{D}) = \frac{||\vec{AB}\wedge \vec{u}||}{||\vec{u}||} = \frac{||\begin{pmatrix} -4 \\ -3 \\ -1 \end{pmatrix}||}{\sqrt{1²+1²+1²}} = 2.94\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="nb">print</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">4</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.08248290463863
+0.3086066999241838
+2.943920288775949
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="TD.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Travaux Dirigés</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../Part2/Cours.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Cours</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
