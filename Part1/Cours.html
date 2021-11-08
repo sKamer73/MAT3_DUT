@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Cours &#8212; Cours de Math 3</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,19 +34,19 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -96,7 +97,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Géométrie dans l'espace
  </span>
@@ -118,7 +119,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Matrices
  </span>
@@ -135,7 +136,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Probabilités
  </span>
@@ -152,7 +153,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Examens et Corrections
  </span>
@@ -166,6 +167,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../Part5/Correction_Ct1.html">
    Brève Correction - DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/Analyse_notes_DSC1.html">
+   Analyse Rapide des notes - DSC1
   </a>
  </li>
 </ul>
@@ -363,18 +369,18 @@
         
               <div>
                 
-  <div class="section" id="cours">
+  <section id="cours">
 <h1>Cours<a class="headerlink" href="#cours" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Dans ce premier chapitre, nous allons aborder la géométrie dans l’espace. Une introduction aux outils mathématiques utilisés pour décrire les forces, vitesses et positions des différents objets nous environnant est donnée.</p>
 <p>Une vidéo de M. Ouin présentant une version similaire de ce cours est disponible à l’adresse suivante: <a class="reference external" href="https://www.youtube.com/watch?v=9LGTMhIp7ig">https://www.youtube.com/watch?v=9LGTMhIp7ig</a> .</p>
-<div class="section" id="definition">
+<section id="definition">
 <h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
 <p>Dans l’ensemble de ce chapitre on définit un repère orthonormé <span class="math notranslate nohighlight">\(\mathcal{E} = (O,\vec{i},\vec{j},\vec{k})\)</span> dans l’espace .</p>
-</div>
-</div>
-<div class="section" id="vecteurs-rappels">
+</section>
+</section>
+<section id="vecteurs-rappels">
 <h2>Vecteurs, rappels<a class="headerlink" href="#vecteurs-rappels" title="Permalink to this headline">¶</a></h2>
 <p><strong>Définition.</strong> Un vecteur est un objet mathématique, généralement noté à l’aide d’une flèche, caractérisé par sa direction, son sens ainsi que sa norme.</p>
 <p>Par exemple si <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> sont deux points de l’espace, de coordonnées respectives <span class="math notranslate nohighlight">\(\begin{pmatrix} x_A \\ y_A \\ z_A \end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(\begin{pmatrix} x_B \\ y_B \\ z_B \end{pmatrix}\)</span>, le vecteur <span class="math notranslate nohighlight">\(\vec{AB}\)</span> a pour coordonnées <span class="math notranslate nohighlight">\(\begin{pmatrix}x_A-y_A \\ x_B-y_B \\ z_B-z_A \end{pmatrix}\)</span>, il a pour direction la droite <span class="math notranslate nohighlight">\((AB)\)</span>, pour sens <span class="math notranslate nohighlight">\(A\)</span> vers <span class="math notranslate nohighlight">\(B\)</span> et pour norme :</p>
@@ -389,10 +395,10 @@
 ||\vec{u}|| = \sqrt{x_u^2+y_u^2 + z_u^2}
 \]</div>
 <p><strong>Exemple.</strong> En mécanique, les vitesses et les forces sont toutes représentées par des vecteurs. Ces derniers contiennent l’information sur la direction et l’ampleur des phénomènes. Les vecteurs sont donc des outils très pratiques dans ce domaine. Il est fréquent d’écrire un vecteur sous la forme: norme <span class="math notranslate nohighlight">\(\cdot\)</span> vecteur direction, par exemple: soit <span class="math notranslate nohighlight">\(\vec{F}\)</span> une force, il peut être utile d’écrire <span class="math notranslate nohighlight">\(\vec{F} = F \vec{u}\)</span> avec <span class="math notranslate nohighlight">\(F\)</span> la norme du vecteur <span class="math notranslate nohighlight">\(\vec{F}\)</span> (<span class="math notranslate nohighlight">\(F=||\vec{F}||\)</span>) et <span class="math notranslate nohighlight">\(\vec{u}\)</span> le vecteur unitaire indiquant la direction de la force (<span class="math notranslate nohighlight">\(\vec{u} = \frac{\vec{F}}{F}\)</span>).</p>
-</div>
-<div class="section" id="operation-sur-les-vecteurs-dans-l-espace">
+</section>
+<section id="operation-sur-les-vecteurs-dans-l-espace">
 <h2>Opération sur les vecteurs dans l’espace<a class="headerlink" href="#operation-sur-les-vecteurs-dans-l-espace" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="produit-scalaire">
+<section id="produit-scalaire">
 <h3>Produit scalaire<a class="headerlink" href="#produit-scalaire" title="Permalink to this headline">¶</a></h3>
 <p>Soient <span class="math notranslate nohighlight">\(\vec{u}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}\)</span> deux vecteurs de coordonnées <span class="math notranslate nohighlight">\(\begin{pmatrix} x_u \\ y_u \\ z_u \end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(\begin{pmatrix} x_v \\ y_v \\ z_v \end{pmatrix}\)</span>.</p>
 <p>On appelle produit scalaire de deux vecteurs et on note par <span class="math notranslate nohighlight">\(\cdot\)</span> la quantité (réelle, ce n’est pas un vecteur !) :
@@ -407,15 +413,15 @@ On remarquera en particulier que :</p>
 \]</div>
 <p>où <span class="math notranslate nohighlight">\((\vec{u},\vec{v})\)</span> est l’angle orienté formé par les vecteurs <span class="math notranslate nohighlight">\(\vec{u}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}\)</span>.\</p>
 <p><strong>Exemple.</strong> Un cycliste prenant le vent de face, de côté ou de l’arrière ne ressentira pas du tout les mêmes frottements dûs à l’air. En fait, la composante du vent influant sur la puissance qu’il doit développer est celle projetée dans la direction de son déplacement. Mathématiquement, soit <span class="math notranslate nohighlight">\(\vec{v}\)</span> la vitesse du vent dans le référentiel du cycliste et <span class="math notranslate nohighlight">\(\vec{u}\)</span> le vecteur unitaire indiquant la direction de déplacement du cycliste. Alors, la composante influente dans son déplacement sera <span class="math notranslate nohighlight">\(\vec{v} \cdot \vec{u}\)</span>. La même chose s’applique en voiture et donc pour expliquer la consommation d’essence.</p>
-</div>
-<div class="section" id="orthogonalite-de-deux-vecteurs">
+</section>
+<section id="orthogonalite-de-deux-vecteurs">
 <h3>Orthogonalité de deux vecteurs<a class="headerlink" href="#orthogonalite-de-deux-vecteurs" title="Permalink to this headline">¶</a></h3>
 <p>On déduit aisément de l’expression géométrique du produit scalaire que si <span class="math notranslate nohighlight">\(\vec{u}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}\)</span> sont deux vecteurs orthogonaux alors leur produit scalaire est nul. On a en fait le résultat plus général suivant :</p>
 <p><strong>Proposition 1.</strong> On dit que deux vecteurs sont orthogonaux si et seulement si leur produit scalaire est nul, autrement dit :
 <span class="math notranslate nohighlight">\(\vec{u} \perp \vec{v} \Leftrightarrow \vec{u} \cdot \vec{v} =0.\)</span></p>
 <p><strong>Exemple.</strong> Un vent de côté n’influencera pas la demande en puissance du cycliste.</p>
-</div>
-<div class="section" id="operation-sur-les-vecteurs">
+</section>
+<section id="operation-sur-les-vecteurs">
 <h3>Opération sur les vecteurs<a class="headerlink" href="#operation-sur-les-vecteurs" title="Permalink to this headline">¶</a></h3>
 <p>Soient <span class="math notranslate nohighlight">\(\vec{u}\)</span> et <span class="math notranslate nohighlight">\(\vec{v}\)</span> deux vecteurs de coordonnées <span class="math notranslate nohighlight">\(\begin{pmatrix} x_u \\ y_u \\ z_u \end{pmatrix}\)</span> et <span class="math notranslate nohighlight">\(\begin{pmatrix} x_v \\ y_v \\ z_v \end{pmatrix}\)</span>, alors :</p>
 <ul class="simple">
@@ -424,18 +430,18 @@ On remarquera en particulier que :</p>
 </ul>
 <p><strong>Exemple.</strong> La vitesse du cycliste influe sur son ressenti de la vitesse du vent. Soit <span class="math notranslate nohighlight">\(\vec{v}_{vent}\)</span> la vitesse du vent lorsque le cycliste est à l’arrêt, et soit <span class="math notranslate nohighlight">\(\vec{v}_{cycliste}\)</span> la vitesse du cycliste. La vitesse du vent telle que ressentie par le cycliste sera alors <span class="math notranslate nohighlight">\(\vec{v}_{vent}-\vec{v}_{cycliste}\)</span>.</p>
 <p><strong>Question bonus</strong>: Si un vent provenant de la direction sud-ouest et d’intensité 30 km/h souffle sur le cycliste qui circule vers le nord, quelle vitesse devra-t-il avoir pour que le vent ne lui apporte plus d’aide?</p>
-</div>
-<div class="section" id="produit-vectoriel">
+</section>
+<section id="produit-vectoriel">
 <h3>Produit vectoriel<a class="headerlink" href="#produit-vectoriel" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="triedre-direct">
+<section id="triedre-direct">
 <h4>Trièdre direct<a class="headerlink" href="#triedre-direct" title="Permalink to this headline">¶</a></h4>
 <p>Soit <span class="math notranslate nohighlight">\(\vec{u},\vec{v},\vec{w}\)</span>  trois vecteurs de l’espace <span class="math notranslate nohighlight">\(\mathcal{E}\)</span>. On dit que <span class="math notranslate nohighlight">\((\vec{u},\vec{v},\vec{w})\)</span> est un triède direct si :</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\vec{u},\vec{v},\vec{w}\)</span> ne sont pas coplanaires</p></li>
 <li><p><span class="math notranslate nohighlight">\(\vec{u},\vec{v},\vec{w}\)</span> vérifient la règle des trois doigts (pouce, index, majeur).</p></li>
 </ul>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h4>Produit vectoriel<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>On peut enfin définir dans l’espace, et uniquement dans l’espace, le produit vectoriel.</p>
 <p><strong>Définition.</strong></p>
@@ -465,17 +471,17 @@ Soient <span class="math notranslate nohighlight">\(\vec{u},\vec{v}\)</span>  de
 <li><p><span class="math notranslate nohighlight">\(\vec{u} \wedge \vec{v} =-\vec{v} \wedge \vec{u}\)</span>.</p></li>
 </ul>
 <p><strong>Exemple.</strong> En mécanique, le moment appliqué par une force se définit au moyen du produit vectoriel: soit O l’axe de référence, P le point d’application d’une force <span class="math notranslate nohighlight">\(\vec{F}\)</span>, le moment appliqué par cette force s’écrit <span class="math notranslate nohighlight">\(M_O = \vec{OP} \wedge \vec{F}\)</span>. On peut alors retrouver la notion de bras de levier: Si <span class="math notranslate nohighlight">\(\vec{OP}\)</span> et <span class="math notranslate nohighlight">\(\vec{F}\)</span> sont perpendiculaires (comme dans le cas d’un poids au bout d’une grue), on a alors <span class="math notranslate nohighlight">\(||M_O|| = OP \times F\)</span>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="equation-cartesienne-d-un-plan-dans-l-espace">
+</section>
+</section>
+</section>
+<section id="equation-cartesienne-d-un-plan-dans-l-espace">
 <h2>Equation cartésienne d’un plan dans l’espace<a class="headerlink" href="#equation-cartesienne-d-un-plan-dans-l-espace" title="Permalink to this headline">¶</a></h2>
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span> trois points non alignés de l’espace, on appelle plan de l’espace <span class="math notranslate nohighlight">\(\mathcal{E}\)</span> et on note <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> le plan <span class="math notranslate nohighlight">\((ABC)\)</span>. Pour rappel,  <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> est l’ensemble des points <span class="math notranslate nohighlight">\(M\)</span> de <span class="math notranslate nohighlight">\(\mathcal{E}\)</span> tels que <span class="math notranslate nohighlight">\(\vec{AM} = \lambda_1 \vec{AB} + \lambda_2 \vec{AC}\)</span> quand <span class="math notranslate nohighlight">\(\lambda_1\)</span> et <span class="math notranslate nohighlight">\(\lambda_2\)</span> parcourent <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> :
 $<span class="math notranslate nohighlight">\(
 \mathcal{P} = \{M \in \mathcal{E},\quad \vec{AM} = \lambda_1 \vec{AB}+\lambda_2 \vec{AC},\ \lambda_1, \lambda_2 \in \mathbb{R}\}
 \)</span>$</p>
 <p>On dira que <span class="math notranslate nohighlight">\(\vec{AB}\)</span> et <span class="math notranslate nohighlight">\(\vec{AC}\)</span> sont deux vecteurs directeurs de <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>.</p>
-<div class="section" id="determination-de-l-equation-cartesienne">
+<section id="determination-de-l-equation-cartesienne">
 <h3>Détermination de l’équation cartésienne.<a class="headerlink" href="#determination-de-l-equation-cartesienne" title="Permalink to this headline">¶</a></h3>
 <p>Soit <span class="math notranslate nohighlight">\(\vec{n}=\begin{pmatrix}a \\ b \\ c \end{pmatrix}\)</span> un vecteur normal au plan <span class="math notranslate nohighlight">\((ABC) = : \mathcal{P}\)</span>. Alors, pour tout point <span class="math notranslate nohighlight">\(M\)</span> de coordonnées <span class="math notranslate nohighlight">\((x,y,z)\)</span> du plan :
 <span class="math notranslate nohighlight">\(\vec{AM} \cdot \vec{n} = 0.\)</span>
@@ -489,16 +495,16 @@ L’ensemble des points de <span class="math notranslate nohighlight">\(\mathcal
 <span class="math notranslate nohighlight">\(ax+by + cz + d = 0,\)</span>
 où au moins un des réels <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> et <span class="math notranslate nohighlight">\(c\)</span> est différent de 0, forme un plan affine <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> admettant <span class="math notranslate nohighlight">\(\vec{n}=\begin{pmatrix}a \\ b \\ c \end{pmatrix}\)</span> comme vecteur normal. On parle d’équation cartésienne du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> dans l’espace.</p>
 <p><strong>Exemple.</strong> D’après sa définition, le vecteur <span class="math notranslate nohighlight">\(\vec{AB} \wedge \vec{AC}\)</span> est normal au plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>.</p>
-</div>
-<div class="section" id="distance-d-un-point-a-un-plan">
+</section>
+<section id="distance-d-un-point-a-un-plan">
 <h3>Distance d’un point à un plan<a class="headerlink" href="#distance-d-un-point-a-un-plan" title="Permalink to this headline">¶</a></h3>
 <p>Soit <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> un plan d’équation cartésienne <span class="math notranslate nohighlight">\(ax + by + cz +d =0\)</span> et soit <span class="math notranslate nohighlight">\(M\)</span> un point quelconque de l’espace de coordonnées <span class="math notranslate nohighlight">\((x_M,y_M,z_M)\)</span>. La distance du point <span class="math notranslate nohighlight">\(M\)</span> au plan, notée <span class="math notranslate nohighlight">\(d(M,\mathcal{P})\)</span> est donnée par :
 <span class="math notranslate nohighlight">\(d(M,\mathcal{P}) = \frac{|ax_M+ by_M + cz_M + d|}{\sqrt{a^2+b^2+c^2}}.\)</span>
 C’est la plus petite distance du point <span class="math notranslate nohighlight">\(M\)</span> à n’importe quel point du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>. Le point du plan <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> qui réalise cette distance est appelé \textbf{projeté orthogonal de <span class="math notranslate nohighlight">\(M\)</span> sur <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>}.</p>
 <p><strong>Question bonus:</strong> Le démontrer !</p>
-</div>
-</div>
-<div class="section" id="equation-d-une-droite-dans-l-espace">
+</section>
+</section>
+<section id="equation-d-une-droite-dans-l-espace">
 <h2>Equation d’une droite dans l’espace<a class="headerlink" href="#equation-d-une-droite-dans-l-espace" title="Permalink to this headline">¶</a></h2>
 <p>Soient <span class="math notranslate nohighlight">\(A(x_A;y_A;z_A)\)</span>, <span class="math notranslate nohighlight">\(B(x_B;y_B;z_A)\)</span> deux points de l’espace. La droite <span class="math notranslate nohighlight">\((AB)\)</span> est l’ensemble des points <span class="math notranslate nohighlight">\(M\)</span> de <span class="math notranslate nohighlight">\(\mathcal{E}\)</span>  tels que <span class="math notranslate nohighlight">\(\vec{AM} = \lambda .\vec{AB} \)</span> quand <span class="math notranslate nohighlight">\(\lambda\)</span> parcourt <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> :
 <span class="math notranslate nohighlight">\((AB) = \{M \in \mathcal{E},\quad \vec{AM} = \lambda. \vec{AB},\ \lambda \in \mathbb{R}\}.\)</span>
@@ -541,8 +547,8 @@ z = \lambda (z_B-z_A)+ z_A
 <p>On l’appelle système d’équation caractéristique de <span class="math notranslate nohighlight">\((AB)\)</span>.</p>
 <p><strong>Remarque.</strong> Il s’agit en fait des équations de deux plan de l’espace <span class="math notranslate nohighlight">\(\mathcal{E}\)</span>. Dans l’espace, une droite est ainsi caractérisée comme l’intersection de deux plans.</p>
 <p><strong>Question bonus:</strong> Le démontrer !</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

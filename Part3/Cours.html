@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Cours &#8212; Cours de Math 3</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,19 +34,19 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -96,7 +97,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Géométrie dans l'espace
  </span>
@@ -118,7 +119,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Matrices
  </span>
@@ -135,7 +136,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Probabilités
  </span>
@@ -152,7 +153,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Examens et Corrections
  </span>
@@ -166,6 +167,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../Part5/Correction_Ct1.html">
    Brève Correction - DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part5/Analyse_notes_DSC1.html">
+   Analyse Rapide des notes - DSC1
   </a>
  </li>
 </ul>
@@ -439,9 +445,9 @@
         
               <div>
                 
-  <div class="section" id="cours">
+  <section id="cours">
 <h1>Cours<a class="headerlink" href="#cours" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction-1">
+<section id="introduction-1">
 <h2>Introduction [1]<a class="headerlink" href="#introduction-1" title="Permalink to this headline">¶</a></h2>
 <p>La théorie des probabilités fournit des modèles mathématiques permettant
 l’étude d’expériences dont le résultat ne peut être prévu avec une
@@ -487,10 +493,10 @@ ou de les invalider. Par exemple si quelqu’un a 60 bonnes réponses sur
 » que le hasard ? Sur les <span class="math notranslate nohighlight">\(n\)</span> objets prélevés en sortie de chaîne, <span class="math notranslate nohighlight">\(k\)</span>
 sont défectueux. Peut-on en déduire quelque chose sur la qualité de la
 production globale ?</p>
-</div>
-<div class="section" id="reflexions-sur-le-hasard">
+</section>
+<section id="reflexions-sur-le-hasard">
 <h2>Réflexions sur le hasard<a class="headerlink" href="#reflexions-sur-le-hasard" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="simuler-le-hasard">
+<section id="simuler-le-hasard">
 <h3>Simuler le hasard<a class="headerlink" href="#simuler-le-hasard" title="Permalink to this headline">¶</a></h3>
 <p><strong>Hasard</strong> : de l’arabe <em>az-zahr</em> (dé à jouer), nommé d’après l’arabe
 <em>zahr</em> (« fleur ») car la face gagnante du dé portait une fleur.</p>
@@ -532,8 +538,8 @@ comportement alétoire de dizaines de milliers de cellules et de
 centaines de milliers de cellules. Un générateur de nombres aléatoires
 performant devient alors indispensable.[3] A notre échelle, la fonction
 ALEA() d’excel sera largement suffisante !</p>
-</div>
-<div class="section" id="leffet-rateau">
+</section>
+<section id="leffet-rateau">
 <h3>L’effet “rateau”<a class="headerlink" href="#leffet-rateau" title="Permalink to this headline">¶</a></h3>
 <p>Dans les images ci-dessous, laquelle est celle dont la répartition est
 la plus conforme au hasard pur ?[4]</p>
@@ -555,14 +561,14 @@ artificiellement les données.[5]<br />
 Cette attente excessive d’étalement est appelé l’<em>effet râteau</em>.<br />
 Attention donc, un <em>tirage</em> uniforme donne une <em>répartition</em> non
 uniforme !</p>
-</div>
-</div>
-<div class="section" id="elements-de-vocabulaire-et-notions-cles">
+</section>
+</section>
+<section id="elements-de-vocabulaire-et-notions-cles">
 <h2>Eléments de vocabulaire et Notions clés<a class="headerlink" href="#elements-de-vocabulaire-et-notions-cles" title="Permalink to this headline">¶</a></h2>
 <p>L’objectif de ce chapitre est définir la notion de variable aléatoire et
 de rappeler les principales lois de probabilité. Commençons par
 introduire certaines notions à l’aide d’un exemple.</p>
-<div class="section" id="ensemble-des-eventualites-variable-aleatoire">
+<section id="ensemble-des-eventualites-variable-aleatoire">
 <h3>Ensemble des éventualités, Variable aléatoire<a class="headerlink" href="#ensemble-des-eventualites-variable-aleatoire" title="Permalink to this headline">¶</a></h3>
 <p>Soit un jeu de lancer de pièce, où l’on observe le résultat du lancer:
 pile, ou face. Notons <span class="math notranslate nohighlight">\(\Omega\)</span> l’ensemble des évènements élémentaires
@@ -600,8 +606,8 @@ alors: <span class="math notranslate nohighlight">\(\begin{aligned}
 T : \quad &amp;\Omega &amp;\rightarrow &amp;\quad\mathbb R\\
 &amp;(\omega_{1},\omega_{2}) &amp;\rightarrow &amp;\quad inf\{\omega_{1},\omega_{2}\}
 \end{aligned}\)</span></p>
-</div>
-<div class="section" id="mesure-de-probabilite">
+</section>
+<section id="mesure-de-probabilite">
 <h3>Mesure de probabilité<a class="headerlink" href="#mesure-de-probabilite" title="Permalink to this headline">¶</a></h3>
 <p>Quelle proportion associer à ces évènements ? Et comment la mesurer ?
 C’est une <strong>mesure de probabilité</strong>, notée <span class="math notranslate nohighlight">\(\mathbb{P}\)</span> qui jouera ce
@@ -619,8 +625,8 @@ de <span class="math notranslate nohighlight">\(1/2\)</span> et on notera :</p>
 <p>Cet ensemble de données sera appelé <strong>la loi de <span class="math notranslate nohighlight">\(X\)</span></strong>.Certaines de ces
 lois sont classiques: en l’occurrence, il s’agit d’une loi de Bernoulli
 de paramètre <span class="math notranslate nohighlight">\(1/2\)</span>, on écrira <span class="math notranslate nohighlight">\(X\sim \mathcal{B}(\dfrac{1}{2}).\)</span></p>
-</div>
-<div class="section" id="fonction-de-repartition">
+</section>
+<section id="fonction-de-repartition">
 <h3>Fonction de répartition<a class="headerlink" href="#fonction-de-repartition" title="Permalink to this headline">¶</a></h3>
 <p><strong>Définition.</strong> La loi de la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> est déterminée par
 sa fonction de répartition <span class="math notranslate nohighlight">\(F_X\)</span>. C’est la fonction de <span class="math notranslate nohighlight">\(\mathbb R\)</span> dans
@@ -639,8 +645,8 @@ appartient à l’intervalle <span class="math notranslate nohighlight">\([a,b]\
 <span class="math notranslate nohighlight">\(\lim_{x\to -\infty}F_X(x)=0 \text{ et }\lim_{x\to +\infty} F_X(x)  =1.\)</span>
 On notera donc que pour toute variable aléatoire réelle,
 <span class="math notranslate nohighlight">\(\mathbb{P}(X\leqslant x) = 1- \mathbb{P} ( X &gt; x)\)</span></p>
-</div>
-<div class="section" id="independance-de-variables-aleatoires">
+</section>
+<section id="independance-de-variables-aleatoires">
 <h3>Indépendance de variables aléatoires<a class="headerlink" href="#independance-de-variables-aleatoires" title="Permalink to this headline">¶</a></h3>
 <p><strong>Définition.</strong> Soient <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> deux variables aléatoires. On dit que
 <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> sont indépendantes si, pour tout intervalle <span class="math notranslate nohighlight">\(I\)</span> et <span class="math notranslate nohighlight">\(J\)</span> de
@@ -660,17 +666,17 @@ et identiquement distribuées).</p>
 <p>Nous allons maintenant distinguer deux types de variables aléatoire :
 les variable aléatoires <strong>discrètes</strong> et les variables aléatoires
 <strong>continues</strong>.</p>
-</div>
-<div class="section" id="probabilites-conditionnelles">
+</section>
+<section id="probabilites-conditionnelles">
 <h3>Probabilités conditionnelles<a class="headerlink" href="#probabilites-conditionnelles" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id1">
+<section id="id1">
 <h4>Probabilités conditionnelles<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La probabilité conditionnelle de <span class="math notranslate nohighlight">\(A\)</span> sachant <span class="math notranslate nohighlight">\(B\)</span> est
 définie, lorsque <span class="math notranslate nohighlight">\(\mathbb{P}(B)\)</span> est non nulle, par:
 <span class="math notranslate nohighlight">\(\mathbb{P}(A|B)=\dfrac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}\)</span></p>
 <p>Cette formule porte le nom de formule de Bayes.</p>
-</div>
-<div class="section" id="probabilites-totales">
+</section>
+<section id="probabilites-totales">
 <h4>Probabilités totales<a class="headerlink" href="#probabilites-totales" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> Soit <span class="math notranslate nohighlight">\((B_{k})_{k=1,2, ...}\)</span> une famille finie ou infinie
 dénombrable d’évènements deux à deux incompatibles (c’est-à-dire que
@@ -688,10 +694,10 @@ un système complet d’évènements.<br />
 <span class="math notranslate nohighlight">\(\mathbb{P}(A)=\sum_{k}\mathbb{P}(B_{k}).\mathbb{P}(A|B_{k})\)</span></p>
 <p>ou encore</p>
 <p><span class="math notranslate nohighlight">\(\mathbb{P}(B_{k}|A)=\dfrac{\mathbb{P}(B_{k}).\mathbb{P}(A|B_{k})}{\sum_{i}\mathbb{P}(B_{i}).\mathbb{P}(A|B_{i})}\)</span></p>
-</div>
-</div>
-</div>
-<div class="section" id="le-cas-discret">
+</section>
+</section>
+</section>
+<section id="le-cas-discret">
 <h2>Le cas discret<a class="headerlink" href="#le-cas-discret" title="Permalink to this headline">¶</a></h2>
 <p>Lorsqu’une variable aléatoire est à valeurs dans un ensemble discret
 fini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n\}\)</span> ou infini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n,\cdots \}\)</span>
@@ -704,7 +710,7 @@ ce cas précis, <strong>il suffit de connaitre la probabilité de chacun des
 <p>Il suffit donc de connaître la famille de poids
 <span class="math notranslate nohighlight">\((\mathbb{P}(X = x_k))_{k \geqslant 0}\)</span> pour déterminer la loi de <span class="math notranslate nohighlight">\(X\)</span>.
 On appelle loi de <span class="math notranslate nohighlight">\(X\)</span> cette famille.</p>
-<div class="section" id="esperance-et-variance-dune-variable-aleatoire-discrete">
+<section id="esperance-et-variance-dune-variable-aleatoire-discrete">
 <h3>Espérance et variance d’une variable aléatoire discrète<a class="headerlink" href="#esperance-et-variance-dune-variable-aleatoire-discrete" title="Permalink to this headline">¶</a></h3>
 <p><strong>Définition 1.1</strong>. Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire discrète à valeur
 dans un sous ensemble fini <span class="math notranslate nohighlight">\(\{x_1,\cdots,x_n\}\)</span> de loi <span class="math notranslate nohighlight">\(\mathbb{P}\)</span>. On
@@ -757,10 +763,10 @@ et <span class="math notranslate nohighlight">\(Y\)</span> : <span class="math n
 <li><p>On a
 <span class="math notranslate nohighlight">\({\rm Var}(X) = \mathbb E[(X-\mathbb E[X])^2] = \mathbb E[X^2] - (\mathbb E[X])^2.\)</span></p></li>
 </ol>
-</div>
-<div class="section" id="les-lois-discretes-usuelles">
+</section>
+<section id="les-lois-discretes-usuelles">
 <h3>Les lois discrètes usuelles<a class="headerlink" href="#les-lois-discretes-usuelles" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="loi-uniforme-sur-un-ensemble-fini-de-reels">
+<section id="loi-uniforme-sur-un-ensemble-fini-de-reels">
 <h4>Loi uniforme sur un ensemble fini de réels<a class="headerlink" href="#loi-uniforme-sur-un-ensemble-fini-de-reels" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi uniforme sur
 l’ensemble de réels à <span class="math notranslate nohighlight">\(n\)</span> éléments <span class="math notranslate nohighlight">\(\{x_{1}, . . . , x_{n}\}\)</span> si on a
@@ -771,8 +777,8 @@ il n’y a aucune raison qu’une issue soit favorisée par rapport à
 l’autre. Par exemple dans le cas d’un jet de dé non truqué, alors le
 nombre de points indiqué par un dé suit la loi uniforme sur
 <span class="math notranslate nohighlight">\(\{1, 2, 3, 4, 5, 6\}\)</span>.</p>
-</div>
-<div class="section" id="loi-de-bernoulli">
+</section>
+<section id="loi-de-bernoulli">
 <h4>Loi de Bernoulli<a class="headerlink" href="#loi-de-bernoulli" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi de Bernoulli de
 paramètre <span class="math notranslate nohighlight">\(p\)</span> (<span class="math notranslate nohighlight">\(p \in [0,1]\)</span>), si elle ne prend que deux valeurs <span class="math notranslate nohighlight">\(0\)</span> et
@@ -798,8 +804,8 @@ X=0 &amp; \text{si } \omega=&quot;face&quot; &amp; \text{(cas d'échec)}
 \end{array} \right.\)</span><br />
 <span class="math notranslate nohighlight">\(X\)</span> suit alors la loi de Bernoulli de paramètre <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>, ce qu’on
 peut noter <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(\frac{1}{3})\)</span></p>
-</div>
-<div class="section" id="loi-binomiale">
+</section>
+<section id="loi-binomiale">
 <h4>Loi binomiale<a class="headerlink" href="#loi-binomiale" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi de binomiale de
 paramètre <span class="math notranslate nohighlight">\((n,p)\)</span>, où <span class="math notranslate nohighlight">\(n \in \mathbb{N}^*\)</span> et <span class="math notranslate nohighlight">\(p\in [0,1]\)</span>, si <span class="math notranslate nohighlight">\(X\)</span> est à
@@ -837,8 +843,8 @@ tombée sur pile durant les 100 lancers. On aura alors
 <span class="math notranslate nohighlight">\(X \sim \mathcal{B}(100,\frac{1}{3})\)</span>.<br />
 La probabilité de tomber exactement 40 fois sur pile vaudra:<br />
 <span class="math notranslate nohighlight">\(\mathbb{P}(X=40)=C_{100}^{40} (\frac{1}{3})^{40}(1-\frac{1}{3})^{100-40} = C_{100}^{40} (\frac{1}{3})^{40}(\frac{2}{3})^{60} = 0,031\)</span></p>
-</div>
-<div class="section" id="loi-de-poisson">
+</section>
+<section id="loi-de-poisson">
 <h4>Loi de poisson<a class="headerlink" href="#loi-de-poisson" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi de poisson de
 paramètre <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>, si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>
@@ -901,8 +907,8 @@ de <span class="math notranslate nohighlight">\(k\)</span> pour une variable al�
 <span class="math notranslate nohighlight">\(\lambda = 4\)</span></p>
 <p><img alt="" src="../_images/poisson10.png" />
 <span class="math notranslate nohighlight">\(\lambda = 10\)</span></p>
-</div>
-<div class="section" id="loi-geometrique">
+</section>
+<section id="loi-geometrique">
 <h4>Loi géométrique<a class="headerlink" href="#loi-geometrique" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi géométrique de
 paramètre <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(p\in [0,1]\)</span> si <span class="math notranslate nohighlight">\(X\)</span> est à valeur dans <span class="math notranslate nohighlight">\(\mathbb{N}^*\)</span> et</p>
@@ -943,10 +949,10 @@ résultat.<br />
 <span class="math notranslate nohighlight">\(\mathcal{G}(p)\)</span>, avec p=0,5.</p>
 <p><strong>Remarque.</strong> La loi géométrique est une version discrétisée de la loi
 exponentielle. Ce sont toutes les deux des lois “sans mémoire”.</p>
-</div>
-</div>
-</div>
-<div class="section" id="le-cas-continu">
+</section>
+</section>
+</section>
+<section id="le-cas-continu">
 <h2>Le cas continu<a class="headerlink" href="#le-cas-continu" title="Permalink to this headline">¶</a></h2>
 <p>Lorsqu’une variable aléatoire est à valeur dans un ensemble continu
 (dans un intervalle de <span class="math notranslate nohighlight">\(\mathbb R\)</span>), elle prend alors une infinité non
@@ -972,7 +978,7 @@ alors sa fonction de répartition <span class="math notranslate nohighlight">\(F
 <span class="math notranslate nohighlight">\(\int_{-\infty}^{b} f_X(y){\rm d}y,\ \int_{a}^{+\infty} f_X(y){\rm d}y\text{ et }\int_{-\infty}^{+\infty} f_X(y){\rm d}y,\)</span>
 comme
 <span class="math notranslate nohighlight">\(\lim_{a\to -\infty},\ \lim_{b\to +\infty},\ \lim_{a\to -\infty,\ b\to +\infty} \int_{a}^{b} f_X(y){\rm d}y.\)</span></p>
-<div class="section" id="esperance-et-variance-dune-variable-aleatoire-continue">
+<section id="esperance-et-variance-dune-variable-aleatoire-continue">
 <h3>Éspérance et variance d’une variable aléatoire continue<a class="headerlink" href="#esperance-et-variance-dune-variable-aleatoire-continue" title="Permalink to this headline">¶</a></h3>
 <p><strong>Définition.</strong> Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire continue de densité
 <span class="math notranslate nohighlight">\(f_X\)</span>. On appelle espérance de <span class="math notranslate nohighlight">\(X\)</span> la quantité définie par</p>
@@ -998,10 +1004,10 @@ et <span class="math notranslate nohighlight">\(Y\)</span> : <span class="math n
 <li><p>On a
 <span class="math notranslate nohighlight">\({\rm Var}(X) = \mathbb E[(X-\mathbb E[X])^2] = \mathbb E[X^2] - (\mathbb E[X])^2.\)</span></p></li>
 </ol>
-</div>
-<div class="section" id="les-lois-continues-usuelles">
+</section>
+<section id="les-lois-continues-usuelles">
 <h3>Les lois continues usuelles<a class="headerlink" href="#les-lois-continues-usuelles" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="loi-uniforme">
+<section id="loi-uniforme">
 <h4>Loi uniforme<a class="headerlink" href="#loi-uniforme" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> Soient <span class="math notranslate nohighlight">\(a,b\)</span>, deux réels tels que <span class="math notranslate nohighlight">\(a&lt;b\)</span>. On dit que <span class="math notranslate nohighlight">\(X\)</span>
 suit une loi uniforme sur l’intervalle <span class="math notranslate nohighlight">\([a,b]\)</span> et on note
@@ -1027,8 +1033,8 @@ appartenant à <span class="math notranslate nohighlight">\(\mathbb R\)</span>.<
 Densité uniforme</p>
 <p><img alt="" src="../_images/repartition-uniforme.png" />
 Répartition uniforme</p>
-</div>
-<div class="section" id="loi-exponentielle">
+</section>
+<section id="loi-exponentielle">
 <h4>Loi exponentielle<a class="headerlink" href="#loi-exponentielle" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> On dit que la variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit une loi
 exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda\)</span> (<span class="math notranslate nohighlight">\(\lambda&gt;0\)</span>) si <span class="math notranslate nohighlight">\(X\)</span> est à valeur
@@ -1074,8 +1080,8 @@ cumul).
 <p><strong>Remarque.</strong> Si <span class="math notranslate nohighlight">\(X\)</span> est une variable de loi exponentielle de paramètre
 <span class="math notranslate nohighlight">\(1\)</span>, pour tout <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span>, la loi de <span class="math notranslate nohighlight">\(\dfrac{X}{\lambda}\)</span> est la loi
 exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
-</div>
-<div class="section" id="loi-normale">
+</section>
+<section id="loi-normale">
 <h4>Loi normale<a class="headerlink" href="#loi-normale" title="Permalink to this headline">¶</a></h4>
 <p><strong>Définition.</strong> On dit que <span class="math notranslate nohighlight">\(X\)</span> suit une loi normale de paramètre <span class="math notranslate nohighlight">\(\mu\)</span>
 et <span class="math notranslate nohighlight">\(\sigma\)</span> (<span class="math notranslate nohighlight">\(\mu\)</span> un réel et <span class="math notranslate nohighlight">\(\sigma\)</span> un réel positif), et on note
@@ -1153,8 +1159,8 @@ suivantes:</p>
 &amp; &amp; \\
 \hline
 \end{array}\)</span></p>
-</div>
-<div class="section" id="loi-du-khi-deux">
+</section>
+<section id="loi-du-khi-deux">
 <h4>Loi du khi-deux<a class="headerlink" href="#loi-du-khi-deux" title="Permalink to this headline">¶</a></h4>
 <p><strong>Introduction.</strong> Soient <span class="math notranslate nohighlight">\(X_{1}, . . . , X_{n}\)</span> des variables aléatoires
 indépendantes de même loi <span class="math notranslate nohighlight">\(\mathcal{N}(0,1)\)</span>. Posons
@@ -1183,10 +1189,10 @@ l’indépendance de plusieurs variables ou encore de tester l’adéquation
 d’une série de données à une loi de probabilités.<br />
 Dans la pratique on utilise une table de valeurs de sa fonction de
 répartition.</p>
-</div>
-</div>
-</div>
-<div class="section" id="loi-des-grands-nombres-et-tcl">
+</section>
+</section>
+</section>
+<section id="loi-des-grands-nombres-et-tcl">
 <h2>Loi des grands nombres et TCL<a class="headerlink" href="#loi-des-grands-nombres-et-tcl" title="Permalink to this headline">¶</a></h2>
 <p><strong>Théorème 1.1</strong>. <strong>Loi forte des grands nombres</strong><br />
 Soient <span class="math notranslate nohighlight">\(X_1,\ldots,X_n\)</span>, <span class="math notranslate nohighlight">\(n\)</span> variables aléatoires [v.a.] i.i.d.
@@ -1226,8 +1232,8 @@ l’Université de Poitiers</p>
 l’Université de Poitiers</p>
 <p>[9] Images tirées d’un cours “Lois de probabilité usuelles” de
 l’Université de Poitiers</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
