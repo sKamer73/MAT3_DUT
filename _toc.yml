@@ -19,3 +19,5 @@ parts:
   - file: Part5/EXAM-1.ipynb
   - file: Part5/Correction_Ct1.ipynb
   - file: Part5/Analyse_notes_DSC1
+  - file: Part5/Exam_1_DSA
+  - file: Part5/correction_DSA1

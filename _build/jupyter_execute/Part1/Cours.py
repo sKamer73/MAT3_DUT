@@ -223,3 +223,9 @@
 # **Question bonus:** Le démontrer !
 # 
 # 
+
+# In[ ]:
+
+
+
+
