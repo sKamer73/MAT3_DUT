@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sujet Contrôle DSA 1 &#8212; Cours de Math 3</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Correction rapide - DSA1" href="correction_DSA1.html" />
+    <link rel="prev" title="Analyse Rapide des notes - DSC1" href="Analyse_notes_DSC1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/IUT_Chambery.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cours de Math 3</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Géométrie dans l'espace
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part1/Correction.html">
+   Correction du TD
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Matrices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part2/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/Cours.html">
+   Cours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part3/TD.html">
+   Travaux Dirigés
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Examens et Corrections
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="EXAM-1.html">
+   Sujet Contrôle DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Correction_Ct1.html">
+   Brève Correction - DSC1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Analyse_notes_DSC1.html">
+   Analyse Rapide des notes - DSC1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Sujet Contrôle DSA 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="correction_DSA1.html">
+   Correction rapide - DSA1
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Part5/Exam_1_DSA.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/sKamer73/MAT3_DUT"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/sKamer73/MAT3_DUT/issues/new?title=Issue%20on%20page%20%2FPart5/Exam_1_DSA.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/sKamer73/MAT3_DUT/edit/main/Part5/Exam_1_DSA.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part5/Exam_1_DSA.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section id="sujet-controle-dsa-1">
+<h1>Sujet Contrôle DSA 1<a class="headerlink" href="#sujet-controle-dsa-1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Exercice 1</strong>.   <strong>(5 Points)</strong></p>
+<p>Soient <span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;1&amp;0\\ 0&amp;1&amp;1\\ 0&amp;0&amp;1
+\end{pmatrix}\)</span> et
+<span class="math notranslate nohighlight">\(B = \begin{pmatrix} 0&amp;1&amp;0 \\ 0&amp;0&amp;1 \\ 0&amp;0&amp;0 \end{pmatrix}\)</span></p>
+<ol class="simple">
+<li><p>Calculer <span class="math notranslate nohighlight">\((2I_3+A)\)</span>, (<span class="math notranslate nohighlight">\(2I_3+A - ~^tB)\times B\)</span> (avec <span class="math notranslate nohighlight">\(~^tB\)</span> la
+transposée de <span class="math notranslate nohighlight">\(B\)</span>), <span class="math notranslate nohighlight">\(B^2\)</span> et <span class="math notranslate nohighlight">\(B^3\)</span> .</p></li>
+<li><p>Donner une relation entre <span class="math notranslate nohighlight">\(I_3\)</span>, A et B. En déduire que A et B
+commutent (i.e., <span class="math notranslate nohighlight">\(AB=BA\)</span>).</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>. Calculer <span class="math notranslate nohighlight">\(B^n\)</span> selon les valeurs de n. En
+utilisant la formule de Newton et les éléments donnée à la fin de ce
+document, donnez une expression pour <span class="math notranslate nohighlight">\(A^n\)</span>.</p></li>
+</ol>
+<p><strong>Exercice 2</strong>.   <strong>(8 Points)</strong></p>
+<p>Soient <span class="math notranslate nohighlight">\(\vec{n} =\begin{pmatrix} 1 \\ 2 \\3 \end{pmatrix}\)</span> et
+<span class="math notranslate nohighlight">\(\vec{d} =\begin{pmatrix} 2 \\ 0 \\-2 \end{pmatrix}\)</span>.</p>
+<p>Soient <span class="math notranslate nohighlight">\(A(2,0,-2)\)</span>, <span class="math notranslate nohighlight">\(B(2,3,-1)\)</span> et <span class="math notranslate nohighlight">\(C(0,2,-1)\)</span>.</p>
+<ol class="simple">
+<li><p>Calculer <span class="math notranslate nohighlight">\(\vec{n} \cdot \vec{d}\)</span>, <span class="math notranslate nohighlight">\(\vec{n} \wedge \vec{AC}\)</span> et
+<span class="math notranslate nohighlight">\(||\vec{AB}||\)</span></p></li>
+<li><p>Calculer l’équation cartésienne du plan <span class="math notranslate nohighlight">\((P)\)</span> passant par les
+points A,B et C.</p></li>
+<li><p>Calculer le système cartésien de la droite <span class="math notranslate nohighlight">\(\mathcal{D}\)</span>, de
+vecteur directeur <span class="math notranslate nohighlight">\(\vec{d}\)</span> et telle que B appartienne à cette
+droite.</p></li>
+<li><p>Ecrire le système permettant de trouver l’intersection de la droite
+et du plan, puis l’écrire sous forme matricielle <span class="math notranslate nohighlight">\(AX = Y\)</span></p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(D(1,-2,5)\)</span>. On cherche un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> tel que la droite
+<span class="math notranslate nohighlight">\((DM)\)</span> soit perpendiculaire à la droite <span class="math notranslate nohighlight">\(\mathcal{D}\)</span></p>
+<ol class="simple">
+<li><p>On suppose que <span class="math notranslate nohighlight">\(M \in \mathcal{D}\)</span>. Ecrire la condition de
+perpendicularité entre <span class="math notranslate nohighlight">\((DM)\)</span> et <span class="math notranslate nohighlight">\(\mathcal{D}\)</span>.</p></li>
+<li><p>On prend un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> sur la droite <span class="math notranslate nohighlight">\(\mathcal{D}\)</span>.
+Ecrire les conditions d’appartenance de <span class="math notranslate nohighlight">\(M\)</span> à <span class="math notranslate nohighlight">\(\mathcal{D}\)</span>,
+puis écrire et résoudre le système associé à l’appartenance de
+<span class="math notranslate nohighlight">\(M\)</span> à <span class="math notranslate nohighlight">\(\mathcal{D}\)</span> et la perpendicularité de <span class="math notranslate nohighlight">\((DM)\)</span> et
+<span class="math notranslate nohighlight">\(\mathcal{D}\)</span>. Conclure.</p></li>
+</ol>
+</li>
+</ol>
+<p><strong>Exercice 3</strong>.   <strong>(7 Points)</strong></p>
+<p>Soit $<span class="math notranslate nohighlight">\(A=\begin{pmatrix}
+1&amp;-2&amp;6\\ 0&amp;1&amp;0\\ 1&amp;0&amp;1
+\end{pmatrix}\)</span>$</p>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(A\)</span> est inversible.</p></li>
+<li><p>Trouver <span class="math notranslate nohighlight">\(A^{-1}\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(\displaystyle{Y=\begin{pmatrix}-10\\ 3\\1 \end{pmatrix}}\)</span>.
+Résoudre le système <span class="math notranslate nohighlight">\(AX=Y\)</span>, avec ou sans calculs, et en justifiant.</p></li>
+</ol>
+<p><strong>BONUS</strong>   <strong>(2 Points)</strong> Soient a et b deux réels non-nuls, on pose
+<span class="math notranslate nohighlight">\(A=\begin{pmatrix} a &amp; b \\ 0&amp;a \end{pmatrix}\)</span>. En posant une matrice
+<span class="math notranslate nohighlight">\(B=\begin{pmatrix} c &amp;d \\ e&amp;f \end{pmatrix}\)</span>, donner l’ensemble des
+matrices qui commutent avec <span class="math notranslate nohighlight">\(A\)</span>, c’est-à-dire telles que <span class="math notranslate nohighlight">\(AB=BA\)</span>.</p>
+<p><strong>Formule de Newton</strong> <strong>Q.1.c.</strong> Soient 2 matrices <span class="math notranslate nohighlight">\(M\)</span> et <span class="math notranslate nohighlight">\(N\)</span> qui
+commutent, alors:
+<span class="math notranslate nohighlight">\((M+N)^n = \sum_{k=0}^n \begin{pmatrix} n \\ k \end{pmatrix} M^k N^{n-k} = \begin{pmatrix} n \\ 0 \end{pmatrix}M^0N^n + \begin{pmatrix} n \\ 1 \end{pmatrix}M^1N^{n-1} + \begin{pmatrix} n \\ 2 \end{pmatrix}M^2N^{n-2} + \dots + \begin{pmatrix} n \\ n-1 \end{pmatrix}M^{n-1}N^{1} + \begin{pmatrix} n \\ n \end{pmatrix}M^{n}N^{0}\)</span>.
+On donne <span class="math notranslate nohighlight">\(\begin{pmatrix} n \\ 0 \end{pmatrix} = 1\)</span>,
+<span class="math notranslate nohighlight">\(\begin{pmatrix} n \\ 1 \end{pmatrix} = n\)</span>,
+<span class="math notranslate nohighlight">\(\begin{pmatrix} n \\ 2 \end{pmatrix} = \frac{n(n-1)}{2}\)</span> et <span class="math notranslate nohighlight">\(B^0=I_3\)</span>.
+Pour information,
+<span class="math notranslate nohighlight">\(\begin{pmatrix} n \\ k \end{pmatrix} = \frac{n!}{k!(n-k)!}\)</span>, avec
+<span class="math notranslate nohighlight">\(k \leq n\)</span> des entiers et
+<span class="math notranslate nohighlight">\(n! = n \times (n-1) \times (n-2) \times \dots \times 2 \times 1\)</span>.</p>
+<p><strong>EX1:=(0.5+1+0.5+0.5)+(0.5+0.5)+(0.75+0.75)    EX2:=2+2+1+1+1+1    EX3:=1.5+4+1.5</strong></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Part5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="Analyse_notes_DSC1.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Analyse Rapide des notes - DSC1</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="correction_DSA1.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Correction rapide - DSA1</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Simon Kamerling<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
