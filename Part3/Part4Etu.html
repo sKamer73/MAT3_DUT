@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Cours de Math 3</title>
+    <title>Correction du TD4 &#8212; Cours de Math 3</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -169,7 +169,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Part5/Analyse_notes_DSC1.html">
-   Analyse Rapide des notes - DSC1
+   Analyse Rapide des notes - DS1
   </a>
  </li>
  <li class="toctree-l1">
@@ -180,6 +180,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../Part5/correction_DSA1.html">
    Correction rapide - DSA1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part4/Correction.html">
+   Correction du sujet de contrôle 2020
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Part4/correcTD.html">
+   Correction du TD de statistique via Python
   </a>
  </li>
 </ul>
@@ -261,19 +271,28 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/sKamer73/MAT3_DUT/main?urlpath=tree/Part3/Part4Etu.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -282,7 +301,8 @@
         
               <div>
                 
-  <p>IUT de Chambéry - 2 année GCCD 2017-2018</p>
+  <section id="correction-du-td4">
+<h1>Correction du TD4<a class="headerlink" href="#correction-du-td4" title="Permalink to this headline">¶</a></h1>
 <p><strong>Exercice 1</strong>. (* à ***) En utilisant les définitions du cours,
 montrer que :</p>
 <ol>
@@ -297,11 +317,17 @@ et <span class="math notranslate nohighlight">\({\rm Var}[X] = \dfrac{1}{12}\)</
 Indication: Utiliser une intégration par parties.</p>
 </li>
 </ol>
+<p><strong>Correction:</strong> la correction et disponible dans la feuille de cours supplémentaire présentant les calculs d’espérance et de variance des lois usuels.</p>
 <p><strong>Exercice 2</strong>. (**) Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire. Calculer la
 fonction de répartition de <span class="math notranslate nohighlight">\(X\)</span> lorsque :</p>
 <ol class="simple">
 <li><p><span class="math notranslate nohighlight">\(X \sim \mathcal{U}([a,b])\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(X\sim \mathcal{E}(\lambda)\)</span></p></li>
+</ol>
+<p><strong>Correction:</strong></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(F_X(x) = \int_a^x \frac{dt}{b-a} =  \frac{x-a}{b-a}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_X(x) = \int_0^x \lambda e^{-\lambda t}dt = [-e^{-\lambda t}]_0^x = 1-e^{-\lambda x}\)</span></p></li>
 </ol>
 <p><strong>Exercice 3</strong>. (*) Madame Michel et Monsieur Boulanger vont chaque
 semaine au marché hebdomadaire. Madame Michel arrive à une heure
@@ -309,6 +335,8 @@ aléatoire entre 8h et 12h et elle reste 30 minutes ; on suppose que son
 heure d’arrivée suit une loi uniforme. Monsieur Boulanger arrive à 10h
 pile et reste également 30 minutes. Quelle est la probabilité pour
 qu’ils se trouvent ensemble au marché à un certain moment ?</p>
+<p><span class="math notranslate nohighlight">\(M\)</span> la v.a. de l’arrivée de Mme Michel. On cherche <span class="math notranslate nohighlight">\(P(9.5&lt;M&lt;10.5)\)</span>. On a alors:
+<span class="math notranslate nohighlight">\(P(9.5&lt;M&lt;10.5)=\int_{9.5}^{10.5} \frac{dt}{4} = 0.25\)</span></p>
 <p><strong>Exercice 4</strong>. (*) Max a un rendez-vous avec une amie. Ils vont au
 restaurant, puis au cinéma. Le temps passé au restaurant est une
 variable aléatoire suivant une loi exponentielle de paramètre
@@ -323,6 +351,13 @@ partie du film seulement ?</p></li>
 exponentielle de paramètre <span class="math notranslate nohighlight">\(\lambda = \frac{1}{2}\)</span>. Combien de temps
 Max peut-il espérer passer avec son amie ce soir ?</p></li>
 </ol>
+<p><strong>Correction</strong>:</p>
+<p>soit T la v.a. du temps passé au restaurant.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(T&gt;1)=\int_1^{+\infty} \lambda e^{-\lambda t} dt = [-e^{-\lambda t}]_1^{+\infty}=e^{-\lambda}=e^{-1}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(1&lt;T&lt;2.5)=\int_1^{2.5} \lambda e^{-\lambda t} dt = [-e^{-t}]_1^{2.5}= e^{-1}-e^{-2.5}\)</span></p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(C\)</span> la v.a. du temps passé au cinéma Alors: <span class="math notranslate nohighlight">\(E(T+C) = E(T)+E(C) = \frac{1}{1}+\frac{1}{\frac{1}{2}}=3\)</span></p></li>
+</ol>
 <p><strong>Exercice 5</strong>. (*)</p>
 <ol class="simple">
 <li><p>Soit <span class="math notranslate nohighlight">\(X\)</span> une variable aléatoire suivant une loi normale
@@ -334,9 +369,18 @@ Quelle est la loi de <span class="math notranslate nohighlight">\(-Y\)</span> ? 
 <span class="math notranslate nohighlight">\(P(0\leqslant Y\leqslant 0,8)\)</span>, <span class="math notranslate nohighlight">\(P(-0,6\leqslant Y\leqslant 0)\)</span> et
 <span class="math notranslate nohighlight">\(P(Y\leqslant 0,8)\)</span>.</p></li>
 </ol>
+<p><strong>Correction:</strong></p>
+<ol class="simple">
+<li><p>Montrer avec le changement de variable et avec le dessin que c’est 1/2. Invoquer la symétrie de la fonction carré.</p></li>
+<li><p>-Y suit la loi <span class="math notranslate nohighlight">\(N(0,1)\)</span>, par symétrie en 0. D’après le cours, <span class="math notranslate nohighlight">\(\sigma Y+m \sim N(m,\sigma)\)</span></p></li>
+<li><p>voir table. Précisément: <span class="math notranslate nohighlight">\(P(0&lt;=Y&lt;=0.8)=0.7881-0.5=0.2881\)</span>,<span class="math notranslate nohighlight">\(P(-0,6\leqslant Y\leqslant 0)=0.7257-0.5=0.2257\)</span>, <span class="math notranslate nohighlight">\(P(Y&lt;=0.8)=0.7881\)</span></p></li>
+</ol>
 <p><strong>Exercice 6</strong>. (*) La variable aléatoire <span class="math notranslate nohighlight">\(X\)</span> suit la loi normale
 <span class="math notranslate nohighlight">\(N(12,4)\)</span>. Calculer:
 $<span class="math notranslate nohighlight">\(P(X\leqslant 15), \qquad P(X\geqslant 18), \qquad P(X\geqslant 7), \qquad P(X\leqslant 9), \qquad P(8\leqslant X\leqslant 17).\)</span>$</p>
+<p>Soit <span class="math notranslate nohighlight">\(Y=\frac{X-12}{4}\)</span> la variable centrée réduite correspondante, on cherche les probas:</p>
+<div class="math notranslate nohighlight">
+\[P(Y\leqslant 0.75)=0.7734, \qquad P(Y\geqslant 1.5)=1-0.9332=, \qquad P(Y\geqslant -1.25) = P(Y \leqslant 1.25) = 0.8944, \qquad P(Y \leqslant -0.75)=0.5 - (0.7734-0.5), \qquad P(-1\leqslant Y\leqslant 1.25).\]</div>
 <p><strong>Exercice 7</strong>. (*) Une machine produit des rondelles métalliques en
 grande série. Une rondelle est acceptée si son diamètre extérieur est
 compris entre 21,9 et 22,1 mm. On suppose que sur l’ensemble de la
@@ -344,6 +388,21 @@ production le diamètre extérieur des rondelles est une variable
 aléatoire X suivant la loi normale de moyenne <span class="math notranslate nohighlight">\(m\)</span> = 22 mm et
 d’écart-type <span class="math notranslate nohighlight">\(\sigma\)</span> = 0,05 mm. Quelle est la probabilité qu’une pièce
 soit refusée ?</p>
+<p><strong>Correction:</strong></p>
+<p><span class="math notranslate nohighlight">\(P(21.9&lt;=X&lt;=22.1)=P(-0.1/0.05&lt;Y&lt;0.1/0.05)=P(-2&lt;Y&lt;2)=2*(0.9772-0.5)=0.95439\)</span>
+La réponse à la question est alors <span class="math notranslate nohighlight">\(-&gt; 1-P(21.9&lt;=X&lt;=22.1)=0.0456\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mf">0.9772</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.045600000000000085
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Exercice 8</strong>. (*) Le nombre de clients d’un magasin suit chaque
 samedi une loi normale <span class="math notranslate nohighlight">\(N(365,30)\)</span>. Quelle est la probabilité pour qu’il
 y ait un samedi donné:</p>
@@ -351,6 +410,11 @@ y ait un samedi donné:</p>
 <li><p>plus de 400 clients ?</p></li>
 <li><p>moins de 300 clients ?</p></li>
 <li><p>entre 320 et 380 clients ?</p></li>
+</ol>
+<p>1.<span class="math notranslate nohighlight">\(P(N&gt;400)=P(N_{adim}&gt;1.17)=1-0.9554\)</span></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(N&lt;300)=P(N_{adim}&lt;-2.16)=0.5-(0.9846-0.5)=0.0153\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(320&lt;N&lt;380)=P( -1.5 &lt; N_{adim}&lt;0.5 )=0.6915-(1-P(N_{adim}&lt;-1.5))=0.6915-1+(0.9332-0.5)=0.124\)</span></p></li>
 </ol>
 <p><strong>Exercice 9</strong>. (**) Dans une population, le poids des individus est
 une variable aléatoire suivant une loi normale de moyenne égale à 60 kg
@@ -362,6 +426,50 @@ kg. Calculer :</p>
 sorte que celui-ci ne soit en surcharge qu’avec une probabilité
 inférieure à 0,01.</p></li>
 </ol>
+<p><span class="math notranslate nohighlight">\(M=\sum_i M_i\)</span>, M suit la loi <span class="math notranslate nohighlight">\(N(20*60,\sqrt{20*\sigma²})=N(1200,67.08)\)</span></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(M&gt;2200)=P(M_{a}&gt;14.9)=0\)</span></p></li>
+<li><p>M suit la loi <span class="math notranslate nohighlight">\(N(n*60,\sqrt{n}*15)\)</span>, et on veut <span class="math notranslate nohighlight">\(P(N&gt;2200)=0.01\)</span> (99ème centile), d’où: <span class="math notranslate nohighlight">\(P(N_{a}&gt;\frac{2200-n*60}{\sqrt{n}*15})\)</span>, le deuxième doit être égal à 2.326, on doit résoudre (en passant au carré):
+<span class="math notranslate nohighlight">\((2200²-120*2200*n+60²*n²)/(n*15²)=2.326²\)</span> équivalent à <span class="math notranslate nohighlight">\(60²*n²-(120*2200+2.326²*15²)*n+2200²=0\)</span></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sqrt</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">*</span><span class="mi">15</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>67.0820393249937
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">delta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">120</span><span class="o">*</span><span class="mi">2200</span><span class="o">+</span><span class="mi">15</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mf">2.326</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="mi">60</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">2200</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="mi">120</span><span class="o">*</span><span class="mi">2200</span><span class="o">+</span><span class="mi">15</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mf">2.326</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="mi">60</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-33.31052372554596
+</pre></div>
+</div>
+</div>
+</div>
 <p><strong>Exercice 10</strong>. (**) Une machine est conçue pour confectionner des
 paquets d’un poids de 500g, mais ils n’ont pas exactement tous le même
 poids. On a constaté que la distribution des poids autour de la valeur
@@ -389,6 +497,7 @@ renseignement :</p>
 <li><p>exactement 110 commandes</p></li>
 <li><p>plus de 110 commandes</p></li>
 </ol>
+<p>Manque la donnée: quelle proba que le client se manifeste</p>
 <p><strong>Exercice 12</strong>. (***) La demande de fabrication d’une pièce X à une
 entreprise suit une loi normale. Elle a une probabilité 0,1 d’être
 inférieure à 15.000, et une probabilité 0,1 d’être supérieure à 25.000.</p>
@@ -402,6 +511,8 @@ atteint.</p></li>
 <li><p>Quelle est la probabilité que le seuil de rentabilité trimestriel
 soit atteint ?</p></li>
 </ol>
+<p>P(N_a&lt;x)=0.1 -&gt; x1 = -1.282=(15000-m)/s, 1.282 = (25000-m)/s -&gt; m = 20000, s</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
