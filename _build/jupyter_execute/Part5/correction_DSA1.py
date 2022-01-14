@@ -33,7 +33,7 @@ print("B^3 = ", B.dot(B.dot(B)))
 
 # **Question a:**
 
-# In[14]:
+# In[3]:
 
 
 from math import sqrt
@@ -48,7 +48,7 @@ print(" Norme de AB = ", np.linalg.norm(AB), " = sqrt(10) = ", sqrt(10))
 
 # **Question b:**
 
-# In[16]:
+# In[4]:
 
 
 normalP = np.cross(AB,AC)
@@ -105,12 +105,18 @@ print("Normal à P:", normalP)
 # 
 # $A^{-1} = \frac{1}{7} \begin{pmatrix} 1 & -2 & 6 \\ 0 & 5 & 0 \\ 1 & 2 & -1 \end{pmatrix} $
 
-# In[4]:
+# In[ ]:
+
+
+
+
+
+# In[6]:
 
 
 A = np.array([[1,-2,6],[0,1,0],[1,0,1]])
-Am1 = np.array([[1,2,-6],[0,7,0],[-1,2,1]])/5
-print(A.dot(A)
+Am1 = np.array([[-1,-2,6],[0,5,0],[1,2,-1]])/5
+print(np.linalg.inv(A))
 
 
 # **Question c:**

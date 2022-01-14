@@ -21,3 +21,5 @@ parts:
   - file: Part5/Analyse_notes_DSC1
   - file: Part5/Exam_1_DSA
   - file: Part5/correction_DSA1
+  - file: Part4/Correction
+  - file: Part4/correcTD
