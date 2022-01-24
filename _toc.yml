@@ -14,6 +14,8 @@ parts:
   chapters:
   - file: Part3/Cours
   - file: Part3/TD
+  - file: Part4/Correction
+  - file: Part4/correcTD
 - caption: Examens et Corrections
   chapters:
   - file: Part5/EXAM-1.ipynb
@@ -21,5 +23,4 @@ parts:
   - file: Part5/Analyse_notes_DSC1
   - file: Part5/Exam_1_DSA
   - file: Part5/correction_DSA1
-  - file: Part4/Correction
-  - file: Part4/correcTD
+  - file: Part5/Correction_DS2
